@@ -402,6 +402,9 @@ UsedLibrary="C:/Users/Tiago/Google Drive/Eagle Libraries/testpad.lbr"
 UsedLibrary="C:/Users/Tiago/Google Drive/Eagle Libraries/transistor.lbr"
 UsedLibrary="C:/Users/Tiago/Google Drive/Eagle Libraries/trimpot-molex2p.lbr"
 UsedLibrary="C:/Users/Tiago/Google Drive/Eagle Libraries/varistor.lbr"
+UsedLibrary="C:/Users/Tiago/Google Drive/Eagle Libraries/SI2302DS.lbr"
+UsedLibrary="C:/Users/Tiago/Google Drive/Eagle Libraries/TSOP1838.lbr"
+UsedLibrary="C:/Users/Tiago/Google Drive/Eagle Libraries/USB Connectors.lbr"
 
 [Win_1]
 Type="Control Panel"
