@@ -76,21 +76,21 @@
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="yes"/>
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="Name" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="16" fill="1" visible="no" active="yes"/>
 <layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="108" name="water" color="31" fill="3" visible="yes" active="yes"/>
-<layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
-<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
-<layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
-<layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
 <layer number="114" name="Badge_Outline" color="11" fill="1" visible="no" active="no"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
@@ -98,23 +98,23 @@
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
-<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
-<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
-<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
@@ -149,8 +149,8 @@
 <layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
 <layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
 <layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
-<layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
-<layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
@@ -537,7 +537,7 @@ Source: &lt;a href="https://assets.nexperia.com/documents/data-sheet/SI2302DS.pd
 <rectangle x1="-3.4" y1="4.95" x2="-3" y2="6.1001" layer="51"/>
 <rectangle x1="-4.1999" y1="4.95" x2="-3.8001" y2="6.1001" layer="51"/>
 </package>
-<package name="PJ-102A" urn="urn:adsk.eagle:footprint:6239682/1">
+<package name="PJ-102A" urn="urn:adsk.eagle:footprint:6239682/1" locally_modified="yes">
 <wire x1="-4.6" y1="4.4" x2="4.4" y2="4.4" width="0.127" layer="21"/>
 <wire x1="4.4" y1="4.4" x2="4.4" y2="-10.2" width="0.127" layer="21"/>
 <wire x1="4.4" y1="-10.2" x2="-4.6" y2="-10.2" width="0.127" layer="21"/>
@@ -545,6 +545,7 @@ Source: &lt;a href="https://assets.nexperia.com/documents/data-sheet/SI2302DS.pd
 <pad name="RING_SW" x="-4.6" y="-6.29" drill="3" diameter="4.8" rot="R180"/>
 <pad name="TIP" x="0.1" y="-9.29" drill="3" diameter="4.8" rot="R180"/>
 <pad name="RING" x="0.1" y="-3.39" drill="3" diameter="4.8" rot="R180"/>
+<text x="2.54" y="-12.7" size="1.27" layer="25" rot="R180">&gt;NAME</text>
 </package>
 <package name="DCJACK_2MM_SMT" urn="urn:adsk.eagle:footprint:6240084/1">
 <description>2.0/2.1mm DC Jack - SMT
@@ -615,7 +616,7 @@ Source: &lt;a href="https://assets.nexperia.com/documents/data-sheet/SI2302DS.pd
 <packageinstance name="PJ-102A"/>
 </packageinstances>
 </package3d>
-<package3d name="DCJACK_2MM_SMT" urn="urn:adsk.eagle:package:6240730/1" type="box">
+<package3d name="DCJACK_2MM_SMT" urn="urn:adsk.eagle:package:21784513/1" type="box">
 <description>2.0/2.1mm DC Jack - SMT
 &lt;p&gt;4UConnector: 03267&lt;/p&gt;
 &lt;p&gt;Note: Small tRestrict polygon's were added to the ground pads to improve solderability when this part is used in combination with a ground pour.  By default, Eagle will product four large bridges to the ground pour significantly increasing the heat distribution on the pads and preventing lead-free solder from reflowing in certain situations.  For more details, see: http://www.microbuilder.eu/Blog/09-12-14/Reducing_Thermals_for_Large_Pads_in_Eagle.aspx&lt;/p&gt;</description>
@@ -784,7 +785,7 @@ Source: &lt;a href="https://assets.nexperia.com/documents/data-sheet/SI2302DS.pd
 <connect gate="G$1" pin="TIP" pad="PWR2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6240730/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:21784513/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -5600,10 +5601,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <pin name="GND" x="7.62" y="-5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="OUT" x="7.62" y="0" visible="pin" length="middle" rot="R180"/>
 <pin name="V+" x="7.62" y="5.08" visible="pin" length="middle" rot="R180"/>
+<text x="-5.08" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TSOP1838">
+<deviceset name="TSOP1838" prefix="U">
 <description>IR Receiver and Demodulator</description>
 <gates>
 <gate name="G$1" symbol="TSOP" x="2.54" y="0"/>
@@ -5621,612 +5624,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="DESCRIPTION" value=" IR Remote Receiver 38KHz 35m 3-Pin "/>
 <attribute name="MF" value="Vishay"/>
 <attribute name="MP" value="TSOP1838"/>
-<attribute name="PACKAGE" value="None"/>
-<attribute name="PRICE" value="None"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="USB Connectors">
-<packages>
-<package name="MICRO-USB">
-<wire x1="-3.75" y1="5.8" x2="3.75" y2="5.8" width="0.127" layer="51"/>
-<wire x1="-3.75" y1="0" x2="-3.75" y2="5.8" width="0.127" layer="21"/>
-<wire x1="-3.75" y1="5.8" x2="-3.22" y2="5.8" width="0.127" layer="21"/>
-<wire x1="3.22" y1="5.8" x2="3.75" y2="5.8" width="0.127" layer="21"/>
-<wire x1="3.75" y1="5.8" x2="3.75" y2="0" width="0.127" layer="21"/>
-<wire x1="-6.15" y1="-1.37" x2="-6.15" y2="6.65" width="0.05" layer="39"/>
-<wire x1="-6.15" y1="6.65" x2="6.15" y2="6.65" width="0.05" layer="39"/>
-<wire x1="6.15" y1="-1.37" x2="-6.15" y2="-1.37" width="0.05" layer="39"/>
-<wire x1="6.15" y1="6.65" x2="6.15" y2="-1.37" width="0.05" layer="39"/>
-<wire x1="-3.75" y1="0" x2="9.6" y2="0" width="0.127" layer="51"/>
-<text x="6.25" y="0.175" size="0.6096" layer="51">PCB END</text>
-<text x="-6" y="7.8" size="0.8128" layer="25">&gt;NAME</text>
-<text x="-6" y="7.6" size="0.8128" layer="27" align="top-left">&gt;VALUE</text>
-<circle x="-1.3" y="7" radius="0.1" width="0.2" layer="21"/>
-<circle x="-1.3" y="7" radius="0.1" width="0.2" layer="51"/>
-<wire x1="-3.75" y1="-0.5" x2="-3.75" y2="0" width="0.127" layer="51"/>
-<wire x1="-3.75" y1="0" x2="-3.75" y2="5.8" width="0.127" layer="51"/>
-<wire x1="3.75" y1="5.8" x2="3.75" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="4.02" y1="-1.12" x2="3.75" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="-3.75" y1="-0.5" x2="-4.02" y2="-1.12" width="0.127" layer="51"/>
-<wire x1="-4.02" y1="-1.12" x2="4.02" y2="-1.12" width="0.127" layer="51"/>
-<wire x1="-5" y1="6.05" x2="-5.2" y2="6.05" width="0" layer="46"/>
-<wire x1="-5.2" y1="6.05" x2="-5.5" y2="5.75" width="0" layer="46" curve="90"/>
-<wire x1="-5.5" y1="5.75" x2="-5.5" y2="4.85" width="0" layer="46"/>
-<wire x1="-5.5" y1="4.85" x2="-5.2" y2="4.55" width="0" layer="46" curve="90"/>
-<wire x1="-5.2" y1="4.55" x2="-5" y2="4.55" width="0" layer="46"/>
-<wire x1="-5" y1="4.55" x2="-4.7" y2="4.85" width="0" layer="46" curve="90"/>
-<wire x1="-4.7" y1="4.85" x2="-4.7" y2="5.75" width="0" layer="46"/>
-<wire x1="-4.7" y1="5.75" x2="-5" y2="6.05" width="0" layer="46" curve="90"/>
-<polygon width="0.01" layer="1">
-<vertex x="-4.7" y="5.3"/>
-<vertex x="-4.7" y="5.75" curve="90"/>
-<vertex x="-5" y="6.05"/>
-<vertex x="-5.2" y="6.05" curve="90"/>
-<vertex x="-5.5" y="5.75"/>
-<vertex x="-5.5" y="4.85" curve="90"/>
-<vertex x="-5.2" y="4.55"/>
-<vertex x="-5" y="4.55" curve="90"/>
-<vertex x="-4.7" y="4.85"/>
-<vertex x="-4.7" y="5.29"/>
-<vertex x="-4.3" y="5.29"/>
-<vertex x="-4.3" y="4.5" curve="-90"/>
-<vertex x="-4.6" y="4.2"/>
-<vertex x="-5.6" y="4.2" curve="-90"/>
-<vertex x="-5.9" y="4.5"/>
-<vertex x="-5.9" y="6.1" curve="-90"/>
-<vertex x="-5.6" y="6.4"/>
-<vertex x="-4.6" y="6.4" curve="-90"/>
-<vertex x="-4.3" y="6.1"/>
-<vertex x="-4.3" y="5.3"/>
-</polygon>
-<polygon width="0.01" layer="16">
-<vertex x="-4.7" y="5.3"/>
-<vertex x="-4.7" y="5.75" curve="90"/>
-<vertex x="-5" y="6.05"/>
-<vertex x="-5.2" y="6.05" curve="90"/>
-<vertex x="-5.5" y="5.75"/>
-<vertex x="-5.5" y="4.85" curve="90"/>
-<vertex x="-5.2" y="4.55"/>
-<vertex x="-5" y="4.55" curve="90"/>
-<vertex x="-4.7" y="4.85"/>
-<vertex x="-4.7" y="5.29"/>
-<vertex x="-4.3" y="5.29"/>
-<vertex x="-4.3" y="4.5" curve="-90"/>
-<vertex x="-4.6" y="4.2"/>
-<vertex x="-5.6" y="4.2" curve="-90"/>
-<vertex x="-5.9" y="4.5"/>
-<vertex x="-5.9" y="6.1" curve="-90"/>
-<vertex x="-5.6" y="6.4"/>
-<vertex x="-4.6" y="6.4" curve="-90"/>
-<vertex x="-4.3" y="6.1"/>
-<vertex x="-4.3" y="5.3"/>
-</polygon>
-<polygon width="0.01" layer="31">
-<vertex x="-4.7" y="5.3"/>
-<vertex x="-4.7" y="5.75" curve="90"/>
-<vertex x="-5" y="6.05"/>
-<vertex x="-5.2" y="6.05" curve="90"/>
-<vertex x="-5.5" y="5.75"/>
-<vertex x="-5.5" y="4.85" curve="90"/>
-<vertex x="-5.2" y="4.55"/>
-<vertex x="-5" y="4.55" curve="90"/>
-<vertex x="-4.7" y="4.85"/>
-<vertex x="-4.7" y="5.29"/>
-<vertex x="-4.3" y="5.29"/>
-<vertex x="-4.3" y="4.5" curve="-90"/>
-<vertex x="-4.6" y="4.2"/>
-<vertex x="-5.6" y="4.2" curve="-90"/>
-<vertex x="-5.9" y="4.5"/>
-<vertex x="-5.9" y="6.1" curve="-90"/>
-<vertex x="-5.6" y="6.4"/>
-<vertex x="-4.6" y="6.4" curve="-90"/>
-<vertex x="-4.3" y="6.1"/>
-<vertex x="-4.3" y="5.3"/>
-</polygon>
-<polygon width="0.01" layer="32">
-<vertex x="-4.7" y="5.3"/>
-<vertex x="-4.7" y="5.75" curve="90"/>
-<vertex x="-5" y="6.05"/>
-<vertex x="-5.2" y="6.05" curve="90"/>
-<vertex x="-5.5" y="5.75"/>
-<vertex x="-5.5" y="4.85" curve="90"/>
-<vertex x="-5.2" y="4.55"/>
-<vertex x="-5" y="4.55" curve="90"/>
-<vertex x="-4.7" y="4.85"/>
-<vertex x="-4.7" y="5.29"/>
-<vertex x="-4.3" y="5.29"/>
-<vertex x="-4.3" y="4.5" curve="-90"/>
-<vertex x="-4.6" y="4.2"/>
-<vertex x="-5.6" y="4.2" curve="-90"/>
-<vertex x="-5.9" y="4.5"/>
-<vertex x="-5.9" y="6.1" curve="-90"/>
-<vertex x="-5.6" y="6.4"/>
-<vertex x="-4.6" y="6.4" curve="-90"/>
-<vertex x="-4.3" y="6.1"/>
-<vertex x="-4.3" y="5.3"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="-4.2" y="5.3"/>
-<vertex x="-5.5" y="5.3"/>
-<vertex x="-5.5" y="5.29"/>
-<vertex x="-4.2" y="5.29"/>
-<vertex x="-4.2" y="4.5" curve="-90"/>
-<vertex x="-4.6" y="4.1"/>
-<vertex x="-5.6" y="4.1" curve="-90"/>
-<vertex x="-6" y="4.6"/>
-<vertex x="-6" y="6.2" curve="-90"/>
-<vertex x="-5.6" y="6.5"/>
-<vertex x="-4.6" y="6.5" curve="-90"/>
-<vertex x="-4.2" y="6.1"/>
-</polygon>
-<polygon width="0.01" layer="30">
-<vertex x="-4.2" y="5.3"/>
-<vertex x="-5.5" y="5.3"/>
-<vertex x="-5.5" y="5.29"/>
-<vertex x="-4.2" y="5.29"/>
-<vertex x="-4.2" y="4.5" curve="-90"/>
-<vertex x="-4.6" y="4.1"/>
-<vertex x="-5.6" y="4.1" curve="-90"/>
-<vertex x="-6" y="4.6"/>
-<vertex x="-6" y="6.2" curve="-90"/>
-<vertex x="-5.6" y="6.5"/>
-<vertex x="-4.6" y="6.5" curve="-90"/>
-<vertex x="-4.2" y="6.1"/>
-</polygon>
-<wire x1="5.2" y1="6.05" x2="5" y2="6.05" width="0" layer="46"/>
-<wire x1="5" y1="6.05" x2="4.7" y2="5.75" width="0" layer="46" curve="90"/>
-<wire x1="4.7" y1="5.75" x2="4.7" y2="4.85" width="0" layer="46"/>
-<wire x1="4.7" y1="4.85" x2="5" y2="4.55" width="0" layer="46" curve="90"/>
-<wire x1="5" y1="4.55" x2="5.2" y2="4.55" width="0" layer="46"/>
-<wire x1="5.2" y1="4.55" x2="5.5" y2="4.85" width="0" layer="46" curve="90"/>
-<wire x1="5.5" y1="4.85" x2="5.5" y2="5.75" width="0" layer="46"/>
-<wire x1="5.5" y1="5.75" x2="5.2" y2="6.05" width="0" layer="46" curve="90"/>
-<polygon width="0.01" layer="1">
-<vertex x="5.5" y="5.3"/>
-<vertex x="5.5" y="5.75" curve="90"/>
-<vertex x="5.2" y="6.05"/>
-<vertex x="5" y="6.05" curve="90"/>
-<vertex x="4.7" y="5.75"/>
-<vertex x="4.7" y="4.85" curve="90"/>
-<vertex x="5" y="4.55"/>
-<vertex x="5.2" y="4.55" curve="90"/>
-<vertex x="5.5" y="4.85"/>
-<vertex x="5.5" y="5.29"/>
-<vertex x="5.9" y="5.29"/>
-<vertex x="5.9" y="4.5" curve="-90"/>
-<vertex x="5.6" y="4.2"/>
-<vertex x="4.6" y="4.2" curve="-90"/>
-<vertex x="4.3" y="4.5"/>
-<vertex x="4.3" y="6.1" curve="-90"/>
-<vertex x="4.6" y="6.4"/>
-<vertex x="5.6" y="6.4" curve="-90"/>
-<vertex x="5.9" y="6.1"/>
-<vertex x="5.9" y="5.3"/>
-</polygon>
-<polygon width="0.01" layer="16">
-<vertex x="5.5" y="5.3"/>
-<vertex x="5.5" y="5.75" curve="90"/>
-<vertex x="5.2" y="6.05"/>
-<vertex x="5" y="6.05" curve="90"/>
-<vertex x="4.7" y="5.75"/>
-<vertex x="4.7" y="4.85" curve="90"/>
-<vertex x="5" y="4.55"/>
-<vertex x="5.2" y="4.55" curve="90"/>
-<vertex x="5.5" y="4.85"/>
-<vertex x="5.5" y="5.29"/>
-<vertex x="5.9" y="5.29"/>
-<vertex x="5.9" y="4.5" curve="-90"/>
-<vertex x="5.6" y="4.2"/>
-<vertex x="4.6" y="4.2" curve="-90"/>
-<vertex x="4.3" y="4.5"/>
-<vertex x="4.3" y="6.1" curve="-90"/>
-<vertex x="4.6" y="6.4"/>
-<vertex x="5.6" y="6.4" curve="-90"/>
-<vertex x="5.9" y="6.1"/>
-<vertex x="5.9" y="5.3"/>
-</polygon>
-<polygon width="0.01" layer="31">
-<vertex x="5.5" y="5.3"/>
-<vertex x="5.5" y="5.75" curve="90"/>
-<vertex x="5.2" y="6.05"/>
-<vertex x="5" y="6.05" curve="90"/>
-<vertex x="4.7" y="5.75"/>
-<vertex x="4.7" y="4.85" curve="90"/>
-<vertex x="5" y="4.55"/>
-<vertex x="5.2" y="4.55" curve="90"/>
-<vertex x="5.5" y="4.85"/>
-<vertex x="5.5" y="5.29"/>
-<vertex x="5.9" y="5.29"/>
-<vertex x="5.9" y="4.5" curve="-90"/>
-<vertex x="5.6" y="4.2"/>
-<vertex x="4.6" y="4.2" curve="-90"/>
-<vertex x="4.3" y="4.5"/>
-<vertex x="4.3" y="6.1" curve="-90"/>
-<vertex x="4.6" y="6.4"/>
-<vertex x="5.6" y="6.4" curve="-90"/>
-<vertex x="5.9" y="6.1"/>
-<vertex x="5.9" y="5.3"/>
-</polygon>
-<polygon width="0.01" layer="32">
-<vertex x="5.5" y="5.3"/>
-<vertex x="5.5" y="5.75" curve="90"/>
-<vertex x="5.2" y="6.05"/>
-<vertex x="5" y="6.05" curve="90"/>
-<vertex x="4.7" y="5.75"/>
-<vertex x="4.7" y="4.85" curve="90"/>
-<vertex x="5" y="4.55"/>
-<vertex x="5.2" y="4.55" curve="90"/>
-<vertex x="5.5" y="4.85"/>
-<vertex x="5.5" y="5.29"/>
-<vertex x="5.9" y="5.29"/>
-<vertex x="5.9" y="4.5" curve="-90"/>
-<vertex x="5.6" y="4.2"/>
-<vertex x="4.6" y="4.2" curve="-90"/>
-<vertex x="4.3" y="4.5"/>
-<vertex x="4.3" y="6.1" curve="-90"/>
-<vertex x="4.6" y="6.4"/>
-<vertex x="5.6" y="6.4" curve="-90"/>
-<vertex x="5.9" y="6.1"/>
-<vertex x="5.9" y="5.3"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="6" y="5.3"/>
-<vertex x="4.7" y="5.3"/>
-<vertex x="4.7" y="5.29"/>
-<vertex x="6" y="5.29"/>
-<vertex x="6" y="4.5" curve="-90"/>
-<vertex x="5.6" y="4.1"/>
-<vertex x="4.6" y="4.1" curve="-90"/>
-<vertex x="4.2" y="4.6"/>
-<vertex x="4.2" y="6.2" curve="-90"/>
-<vertex x="4.6" y="6.5"/>
-<vertex x="5.6" y="6.5" curve="-90"/>
-<vertex x="6" y="6.1"/>
-</polygon>
-<polygon width="0.01" layer="30">
-<vertex x="6" y="5.3"/>
-<vertex x="4.7" y="5.3"/>
-<vertex x="4.7" y="5.29"/>
-<vertex x="6" y="5.29"/>
-<vertex x="6" y="4.5" curve="-90"/>
-<vertex x="5.6" y="4.1"/>
-<vertex x="4.6" y="4.1" curve="-90"/>
-<vertex x="4.2" y="4.6"/>
-<vertex x="4.2" y="6.2" curve="-90"/>
-<vertex x="4.6" y="6.5"/>
-<vertex x="5.6" y="6.5" curve="-90"/>
-<vertex x="6" y="6.1"/>
-</polygon>
-<wire x1="-5" y1="2.35" x2="-5.2" y2="2.35" width="0" layer="46"/>
-<wire x1="-5.2" y1="2.35" x2="-5.5" y2="2.05" width="0" layer="46" curve="90"/>
-<wire x1="-5.5" y1="2.05" x2="-5.5" y2="1.15" width="0" layer="46"/>
-<wire x1="-5.5" y1="1.15" x2="-5.2" y2="0.85" width="0" layer="46" curve="90"/>
-<wire x1="-5.2" y1="0.85" x2="-5" y2="0.85" width="0" layer="46"/>
-<wire x1="-5" y1="0.85" x2="-4.7" y2="1.15" width="0" layer="46" curve="90"/>
-<wire x1="-4.7" y1="1.15" x2="-4.7" y2="2.05" width="0" layer="46"/>
-<wire x1="-4.7" y1="2.05" x2="-5" y2="2.35" width="0" layer="46" curve="90"/>
-<polygon width="0.01" layer="1">
-<vertex x="-4.7" y="1.6"/>
-<vertex x="-4.7" y="2.05" curve="90"/>
-<vertex x="-5" y="2.35"/>
-<vertex x="-5.2" y="2.35" curve="90"/>
-<vertex x="-5.5" y="2.05"/>
-<vertex x="-5.5" y="1.15" curve="90"/>
-<vertex x="-5.2" y="0.85"/>
-<vertex x="-5" y="0.85" curve="90"/>
-<vertex x="-4.7" y="1.15"/>
-<vertex x="-4.7" y="1.59"/>
-<vertex x="-4.3" y="1.59"/>
-<vertex x="-4.3" y="0.8" curve="-90"/>
-<vertex x="-4.6" y="0.5"/>
-<vertex x="-5.6" y="0.5" curve="-90"/>
-<vertex x="-5.9" y="0.8"/>
-<vertex x="-5.9" y="2.4" curve="-90"/>
-<vertex x="-5.6" y="2.7"/>
-<vertex x="-4.6" y="2.7" curve="-90"/>
-<vertex x="-4.3" y="2.4"/>
-<vertex x="-4.3" y="1.6"/>
-</polygon>
-<polygon width="0.01" layer="16">
-<vertex x="-4.7" y="1.6"/>
-<vertex x="-4.7" y="2.05" curve="90"/>
-<vertex x="-5" y="2.35"/>
-<vertex x="-5.2" y="2.35" curve="90"/>
-<vertex x="-5.5" y="2.05"/>
-<vertex x="-5.5" y="1.15" curve="90"/>
-<vertex x="-5.2" y="0.85"/>
-<vertex x="-5" y="0.85" curve="90"/>
-<vertex x="-4.7" y="1.15"/>
-<vertex x="-4.7" y="1.59"/>
-<vertex x="-4.3" y="1.59"/>
-<vertex x="-4.3" y="0.8" curve="-90"/>
-<vertex x="-4.6" y="0.5"/>
-<vertex x="-5.6" y="0.5" curve="-90"/>
-<vertex x="-5.9" y="0.8"/>
-<vertex x="-5.9" y="2.4" curve="-90"/>
-<vertex x="-5.6" y="2.7"/>
-<vertex x="-4.6" y="2.7" curve="-90"/>
-<vertex x="-4.3" y="2.4"/>
-<vertex x="-4.3" y="1.6"/>
-</polygon>
-<polygon width="0.01" layer="31">
-<vertex x="-4.7" y="1.6"/>
-<vertex x="-4.7" y="2.05" curve="90"/>
-<vertex x="-5" y="2.35"/>
-<vertex x="-5.2" y="2.35" curve="90"/>
-<vertex x="-5.5" y="2.05"/>
-<vertex x="-5.5" y="1.15" curve="90"/>
-<vertex x="-5.2" y="0.85"/>
-<vertex x="-5" y="0.85" curve="90"/>
-<vertex x="-4.7" y="1.15"/>
-<vertex x="-4.7" y="1.59"/>
-<vertex x="-4.3" y="1.59"/>
-<vertex x="-4.3" y="0.8" curve="-90"/>
-<vertex x="-4.6" y="0.5"/>
-<vertex x="-5.6" y="0.5" curve="-90"/>
-<vertex x="-5.9" y="0.8"/>
-<vertex x="-5.9" y="2.4" curve="-90"/>
-<vertex x="-5.6" y="2.7"/>
-<vertex x="-4.6" y="2.7" curve="-90"/>
-<vertex x="-4.3" y="2.4"/>
-<vertex x="-4.3" y="1.6"/>
-</polygon>
-<polygon width="0.01" layer="32">
-<vertex x="-4.7" y="1.6"/>
-<vertex x="-4.7" y="2.05" curve="90"/>
-<vertex x="-5" y="2.35"/>
-<vertex x="-5.2" y="2.35" curve="90"/>
-<vertex x="-5.5" y="2.05"/>
-<vertex x="-5.5" y="1.15" curve="90"/>
-<vertex x="-5.2" y="0.85"/>
-<vertex x="-5" y="0.85" curve="90"/>
-<vertex x="-4.7" y="1.15"/>
-<vertex x="-4.7" y="1.59"/>
-<vertex x="-4.3" y="1.59"/>
-<vertex x="-4.3" y="0.8" curve="-90"/>
-<vertex x="-4.6" y="0.5"/>
-<vertex x="-5.6" y="0.5" curve="-90"/>
-<vertex x="-5.9" y="0.8"/>
-<vertex x="-5.9" y="2.4" curve="-90"/>
-<vertex x="-5.6" y="2.7"/>
-<vertex x="-4.6" y="2.7" curve="-90"/>
-<vertex x="-4.3" y="2.4"/>
-<vertex x="-4.3" y="1.6"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="-4.2" y="1.6"/>
-<vertex x="-5.5" y="1.6"/>
-<vertex x="-5.5" y="1.59"/>
-<vertex x="-4.2" y="1.59"/>
-<vertex x="-4.2" y="0.8" curve="-90"/>
-<vertex x="-4.6" y="0.4"/>
-<vertex x="-5.6" y="0.4" curve="-90"/>
-<vertex x="-6" y="0.9"/>
-<vertex x="-6" y="2.5" curve="-90"/>
-<vertex x="-5.6" y="2.8"/>
-<vertex x="-4.6" y="2.8" curve="-90"/>
-<vertex x="-4.2" y="2.4"/>
-</polygon>
-<polygon width="0.01" layer="30">
-<vertex x="-4.2" y="1.6"/>
-<vertex x="-5.5" y="1.6"/>
-<vertex x="-5.5" y="1.59"/>
-<vertex x="-4.2" y="1.59"/>
-<vertex x="-4.2" y="0.8" curve="-90"/>
-<vertex x="-4.6" y="0.4"/>
-<vertex x="-5.6" y="0.4" curve="-90"/>
-<vertex x="-6" y="0.9"/>
-<vertex x="-6" y="2.5" curve="-90"/>
-<vertex x="-5.6" y="2.8"/>
-<vertex x="-4.6" y="2.8" curve="-90"/>
-<vertex x="-4.2" y="2.4"/>
-</polygon>
-<wire x1="5.2" y1="2.35" x2="5" y2="2.35" width="0" layer="46"/>
-<wire x1="5" y1="2.35" x2="4.7" y2="2.05" width="0" layer="46" curve="90"/>
-<wire x1="4.7" y1="2.05" x2="4.7" y2="1.15" width="0" layer="46"/>
-<wire x1="4.7" y1="1.15" x2="5" y2="0.85" width="0" layer="46" curve="90"/>
-<wire x1="5" y1="0.85" x2="5.2" y2="0.85" width="0" layer="46"/>
-<wire x1="5.2" y1="0.85" x2="5.5" y2="1.15" width="0" layer="46" curve="90"/>
-<wire x1="5.5" y1="1.15" x2="5.5" y2="2.05" width="0" layer="46"/>
-<wire x1="5.5" y1="2.05" x2="5.2" y2="2.35" width="0" layer="46" curve="90"/>
-<polygon width="0.01" layer="1">
-<vertex x="5.5" y="1.6"/>
-<vertex x="5.5" y="2.05" curve="90"/>
-<vertex x="5.2" y="2.35"/>
-<vertex x="5" y="2.35" curve="90"/>
-<vertex x="4.7" y="2.05"/>
-<vertex x="4.7" y="1.15" curve="90"/>
-<vertex x="5" y="0.85"/>
-<vertex x="5.2" y="0.85" curve="90"/>
-<vertex x="5.5" y="1.15"/>
-<vertex x="5.5" y="1.59"/>
-<vertex x="5.9" y="1.59"/>
-<vertex x="5.9" y="0.8" curve="-90"/>
-<vertex x="5.6" y="0.5"/>
-<vertex x="4.6" y="0.5" curve="-90"/>
-<vertex x="4.3" y="0.8"/>
-<vertex x="4.3" y="2.4" curve="-90"/>
-<vertex x="4.6" y="2.7"/>
-<vertex x="5.6" y="2.7" curve="-90"/>
-<vertex x="5.9" y="2.4"/>
-<vertex x="5.9" y="1.6"/>
-</polygon>
-<polygon width="0.01" layer="16">
-<vertex x="5.5" y="1.6"/>
-<vertex x="5.5" y="2.05" curve="90"/>
-<vertex x="5.2" y="2.35"/>
-<vertex x="5" y="2.35" curve="90"/>
-<vertex x="4.7" y="2.05"/>
-<vertex x="4.7" y="1.15" curve="90"/>
-<vertex x="5" y="0.85"/>
-<vertex x="5.2" y="0.85" curve="90"/>
-<vertex x="5.5" y="1.15"/>
-<vertex x="5.5" y="1.59"/>
-<vertex x="5.9" y="1.59"/>
-<vertex x="5.9" y="0.8" curve="-90"/>
-<vertex x="5.6" y="0.5"/>
-<vertex x="4.6" y="0.5" curve="-90"/>
-<vertex x="4.3" y="0.8"/>
-<vertex x="4.3" y="2.4" curve="-90"/>
-<vertex x="4.6" y="2.7"/>
-<vertex x="5.6" y="2.7" curve="-90"/>
-<vertex x="5.9" y="2.4"/>
-<vertex x="5.9" y="1.6"/>
-</polygon>
-<polygon width="0.01" layer="31">
-<vertex x="5.5" y="1.6"/>
-<vertex x="5.5" y="2.05" curve="90"/>
-<vertex x="5.2" y="2.35"/>
-<vertex x="5" y="2.35" curve="90"/>
-<vertex x="4.7" y="2.05"/>
-<vertex x="4.7" y="1.15" curve="90"/>
-<vertex x="5" y="0.85"/>
-<vertex x="5.2" y="0.85" curve="90"/>
-<vertex x="5.5" y="1.15"/>
-<vertex x="5.5" y="1.59"/>
-<vertex x="5.9" y="1.59"/>
-<vertex x="5.9" y="0.8" curve="-90"/>
-<vertex x="5.6" y="0.5"/>
-<vertex x="4.6" y="0.5" curve="-90"/>
-<vertex x="4.3" y="0.8"/>
-<vertex x="4.3" y="2.4" curve="-90"/>
-<vertex x="4.6" y="2.7"/>
-<vertex x="5.6" y="2.7" curve="-90"/>
-<vertex x="5.9" y="2.4"/>
-<vertex x="5.9" y="1.6"/>
-</polygon>
-<polygon width="0.01" layer="32">
-<vertex x="5.5" y="1.6"/>
-<vertex x="5.5" y="2.05" curve="90"/>
-<vertex x="5.2" y="2.35"/>
-<vertex x="5" y="2.35" curve="90"/>
-<vertex x="4.7" y="2.05"/>
-<vertex x="4.7" y="1.15" curve="90"/>
-<vertex x="5" y="0.85"/>
-<vertex x="5.2" y="0.85" curve="90"/>
-<vertex x="5.5" y="1.15"/>
-<vertex x="5.5" y="1.59"/>
-<vertex x="5.9" y="1.59"/>
-<vertex x="5.9" y="0.8" curve="-90"/>
-<vertex x="5.6" y="0.5"/>
-<vertex x="4.6" y="0.5" curve="-90"/>
-<vertex x="4.3" y="0.8"/>
-<vertex x="4.3" y="2.4" curve="-90"/>
-<vertex x="4.6" y="2.7"/>
-<vertex x="5.6" y="2.7" curve="-90"/>
-<vertex x="5.9" y="2.4"/>
-<vertex x="5.9" y="1.6"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="6" y="1.6"/>
-<vertex x="4.7" y="1.6"/>
-<vertex x="4.7" y="1.59"/>
-<vertex x="6" y="1.59"/>
-<vertex x="6" y="0.8" curve="-90"/>
-<vertex x="5.6" y="0.4"/>
-<vertex x="4.6" y="0.4" curve="-90"/>
-<vertex x="4.2" y="0.9"/>
-<vertex x="4.2" y="2.5" curve="-90"/>
-<vertex x="4.6" y="2.8"/>
-<vertex x="5.6" y="2.8" curve="-90"/>
-<vertex x="6" y="2.4"/>
-</polygon>
-<polygon width="0.01" layer="30">
-<vertex x="6" y="1.6"/>
-<vertex x="4.7" y="1.6"/>
-<vertex x="4.7" y="1.59"/>
-<vertex x="6" y="1.59"/>
-<vertex x="6" y="0.8" curve="-90"/>
-<vertex x="5.6" y="0.4"/>
-<vertex x="4.6" y="0.4" curve="-90"/>
-<vertex x="4.2" y="0.9"/>
-<vertex x="4.2" y="2.5" curve="-90"/>
-<vertex x="4.6" y="2.8"/>
-<vertex x="5.6" y="2.8" curve="-90"/>
-<vertex x="6" y="2.4"/>
-</polygon>
-<wire x1="-3.45" y1="4.85" x2="-3.2" y2="4.6" width="0" layer="46" curve="-90"/>
-<wire x1="-3.45" y1="4.85" x2="-3.7" y2="4.6" width="0" layer="46" curve="90"/>
-<wire x1="3.45" y1="4.85" x2="3.7" y2="4.6" width="0" layer="46" curve="-90"/>
-<wire x1="3.45" y1="4.85" x2="3.2" y2="4.6" width="0" layer="46" curve="90"/>
-<wire x1="-3.2" y1="4.6" x2="3.2" y2="4.6" width="0" layer="46"/>
-<wire x1="-3.7" y1="0" x2="-3.7" y2="4.6" width="0" layer="46"/>
-<wire x1="3.7" y1="0" x2="3.7" y2="4.6" width="0" layer="46"/>
-<wire x1="-3.7" y1="0" x2="-5.95" y2="0" width="0" layer="46"/>
-<wire x1="3.7" y1="0" x2="5.95" y2="0" width="0" layer="46"/>
-<smd name="5" x="1.3" y="5.55" dx="0.4" dy="1.5" layer="1"/>
-<smd name="4" x="0.65" y="5.55" dx="0.4" dy="1.5" layer="1"/>
-<smd name="3" x="0" y="5.55" dx="0.4" dy="1.5" layer="1"/>
-<smd name="2" x="-0.65" y="5.55" dx="0.4" dy="1.5" layer="1"/>
-<smd name="1" x="-1.3" y="5.55" dx="0.4" dy="1.5" layer="1"/>
-<smd name="S1" x="-2.325" y="5.55" dx="1.15" dy="1.5" layer="1"/>
-<smd name="S2" x="2.325" y="5.55" dx="1.15" dy="1.5" layer="1"/>
-<smd name="S3" x="-5.1" y="6.25" dx="0.2" dy="0.2" layer="1" stop="no" cream="no"/>
-<smd name="S4" x="5.1" y="6.25" dx="0.2" dy="0.2" layer="1" stop="no" cream="no"/>
-<smd name="S5" x="-5.1" y="2.55" dx="0.2" dy="0.2" layer="1" stop="no" cream="no"/>
-<smd name="S6" x="5.1" y="2.55" dx="0.2" dy="0.2" layer="1" stop="no" cream="no"/>
-</package>
-</packages>
-<symbols>
-<symbol name="MICRO-USB">
-<wire x1="-5.08" y1="6.35" x2="-5.08" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-6.35" x2="-3.81" y2="-7.62" width="0.254" layer="94" curve="90"/>
-<wire x1="-3.81" y1="-7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-7.62" x2="-1.524" y2="-8.128" width="0.254" layer="94" curve="-53.1301"/>
-<wire x1="-1.524" y1="-8.128" x2="0" y2="-8.89" width="0.254" layer="94" curve="53.1301"/>
-<wire x1="0" y1="-8.89" x2="2.54" y2="-8.89" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-8.89" x2="3.81" y2="-7.62" width="0.254" layer="94" curve="90"/>
-<wire x1="-5.08" y1="6.35" x2="-3.81" y2="7.62" width="0.254" layer="94" curve="-90"/>
-<wire x1="-3.81" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="7.62" x2="-1.524" y2="8.128" width="0.254" layer="94" curve="53.1301"/>
-<wire x1="-1.524" y1="8.128" x2="0" y2="8.89" width="0.254" layer="94" curve="-53.1301"/>
-<wire x1="0" y1="8.89" x2="2.54" y2="8.89" width="0.254" layer="94"/>
-<wire x1="2.54" y1="8.89" x2="3.81" y2="7.62" width="0.254" layer="94" curve="-90"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="-1.27" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-6.35" x2="1.27" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-6.35" x2="1.27" y2="6.35" width="0.254" layer="94"/>
-<wire x1="1.27" y1="6.35" x2="-1.27" y2="6.35" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="6.35" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<text x="-3.559609375" y="9.6682" size="1.78053125" layer="95">&gt;NAME</text>
-<text x="-3.557609375" y="-11.4381" size="1.77913125" layer="96">&gt;VALUE</text>
-<pin name="VBUS" x="-7.62" y="5.08" visible="pin" direction="pwr"/>
-<pin name="D-" x="-7.62" y="2.54" visible="pin" direction="pas"/>
-<pin name="D+" x="-7.62" y="0" visible="pin" direction="pas"/>
-<pin name="ID" x="-7.62" y="-2.54" visible="pin" direction="pas"/>
-<pin name="GND" x="-7.62" y="-5.08" visible="pin" direction="pwr"/>
-<pin name="S" x="-7.62" y="-7.62" visible="pin" length="middle" direction="pwr"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MICRO-USB" prefix="CN">
-<gates>
-<gate name="G$1" symbol="MICRO-USB" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MICRO-USB">
-<connects>
-<connect gate="G$1" pin="D+" pad="3"/>
-<connect gate="G$1" pin="D-" pad="2"/>
-<connect gate="G$1" pin="GND" pad="5"/>
-<connect gate="G$1" pin="ID" pad="4"/>
-<connect gate="G$1" pin="S" pad="S1 S2 S3 S4 S5 S6"/>
-<connect gate="G$1" pin="VBUS" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="ARROW_ELECTRONICS-PURCHASE-URL" value="https://snapeda.com/shop?store=Arrow+Electronics&amp;id=4800468"/>
-<attribute name="AVAILABILITY" value="Unavailable"/>
-<attribute name="DESCRIPTION" value=" Micro USB 2.0, Input Output Connectors, B TYPE MID-MOUNT "/>
-<attribute name="DIGIKEY-PURCHASE-URL" value="https://snapeda.com/shop?store=DigiKey&amp;id=4800468"/>
-<attribute name="MF" value="FCI"/>
-<attribute name="MOUSER-PURCHASE-URL" value="https://snapeda.com/shop?store=Mouser&amp;id=4800468"/>
-<attribute name="MP" value="10103593-0001LF"/>
 <attribute name="PACKAGE" value="None"/>
 <attribute name="PRICE" value="None"/>
 </technology>
@@ -20300,6 +19697,182 @@ Source: Comchip CGRM4001-G.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Micro USB Connector">
+<description>&lt;b&gt;Hirose ZX62D-B-5PA8 Connector&lt;/b&gt;&lt;br&gt;
+( OSH Park compatible library)&lt;br&gt;
+&lt;br&gt;
+&amp;copy; 2015 Samuel Lourenço</description>
+<packages>
+<package name="ZX62D-B-5PA8">
+<description>&lt;b&gt;Micro USB Type B Connector&lt;/b&gt; - Standard, Shell Through Hole&lt;br&gt;
+&lt;br&gt;
+Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf&lt;/a&gt;</description>
+<wire x1="5" y1="1.4" x2="5" y2="-1.4" width="0.1524" layer="51"/>
+<pad name="S1" x="2.15" y="-3.6" drill="1.5"/>
+<pad name="S2" x="2.15" y="3.6" drill="1.5"/>
+<smd name="1" x="4.825" y="1.3" dx="1.35" dy="0.4" layer="1" stop="no"/>
+<smd name="2" x="4.825" y="0.65" dx="1.35" dy="0.4" layer="1" stop="no"/>
+<smd name="3" x="4.825" y="0" dx="1.35" dy="0.4" layer="1" stop="no"/>
+<smd name="4" x="4.825" y="-0.65" dx="1.35" dy="0.4" layer="1" stop="no"/>
+<smd name="5" x="4.825" y="-1.3" dx="1.35" dy="0.4" layer="1" stop="no"/>
+<text x="1.27" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="1.27" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="4.1" y1="1.05" x2="5.55" y2="1.55" layer="29"/>
+<pad name="S3" x="5.05" y="2.425" drill="0.7" shape="long"/>
+<pad name="S4" x="5.05" y="-2.425" drill="0.7" shape="long"/>
+<rectangle x1="4.1" y1="0.4" x2="5.55" y2="0.9" layer="29"/>
+<rectangle x1="4.1" y1="-0.25" x2="5.55" y2="0.25" layer="29"/>
+<rectangle x1="4.1" y1="-0.9" x2="5.55" y2="-0.4" layer="29"/>
+<rectangle x1="4.1" y1="-1.55" x2="5.55" y2="-1.05" layer="29"/>
+<wire x1="-0.5" y1="4" x2="-0.6" y2="3.8" width="0.1524" layer="21"/>
+<wire x1="-0.6" y1="3.8" x2="0" y2="3.5" width="0.1524" layer="21"/>
+<wire x1="0" y1="3.5" x2="0" y2="3.1" width="0.1524" layer="21"/>
+<wire x1="0" y1="3.1" x2="-0.6" y2="3.1" width="0.1524" layer="21"/>
+<wire x1="-0.6" y1="3.1" x2="-0.6" y2="-3.1" width="0.1524" layer="21"/>
+<wire x1="-0.6" y1="-3.1" x2="0" y2="-3.1" width="0.1524" layer="21"/>
+<wire x1="0" y1="-3.1" x2="0" y2="-3.5" width="0.1524" layer="21"/>
+<wire x1="0" y1="-3.5" x2="-0.6" y2="-3.8" width="0.1524" layer="21"/>
+<wire x1="-0.6" y1="-3.8" x2="-0.5" y2="-4" width="0.1524" layer="21"/>
+<wire x1="-0.5" y1="-4" x2="0" y2="-3.75" width="0.1524" layer="21"/>
+<wire x1="0" y1="-3.75" x2="5" y2="-3.75" width="0.1524" layer="21"/>
+<wire x1="5" y1="-3.75" x2="5" y2="-3.16" width="0.1524" layer="21"/>
+<wire x1="-0.5" y1="4" x2="0" y2="3.75" width="0.1524" layer="21"/>
+<wire x1="0" y1="3.75" x2="5" y2="3.75" width="0.1524" layer="21"/>
+<wire x1="5" y1="3.75" x2="5" y2="3.16" width="0.1524" layer="21"/>
+<rectangle x1="0" y1="-3.75" x2="1.4" y2="3.75" layer="41"/>
+<rectangle x1="1.4" y1="-2.85" x2="2.9" y2="2.85" layer="41"/>
+<rectangle x1="2.9" y1="-3.75" x2="4.1" y2="3.75" layer="41"/>
+<wire x1="4.02" y1="1.4" x2="5" y2="1.4" width="0.1524" layer="51"/>
+<wire x1="4.02" y1="-1.4" x2="5" y2="-1.4" width="0.1524" layer="51"/>
+<wire x1="3.8" y1="1.4" x2="3.8" y2="2.19" width="0.1524" layer="21"/>
+<wire x1="3.8" y1="2.66" x2="3.8" y2="2.8" width="0.1524" layer="21"/>
+<wire x1="3.8" y1="-2.8" x2="3.8" y2="-2.66" width="0.1524" layer="21"/>
+<wire x1="3.8" y1="-2.19" x2="3.8" y2="-1.4" width="0.1524" layer="21"/>
+<wire x1="3.8" y1="2.8" x2="3.86" y2="2.8" width="0.1524" layer="21"/>
+<wire x1="3.8" y1="-2.8" x2="3.86" y2="-2.8" width="0.1524" layer="21"/>
+<wire x1="3.8" y1="1.4" x2="4.02" y2="1.4" width="0.1524" layer="21"/>
+<wire x1="3.8" y1="-1.4" x2="4.02" y2="-1.4" width="0.1524" layer="21"/>
+<wire x1="4.4" y1="1.9" x2="4.4" y2="2.8" width="0.1524" layer="51"/>
+<wire x1="4.4" y1="-2.8" x2="4.4" y2="-1.9" width="0.1524" layer="51"/>
+<wire x1="4.4" y1="-1.9" x2="5" y2="-1.9" width="0.1524" layer="51"/>
+<wire x1="4.4" y1="1.9" x2="5" y2="1.9" width="0.1524" layer="51"/>
+<wire x1="5" y1="1.9" x2="5" y2="3.16" width="0.1524" layer="51"/>
+<wire x1="5" y1="-3.16" x2="5" y2="-1.9" width="0.1524" layer="51"/>
+<wire x1="0.9" y1="2.8" x2="0.9" y2="1.9" width="0.1524" layer="21"/>
+<wire x1="0.9" y1="1.9" x2="1.5" y2="1.9" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="1.9" x2="1.5" y2="2" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="2" x2="2.5" y2="2" width="0.1524" layer="21"/>
+<wire x1="2.5" y1="2" x2="2.5" y2="2.34" width="0.1524" layer="21"/>
+<wire x1="2.5" y1="2.7" x2="1.5" y2="2.7" width="0.1524" layer="51"/>
+<wire x1="1.5" y1="2.7" x2="1.5" y2="2.8" width="0.1524" layer="51"/>
+<wire x1="1.12" y1="2.8" x2="0.9" y2="2.8" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="2.8" x2="1.12" y2="2.8" width="0.1524" layer="51"/>
+<wire x1="2.5" y1="2.34" x2="2.5" y2="2.7" width="0.1524" layer="51"/>
+<wire x1="0.9" y1="-2.8" x2="0.9" y2="-1.9" width="0.1524" layer="21"/>
+<wire x1="0.9" y1="-1.9" x2="1.5" y2="-1.9" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="-1.9" x2="1.5" y2="-2" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="-2" x2="2.5" y2="-2" width="0.1524" layer="21"/>
+<wire x1="2.5" y1="-2" x2="2.5" y2="-2.34" width="0.1524" layer="21"/>
+<wire x1="2.5" y1="-2.7" x2="1.5" y2="-2.7" width="0.1524" layer="51"/>
+<wire x1="1.5" y1="-2.7" x2="1.5" y2="-2.8" width="0.1524" layer="51"/>
+<wire x1="1.12" y1="-2.8" x2="0.9" y2="-2.8" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="-2.8" x2="1.12" y2="-2.8" width="0.1524" layer="51"/>
+<wire x1="2.5" y1="-2.34" x2="2.5" y2="-2.7" width="0.1524" layer="51"/>
+<wire x1="3.86" y1="2.8" x2="4.4" y2="2.8" width="0.1524" layer="51"/>
+<wire x1="3.86" y1="-2.8" x2="4.4" y2="-2.8" width="0.1524" layer="51"/>
+<wire x1="3.8" y1="-2.66" x2="3.8" y2="-2.19" width="0.1524" layer="51"/>
+<wire x1="3.8" y1="2.19" x2="3.8" y2="2.66" width="0.1524" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MICRO-USB">
+<wire x1="-2.168025" y1="6.721975" x2="-0.371975" y2="8.518025" width="0.254" layer="94"/>
+<wire x1="-0.371975" y1="8.518025" x2="0.52605" y2="8.89" width="0.254" layer="94" curve="-45"/>
+<wire x1="0.52605" y1="8.89" x2="3.81" y2="8.89" width="0.254" layer="94"/>
+<wire x1="-2.168025" y1="6.721975" x2="-2.54" y2="5.82395" width="0.254" layer="94" curve="45"/>
+<wire x1="-2.54" y1="5.82395" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-5.82395" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.82395" x2="-2.168025" y2="-6.721975" width="0.254" layer="94" curve="45"/>
+<wire x1="-2.168025" y1="-6.721975" x2="-0.371975" y2="-8.518025" width="0.254" layer="94"/>
+<wire x1="-0.371975" y1="-8.518025" x2="0.52605" y2="-8.89" width="0.254" layer="94" curve="45"/>
+<wire x1="0.52605" y1="-8.89" x2="3.81" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-8.89" x2="5.08" y2="-7.62" width="0.254" layer="94" curve="90"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="3.81" y1="8.89" x2="5.08" y2="7.62" width="0.254" layer="94" curve="-90"/>
+<wire x1="1.27" y1="6.35" x2="1.27" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="1.27" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-6.35" x2="2.54" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-6.35" x2="2.54" y2="6.35" width="0.254" layer="94"/>
+<wire x1="2.54" y1="6.35" x2="1.27" y2="6.35" width="0.254" layer="94"/>
+<pin name="1" x="-5.08" y="5.08" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="-5.08" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="3" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="4" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="5" x="-5.08" y="-5.08" visible="pad" length="short" direction="pas"/>
+<wire x1="1.27" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
+<text x="-3.302" y="-11.43" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-3.556" y="9.906" size="1.778" layer="96">&gt;NAME</text>
+</symbol>
+<symbol name="MICRO-USB-SHIELD">
+<wire x1="-7.62" y1="0" x2="0" y2="0" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" style="shortdash" curve="90"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="19.05" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-7.62" y1="20.32" x2="0" y2="20.32" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="20.32" x2="1.27" y2="19.05" width="0.254" layer="94" style="shortdash" curve="-90"/>
+<text x="2.54" y="-2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<pin name="S1" x="-7.62" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="S2" x="-5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="S3" x="-2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="S4" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ZX62D-B-5PA8" prefix="CN">
+<description>&lt;b&gt;Micro USB Type B Connector&lt;/b&gt; - Standard, Shell Through Hole&lt;br&gt;
+&lt;br&gt;
+Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MICRO-USB" x="0" y="0"/>
+<gate name="S" symbol="MICRO-USB-SHIELD" x="5.08" y="-10.16" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="ZX62D-B-5PA8">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="S" pin="S1" pad="S1"/>
+<connect gate="S" pin="S2" pad="S2"/>
+<connect gate="S" pin="S3" pad="S3"/>
+<connect gate="S" pin="S4" pad="S4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="Hirose" constant="no"/>
+<attribute name="MPN" value="ZX62D-B-5PA8" constant="no"/>
+<attribute name="OC_FARNELL" value="2300438" constant="no"/>
+<attribute name="OC_NEWARK" value="69W0712" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -20321,19 +19894,17 @@ Source: Comchip CGRM4001-G.pdf</description>
 <parts>
 <part name="FRAME1" library="frames-OSHW" deviceset="DINA4_L" device=""/>
 <part name="Q1" library="SI2302DS" deviceset="SI2302DS" device=""/>
-<part name="U1" library="adafruit" deviceset="ATMEGA32U4" device="-AU" package3d_urn="urn:adsk.eagle:package:6240644/1" value="ATMEGA32U4"/>
+<part name="U2" library="adafruit" deviceset="ATMEGA32U4" device="-AU" package3d_urn="urn:adsk.eagle:package:6240644/1" value="ATMEGA32U4"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="M0805" value="1k (5%)"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="Q2" library="SI2302DS" deviceset="SI2302DS" device=""/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="M0805" value="1k (5%)"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="Q3" library="SI2302DS" deviceset="SI2302DS" device=""/>
-<part name="R11" library="rcl" deviceset="R-EU_" device="M0805" value="1k (5%)"/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="M0805" value="1k (5%)"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="LED1" library="led" deviceset="RGB_LED_STRIP" device=""/>
-<part name="U$1" library="TSOP1838" deviceset="TSOP1838" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="CN1" library="USB Connectors" deviceset="MICRO-USB" device="" value="USB-B Micro"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="M0805" value="10k (5%)"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -20361,7 +19932,6 @@ Source: Comchip CGRM4001-G.pdf</description>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uF x 50V"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="CN2" library="adafruit" deviceset="2.1MMJACK" device="THM" package3d_urn="urn:adsk.eagle:package:6240341/1"/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
@@ -20369,7 +19939,7 @@ Source: Comchip CGRM4001-G.pdf</description>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF x 50V"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="D3" library="diode" deviceset="CGRM400*-G" device="" package3d_urn="urn:adsk.eagle:package:43457/2" technology="7" value="US1A"/>
-<part name="U2" library="LM1117IMP-5.0-NOPB" deviceset="LM1117IMP-5.0-NOPB" device="" value="LM1117-5.0"/>
+<part name="U3" library="LM1117IMP-5.0-NOPB" deviceset="LM1117IMP-5.0-NOPB" device="" value="LM1117-5.0"/>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF x 50V"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uF x 50V"/>
 <part name="D1" library="diode" deviceset="CGRM400*-G" device="" package3d_urn="urn:adsk.eagle:package:43457/2" technology="7" value="US1A"/>
@@ -20378,25 +19948,28 @@ Source: Comchip CGRM4001-G.pdf</description>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="LED2" library="led" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2"/>
 <part name="S1" library="switch-tact2" deviceset="DTSM-3" device="" value=""/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="M0805" value="10k (5%)"/>
+<part name="R10" library="rcl" deviceset="R-EU_" device="M0805" value="10k (5%)"/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="R9" library="rcl" deviceset="R-EU_" device="M0805" value="100R (5%)"/>
+<part name="R11" library="rcl" deviceset="R-EU_" device="M0805" value="100R (5%)"/>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF x 50V"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
-<part name="R10" library="rcl" deviceset="R-EU_" device="M0805" value="100R (5%)"/>
+<part name="R12" library="rcl" deviceset="R-EU_" device="M0805" value="100R (5%)"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="R12" library="rcl" deviceset="R-EU_" device="M0805" value="220k (5%)"/>
-<part name="R13" library="rcl" deviceset="R-EU_" device="M0805" value="100k (5%)"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="M0805" value="220k (5%)"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="M0805" value="100k (5%)"/>
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
+<part name="CN1" library="Micro USB Connector" deviceset="ZX62D-B-5PA8" device="" override_package3d_urn="urn:adsk.eagle:package:21786352/2" override_package_urn="urn:adsk.eagle:footprint:21786353/1" value="Micro-USB"/>
+<part name="U1" library="TSOP1838" deviceset="TSOP1838" device="" override_package3d_urn="urn:adsk.eagle:package:21786871/2" override_package_urn="urn:adsk.eagle:footprint:21786872/1"/>
+<part name="CN2" library="adafruit" deviceset="2.1MMJACK" device="THM" package3d_urn="urn:adsk.eagle:package:6240341/1" override_package3d_urn="urn:adsk.eagle:package:21786658/2" override_package_urn="urn:adsk.eagle:footprint:21786659/1"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="183.515" y="26.035" size="3.81" layer="94">Tiago Silva</text>
 <text x="166.37" y="21.209" size="2.032" layer="94">https://github.com/TiagoPaulaSilva/Light-s-Thrill</text>
-<text x="253.365" y="1.27" size="2.54" layer="94" ratio="5">1.1</text>
+<text x="253.365" y="1.27" size="2.54" layer="94" ratio="5">1.2</text>
 <text x="182.245" y="6.35" size="2.54" layer="94" ratio="5">Complete Schematic</text>
 <wire x1="46.99" y1="97.79" x2="46.99" y2="100.33" width="0.1524" layer="94" grouprefs="RGB_LED_STRIP"/>
 <wire x1="47.625" y1="40.005" x2="47.625" y2="42.545" width="0.1524" layer="94" grouprefs="RGB_LED_STRIP"/>
@@ -20405,7 +19978,6 @@ Source: Comchip CGRM4001-G.pdf</description>
 <wire x1="62.23" y1="120.65" x2="3.81" y2="120.65" width="0.127" layer="212" style="shortdash" grouprefs="RGB_LED_STRIP"/>
 <wire x1="3.81" y1="120.65" x2="3.81" y2="170.815" width="0.127" layer="212" style="shortdash" grouprefs="RGB_LED_STRIP"/>
 <rectangle x1="3.81" y1="170.815" x2="62.23" y2="174.625" layer="212" grouprefs="RGB_LED_STRIP"/>
-<text x="188.595" y="241.935" size="2.54" layer="152" font="vector" ratio="12" align="center">RED</text>
 <wire x1="3.81" y1="113.665" x2="62.23" y2="113.665" width="0.127" layer="210" style="shortdash" grouprefs="RGB_LED_STRIP"/>
 <wire x1="62.23" y1="113.665" x2="62.23" y2="63.5" width="0.127" layer="210" style="shortdash" grouprefs="RGB_LED_STRIP"/>
 <wire x1="62.23" y1="63.5" x2="3.81" y2="63.5" width="0.127" layer="210" style="shortdash" grouprefs="RGB_LED_STRIP"/>
@@ -20438,7 +20010,7 @@ Source: Comchip CGRM4001-G.pdf</description>
 <attribute name="NAME" x="49.911" y="140.081" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="49.911" y="137.541" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="U1" gate="G$1" x="144.145" y="116.84" smashed="yes" grouprefs="MICROCONTROLLER">
+<instance part="U2" gate="G$1" x="144.145" y="116.84" smashed="yes" grouprefs="MICROCONTROLLER">
 <attribute name="NAME" x="126.365" y="165.862" size="1.778" layer="95"/>
 <attribute name="VALUE" x="126.365" y="163.322" size="1.778" layer="96"/>
 </instance>
@@ -20464,7 +20036,7 @@ Source: Comchip CGRM4001-G.pdf</description>
 <attribute name="NAME" x="51.181" y="25.146" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="51.181" y="22.606" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="R11" gate="G$1" x="32.385" y="21.59" smashed="yes" grouprefs="RGB_LED_STRIP">
+<instance part="R13" gate="G$1" x="32.385" y="21.59" smashed="yes" grouprefs="RGB_LED_STRIP">
 <attribute name="NAME" x="29.845" y="23.0886" size="1.778" layer="95"/>
 <attribute name="VALUE" x="28.575" y="18.288" size="1.778" layer="96"/>
 </instance>
@@ -20481,13 +20053,8 @@ Source: Comchip CGRM4001-G.pdf</description>
 <attribute name="NAME" x="51.181" y="34.163" size="1.27" layer="95" rot="R90"/>
 </instance>
 <instance part="LED1" gate="G$4" x="46.355" y="154.94" smashed="yes" grouprefs="RGB_LED_STRIP"/>
-<instance part="U$1" gate="G$1" x="240.665" y="146.05" smashed="yes" rot="MR0" grouprefs="INFRARED_SENSOR"/>
 <instance part="SUPPLY4" gate="+5V" x="220.98" y="168.91" smashed="yes" rot="MR0" grouprefs="INFRARED_SENSOR">
 <attribute name="VALUE" x="223.393" y="172.085" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="CN1" gate="G$1" x="250.19" y="94.615" smashed="yes" grouprefs="USB_COMPUTER_INTERFACE">
-<attribute name="NAME" x="248.535390625" y="104.9182" size="1.78053125" layer="95"/>
-<attribute name="VALUE" x="244.727390625" y="83.1769" size="1.27" layer="96"/>
 </instance>
 <instance part="R2" gate="G$1" x="228.6" y="159.385" smashed="yes" rot="MR270" grouprefs="INFRARED_SENSOR">
 <attribute name="NAME" x="227.1014" y="161.925" size="1.778" layer="95" rot="MR270"/>
@@ -20583,9 +20150,6 @@ Source: Comchip CGRM4001-G.pdf</description>
 <instance part="GND13" gate="1" x="86.995" y="130.81" smashed="yes" grouprefs="MICROCONTROLLER">
 <attribute name="VALUE" x="84.455" y="128.27" size="1.778" layer="96"/>
 </instance>
-<instance part="CN2" gate="G$1" x="257.175" y="60.96" smashed="yes" rot="MR0" grouprefs="EXTERNAL_POWER_SUPPLY">
-<attribute name="NAME" x="257.81" y="65.405" size="1.27" layer="95" rot="MR0"/>
-</instance>
 <instance part="SUPPLY9" gate="+12V" x="204.47" y="67.31" smashed="yes" rot="MR0" grouprefs="EXTERNAL_POWER_SUPPLY">
 <attribute name="VALUE" x="206.883" y="70.485" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -20602,14 +20166,14 @@ Source: Comchip CGRM4001-G.pdf</description>
 <attribute name="NAME" x="197.104" y="54.991" size="1.778" layer="95"/>
 <attribute name="VALUE" x="208.534" y="50.419" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="GND15" gate="1" x="252.095" y="45.085" smashed="yes" rot="MR0" grouprefs="EXTERNAL_POWER_SUPPLY">
-<attribute name="VALUE" x="254.635" y="42.545" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND15" gate="1" x="253.365" y="44.45" smashed="yes" rot="MR0" grouprefs="EXTERNAL_POWER_SUPPLY">
+<attribute name="VALUE" x="255.905" y="41.91" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="D3" gate="G$1" x="227.965" y="56.515" smashed="yes" rot="R90" grouprefs="EXTERNAL_POWER_SUPPLY">
 <attribute name="NAME" x="225.9584" y="54.991" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="231.0384" y="54.229" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="U2" gate="G$1" x="180.34" y="62.23" smashed="yes" rot="MR0" grouprefs="EXTERNAL_POWER_SUPPLY">
+<instance part="U3" gate="G$1" x="180.34" y="62.23" smashed="yes" rot="MR0" grouprefs="EXTERNAL_POWER_SUPPLY">
 <attribute name="NAME" x="171.4645" y="68.9485" size="1.77945" layer="95"/>
 <attribute name="VALUE" x="171.4606" y="66.4104" size="1.779059375" layer="96"/>
 </instance>
@@ -20643,7 +20207,7 @@ Source: Comchip CGRM4001-G.pdf</description>
 <attribute name="NAME" x="78.867" y="17.399" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="80.645" y="22.225" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R8" gate="G$1" x="76.835" y="26.67" smashed="yes" rot="MR180" grouprefs="USER_INTERFACE">
+<instance part="R10" gate="G$1" x="76.835" y="26.67" smashed="yes" rot="MR180" grouprefs="USER_INTERFACE">
 <attribute name="NAME" x="74.295" y="30.2514" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="73.66" y="24.892" size="1.27" layer="96" rot="MR180"/>
 </instance>
@@ -20653,7 +20217,7 @@ Source: Comchip CGRM4001-G.pdf</description>
 <instance part="GND14" gate="1" x="84.455" y="8.89" smashed="yes" grouprefs="USER_INTERFACE">
 <attribute name="VALUE" x="81.915" y="6.35" size="1.778" layer="96"/>
 </instance>
-<instance part="R9" gate="G$1" x="92.075" y="26.67" smashed="yes" rot="MR0" grouprefs="USER_INTERFACE">
+<instance part="R11" gate="G$1" x="92.075" y="26.67" smashed="yes" rot="MR0" grouprefs="USER_INTERFACE">
 <attribute name="NAME" x="89.535" y="30.2514" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="88.265" y="24.892" size="1.27" layer="96" rot="MR180"/>
 </instance>
@@ -20664,18 +20228,18 @@ Source: Comchip CGRM4001-G.pdf</description>
 <instance part="GND17" gate="1" x="100.33" y="8.89" smashed="yes" grouprefs="USER_INTERFACE">
 <attribute name="VALUE" x="97.79" y="6.35" size="1.778" layer="96"/>
 </instance>
-<instance part="R10" gate="G$1" x="143.51" y="26.67" smashed="yes" rot="MR180" grouprefs="USER_INTERFACE">
+<instance part="R12" gate="G$1" x="143.51" y="26.67" smashed="yes" rot="MR180" grouprefs="USER_INTERFACE">
 <attribute name="NAME" x="140.97" y="30.2514" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="139.7" y="24.892" size="1.27" layer="96" rot="MR180"/>
 </instance>
 <instance part="GND18" gate="1" x="154.94" y="8.89" smashed="yes" grouprefs="USER_INTERFACE">
 <attribute name="VALUE" x="152.4" y="6.35" size="1.778" layer="96"/>
 </instance>
-<instance part="R12" gate="G$1" x="80.645" y="60.325" smashed="yes" rot="MR0" grouprefs="EXTERNAL_SUPPLY_DETECT">
+<instance part="R8" gate="G$1" x="80.645" y="60.325" smashed="yes" rot="MR0" grouprefs="EXTERNAL_SUPPLY_DETECT">
 <attribute name="NAME" x="78.105" y="63.9064" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="77.343" y="58.547" size="1.27" layer="96" rot="MR180"/>
 </instance>
-<instance part="R13" gate="G$1" x="90.17" y="52.705" smashed="yes" rot="MR90" grouprefs="EXTERNAL_SUPPLY_DETECT">
+<instance part="R9" gate="G$1" x="90.17" y="52.705" smashed="yes" rot="MR90" grouprefs="EXTERNAL_SUPPLY_DETECT">
 <attribute name="NAME" x="86.5886" y="50.165" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="91.948" y="48.641" size="1.27" layer="96" rot="MR90"/>
 </instance>
@@ -20684,6 +20248,17 @@ Source: Comchip CGRM4001-G.pdf</description>
 </instance>
 <instance part="GND19" gate="1" x="90.17" y="44.45" smashed="yes" grouprefs="EXTERNAL_SUPPLY_DETECT">
 <attribute name="VALUE" x="87.63" y="41.91" size="1.778" layer="96"/>
+</instance>
+<instance part="CN1" gate="G$1" x="253.365" y="94.615" smashed="yes" grouprefs="USB_COMPUTER_INTERFACE">
+<attribute name="VALUE" x="250.698" y="83.82" size="1.27" layer="96"/>
+<attribute name="NAME" x="252.984" y="104.394" size="1.778" layer="96"/>
+</instance>
+<instance part="U1" gate="G$1" x="240.665" y="146.05" smashed="yes" rot="MR0" grouprefs="INFRARED_SENSOR">
+<attribute name="NAME" x="238.125" y="156.21" size="1.778" layer="95"/>
+<attribute name="VALUE" x="238.125" y="154.305" size="1.27" layer="96"/>
+</instance>
+<instance part="CN2" gate="G$1" x="258.445" y="60.96" smashed="yes" rot="MR0" grouprefs="EXTERNAL_POWER_SUPPLY">
+<attribute name="NAME" x="255.905" y="66.04" size="1.27" layer="95" rot="MR180"/>
 </instance>
 </instances>
 <busses>
@@ -20713,20 +20288,20 @@ Source: Comchip CGRM4001-G.pdf</description>
 <wire x1="47.625" y1="12.7" x2="47.625" y2="16.51" width="0.1524" layer="91" grouprefs="RGB_LED_STRIP"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="233.045" y1="140.97" x2="228.6" y2="140.97" width="0.1524" layer="91" grouprefs="INFRARED_SENSOR"/>
 <wire x1="228.6" y1="140.97" x2="228.6" y2="130.81" width="0.1524" layer="91" grouprefs="INFRARED_SENSOR"/>
+<pinref part="U1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="CN1" gate="G$1" pin="S"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="242.57" y1="86.995" x2="238.125" y2="86.995" width="0.1524" layer="91" grouprefs="USB_COMPUTER_INTERFACE"/>
-<wire x1="238.125" y1="86.995" x2="238.125" y2="83.82" width="0.1524" layer="91" grouprefs="USB_COMPUTER_INTERFACE"/>
-<pinref part="CN1" gate="G$1" pin="GND"/>
-<wire x1="242.57" y1="89.535" x2="238.125" y2="89.535" width="0.1524" layer="91" grouprefs="USB_COMPUTER_INTERFACE"/>
-<wire x1="238.125" y1="89.535" x2="238.125" y2="86.995" width="0.1524" layer="91" grouprefs="USB_COMPUTER_INTERFACE"/>
-<junction x="238.125" y="86.995" grouprefs="USB_COMPUTER_INTERFACE"/>
+<wire x1="248.285" y1="92.075" x2="238.125" y2="92.075" width="0.1524" layer="91"/>
+<wire x1="238.125" y1="92.075" x2="238.125" y2="89.535" width="0.1524" layer="91"/>
+<wire x1="238.125" y1="89.535" x2="238.125" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="248.285" y1="89.535" x2="238.125" y2="89.535" width="0.1524" layer="91"/>
+<junction x="238.125" y="89.535"/>
+<pinref part="CN1" gate="G$1" pin="4"/>
+<pinref part="CN1" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
@@ -20734,27 +20309,27 @@ Source: Comchip CGRM4001-G.pdf</description>
 <wire x1="97.79" y1="83.82" x2="97.79" y2="86.995" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="U2" gate="G$1" pin="GND"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="121.285" y1="93.98" x2="118.11" y2="93.98" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="118.11" y1="93.98" x2="118.11" y2="91.44" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<pinref part="U1" gate="G$1" pin="GND1"/>
+<pinref part="U2" gate="G$1" pin="GND1"/>
 <wire x1="118.11" y1="91.44" x2="118.11" y2="88.9" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="118.11" y1="88.9" x2="118.11" y2="86.36" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="118.11" y1="86.36" x2="118.11" y2="83.82" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="121.285" y1="91.44" x2="118.11" y2="91.44" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <junction x="118.11" y="91.44" grouprefs="MICROCONTROLLER"/>
-<pinref part="U1" gate="G$1" pin="GND3"/>
+<pinref part="U2" gate="G$1" pin="GND3"/>
 <wire x1="121.285" y1="86.36" x2="118.11" y2="86.36" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <junction x="118.11" y="86.36" grouprefs="MICROCONTROLLER"/>
-<pinref part="U1" gate="G$1" pin="GND2"/>
+<pinref part="U2" gate="G$1" pin="GND2"/>
 <wire x1="121.285" y1="88.9" x2="118.11" y2="88.9" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <junction x="118.11" y="88.9" grouprefs="MICROCONTROLLER"/>
-<pinref part="U1" gate="G$1" pin="UGND"/>
+<pinref part="U2" gate="G$1" pin="UGND"/>
 <wire x1="121.285" y1="96.52" x2="118.11" y2="96.52" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="118.11" y1="96.52" x2="118.11" y2="93.98" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <junction x="118.11" y="93.98" grouprefs="MICROCONTROLLER"/>
-<pinref part="U1" gate="G$1" pin="PE2(!HWB)"/>
+<pinref part="U2" gate="G$1" pin="PE2(!HWB)"/>
 <wire x1="121.285" y1="99.06" x2="118.11" y2="99.06" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="118.11" y1="99.06" x2="118.11" y2="96.52" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <junction x="118.11" y="96.52" grouprefs="MICROCONTROLLER"/>
@@ -20786,7 +20361,7 @@ Source: Comchip CGRM4001-G.pdf</description>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
-<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
 <wire x1="180.34" y1="53.34" x2="180.34" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <wire x1="180.34" y1="48.895" x2="155.575" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <wire x1="155.575" y1="48.895" x2="137.795" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
@@ -20801,20 +20376,20 @@ Source: Comchip CGRM4001-G.pdf</description>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="137.795" y1="46.99" x2="137.795" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <junction x="137.795" y="48.895" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<pinref part="CN2" gate="G$1" pin="RING"/>
-<pinref part="CN2" gate="G$1" pin="RING_SW"/>
-<wire x1="252.095" y1="60.96" x2="252.095" y2="58.42" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <wire x1="204.47" y1="48.895" x2="227.965" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<wire x1="227.965" y1="48.895" x2="252.095" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<wire x1="252.095" y1="48.895" x2="252.095" y2="58.42" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="227.965" y1="48.895" x2="253.365" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <junction x="204.47" y="48.895" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<junction x="252.095" y="58.42" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="252.095" y1="47.625" x2="252.095" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<junction x="252.095" y="48.895" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="253.365" y1="46.99" x2="253.365" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<junction x="253.365" y="48.895" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="227.965" y1="53.975" x2="227.965" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <junction x="227.965" y="48.895" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="253.365" y1="48.895" x2="253.365" y2="58.42" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<pinref part="CN2" gate="G$1" pin="RING"/>
+<pinref part="CN2" gate="G$1" pin="RING_SW"/>
+<wire x1="253.365" y1="60.96" x2="253.365" y2="58.42" width="0.1524" layer="91"/>
+<junction x="253.365" y="58.42"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="-"/>
@@ -20837,7 +20412,7 @@ Source: Comchip CGRM4001-G.pdf</description>
 <wire x1="154.94" y1="11.43" x2="154.94" y2="13.335" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 </segment>
 <segment>
-<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="90.17" y1="46.99" x2="90.17" y2="47.625" width="0.1524" layer="91" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
 </segment>
@@ -20856,7 +20431,7 @@ Source: Comchip CGRM4001-G.pdf</description>
 <label x="22.225" y="136.525" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="RGB_LED_STRIP"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PC6(OC3A/!OC4A)"/>
+<pinref part="U2" gate="G$1" pin="PC6(OC3A/!OC4A)"/>
 <wire x1="169.545" y1="134.62" x2="173.99" y2="134.62" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <label x="173.99" y="134.62" size="1.27" layer="95" font="vector" xref="yes" grouprefs="MICROCONTROLLER"/>
 </segment>
@@ -20870,12 +20445,12 @@ Source: Comchip CGRM4001-G.pdf</description>
 </net>
 <net name="MCU_PWM_BLUE" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="PB6(OC1B/OC4B/ADC13)"/>
+<pinref part="U2" gate="G$1" pin="PB6(OC1B/OC4B/ADC13)"/>
 <wire x1="169.545" y1="124.46" x2="173.99" y2="124.46" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <label x="173.99" y="124.46" size="1.27" layer="95" font="vector" xref="yes" grouprefs="MICROCONTROLLER"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="27.305" y1="21.59" x2="23.495" y2="21.59" width="0.1524" layer="91" grouprefs="RGB_LED_STRIP"/>
 <label x="23.495" y="21.59" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="RGB_LED_STRIP"/>
 </segment>
@@ -20883,14 +20458,14 @@ Source: Comchip CGRM4001-G.pdf</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="Q3" gate="G$1" pin="G"/>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="37.465" y1="21.59" x2="40.005" y2="21.59" width="0.1524" layer="91" grouprefs="RGB_LED_STRIP"/>
 </segment>
 </net>
 <net name="MCU_PWM_GREEN" class="0">
 <segment>
 <label x="173.99" y="104.14" size="1.27" layer="95" font="vector" xref="yes" grouprefs="MICROCONTROLLER"/>
-<pinref part="U1" gate="G$1" pin="PD7(OC4D/ADC10/T0)"/>
+<pinref part="U2" gate="G$1" pin="PD7(OC4D/ADC10/T0)"/>
 <wire x1="169.545" y1="104.14" x2="173.99" y2="104.14" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 </segment>
 <segment>
@@ -20920,29 +20495,29 @@ Source: Comchip CGRM4001-G.pdf</description>
 <pinref part="D1" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="VBUS"/>
+<pinref part="U2" gate="G$1" pin="VBUS"/>
 <pinref part="SUPPLY7" gate="+5V" pin="+5V"/>
 <wire x1="121.285" y1="157.48" x2="74.295" y2="157.48" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="74.295" y1="157.48" x2="74.295" y2="166.37" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<pinref part="U1" gate="G$1" pin="AVCC1"/>
+<pinref part="U2" gate="G$1" pin="AVCC1"/>
 <wire x1="121.285" y1="144.78" x2="86.995" y2="144.78" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="86.995" y1="144.78" x2="74.295" y2="144.78" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="74.295" y1="144.78" x2="74.295" y2="147.32" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <junction x="74.295" y="157.48" grouprefs="MICROCONTROLLER"/>
-<pinref part="U1" gate="G$1" pin="AVCC"/>
+<pinref part="U2" gate="G$1" pin="AVCC"/>
 <wire x1="74.295" y1="147.32" x2="74.295" y2="149.86" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="74.295" y1="149.86" x2="74.295" y2="152.4" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="74.295" y1="152.4" x2="74.295" y2="154.94" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="74.295" y1="154.94" x2="74.295" y2="157.48" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="121.285" y1="147.32" x2="74.295" y2="147.32" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <junction x="74.295" y="147.32" grouprefs="MICROCONTROLLER"/>
-<pinref part="U1" gate="G$1" pin="UVCC"/>
+<pinref part="U2" gate="G$1" pin="UVCC"/>
 <wire x1="121.285" y1="149.86" x2="74.295" y2="149.86" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <junction x="74.295" y="149.86" grouprefs="MICROCONTROLLER"/>
-<pinref part="U1" gate="G$1" pin="VCC1"/>
+<pinref part="U2" gate="G$1" pin="VCC1"/>
 <wire x1="121.285" y1="152.4" x2="74.295" y2="152.4" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <junction x="74.295" y="152.4" grouprefs="MICROCONTROLLER"/>
-<pinref part="U1" gate="G$1" pin="VCC"/>
+<pinref part="U2" gate="G$1" pin="VCC"/>
 <wire x1="121.285" y1="154.94" x2="74.295" y2="154.94" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <junction x="74.295" y="154.94" grouprefs="MICROCONTROLLER"/>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -20975,7 +20550,7 @@ Source: Comchip CGRM4001-G.pdf</description>
 <wire x1="228.6" y1="164.465" x2="228.6" y2="166.37" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="SUPPLY1" gate="+5V" pin="+5V"/>
 <wire x1="71.755" y1="26.67" x2="70.485" y2="26.67" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <wire x1="70.485" y1="26.67" x2="70.485" y2="28.575" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
@@ -20983,43 +20558,43 @@ Source: Comchip CGRM4001-G.pdf</description>
 </net>
 <net name="IR_SENSOR_SIGNAL" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="OUT"/>
 <wire x1="233.045" y1="146.05" x2="228.6" y2="146.05" width="0.1524" layer="91" grouprefs="INFRARED_SENSOR"/>
 <label x="215.9" y="146.05" size="1.27" layer="95" font="vector" rot="MR0" xref="yes" grouprefs="INFRARED_SENSOR"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="146.05" x2="215.9" y2="146.05" width="0.1524" layer="91" grouprefs="INFRARED_SENSOR"/>
 <wire x1="228.6" y1="154.305" x2="228.6" y2="146.05" width="0.1524" layer="91"/>
 <junction x="228.6" y="146.05"/>
+<pinref part="U1" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
 <label x="173.99" y="139.7" size="1.27" layer="95" font="vector" xref="yes" grouprefs="MICROCONTROLLER"/>
-<pinref part="U1" gate="G$1" pin="PE6(INT.6/AIN0)"/>
+<pinref part="U2" gate="G$1" pin="PE6(INT.6/AIN0)"/>
 <wire x1="169.545" y1="139.7" x2="173.99" y2="139.7" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="V+"/>
 <wire x1="233.045" y1="151.13" x2="220.98" y2="151.13" width="0.1524" layer="91" grouprefs="INFRARED_SENSOR"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="220.98" y1="153.67" x2="220.98" y2="151.13" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="+"/>
 <wire x1="220.98" y1="140.97" x2="220.98" y2="151.13" width="0.1524" layer="91"/>
 <junction x="220.98" y="151.13"/>
+<pinref part="U1" gate="G$1" pin="V+"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="CN1" gate="G$1" pin="D-"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="242.57" y1="97.155" x2="227.33" y2="97.155" width="0.1524" layer="91" grouprefs="USB_COMPUTER_INTERFACE"/>
+<wire x1="248.285" y1="97.155" x2="227.33" y2="97.155" width="0.1524" layer="91" grouprefs="USB_COMPUTER_INTERFACE"/>
+<pinref part="CN1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="CN1" gate="G$1" pin="D+"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="227.33" y1="94.615" x2="242.57" y2="94.615" width="0.1524" layer="91" grouprefs="USB_COMPUTER_INTERFACE"/>
+<wire x1="227.33" y1="94.615" x2="248.285" y2="94.615" width="0.1524" layer="91" grouprefs="USB_COMPUTER_INTERFACE"/>
+<pinref part="CN1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="USB_D-" class="0">
@@ -21030,7 +20605,7 @@ Source: Comchip CGRM4001-G.pdf</description>
 </segment>
 <segment>
 <label x="118.11" y="127" size="1.27" layer="95" font="vector" rot="R180" xref="yes" grouprefs="MICROCONTROLLER"/>
-<pinref part="U1" gate="G$1" pin="D-"/>
+<pinref part="U2" gate="G$1" pin="D-"/>
 <wire x1="118.11" y1="127" x2="121.285" y2="127" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 </segment>
 </net>
@@ -21042,20 +20617,20 @@ Source: Comchip CGRM4001-G.pdf</description>
 </segment>
 <segment>
 <label x="118.11" y="129.54" size="1.27" layer="95" font="vector" rot="R180" xref="yes" grouprefs="MICROCONTROLLER"/>
-<pinref part="U1" gate="G$1" pin="D+"/>
+<pinref part="U2" gate="G$1" pin="D+"/>
 <wire x1="121.285" y1="129.54" x2="118.11" y2="129.54" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="/RESET"/>
+<pinref part="U2" gate="G$1" pin="/RESET"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="121.285" y1="160.02" x2="107.315" y2="160.02" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="UCAP"/>
+<pinref part="U2" gate="G$1" pin="UCAP"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="121.285" y1="106.68" x2="97.79" y2="106.68" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="97.79" y1="106.68" x2="97.79" y2="94.615" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
@@ -21064,7 +20639,7 @@ Source: Comchip CGRM4001-G.pdf</description>
 <net name="N$12" class="0">
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
-<pinref part="U1" gate="G$1" pin="AREF"/>
+<pinref part="U2" gate="G$1" pin="AREF"/>
 <wire x1="109.855" y1="94.615" x2="109.855" y2="104.14" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="109.855" y1="104.14" x2="121.285" y2="104.14" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 </segment>
@@ -21075,7 +20650,7 @@ Source: Comchip CGRM4001-G.pdf</description>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="77.47" y1="97.79" x2="74.295" y2="97.79" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="74.295" y1="97.79" x2="74.295" y2="94.615" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<pinref part="U1" gate="G$1" pin="XTAL1"/>
+<pinref part="U2" gate="G$1" pin="XTAL1"/>
 <wire x1="121.285" y1="114.3" x2="74.295" y2="114.3" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="74.295" y1="114.3" x2="74.295" y2="97.79" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <junction x="74.295" y="97.79" grouprefs="MICROCONTROLLER"/>
@@ -21087,7 +20662,7 @@ Source: Comchip CGRM4001-G.pdf</description>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="82.55" y1="97.79" x2="85.725" y2="97.79" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="85.725" y1="97.79" x2="85.725" y2="94.615" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<pinref part="U1" gate="G$1" pin="XTAL2"/>
+<pinref part="U2" gate="G$1" pin="XTAL2"/>
 <wire x1="121.285" y1="111.76" x2="85.725" y2="111.76" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="85.725" y1="111.76" x2="85.725" y2="97.79" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <junction x="85.725" y="97.79" grouprefs="MICROCONTROLLER"/>
@@ -21113,17 +20688,17 @@ Source: Comchip CGRM4001-G.pdf</description>
 <wire x1="204.47" y1="64.77" x2="204.47" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <wire x1="204.47" y1="63.5" x2="204.47" y2="59.69" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <junction x="204.47" y="63.5" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<pinref part="U2" gate="G$1" pin="IN"/>
+<pinref part="U3" gate="G$1" pin="IN"/>
 <wire x1="194.31" y1="63.5" x2="204.47" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<pinref part="CN2" gate="G$1" pin="TIP"/>
 <pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="252.095" y1="63.5" x2="227.965" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="253.365" y1="63.5" x2="227.965" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <wire x1="227.965" y1="63.5" x2="227.965" y2="59.055" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <wire x1="204.47" y1="63.5" x2="227.965" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <junction x="227.965" y="63.5" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<pinref part="CN2" gate="G$1" pin="TIP"/>
 </segment>
 <segment>
-<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="SUPPLY12" gate="+12V" pin="+12V"/>
 <wire x1="75.565" y1="60.325" x2="71.755" y2="60.325" width="0.1524" layer="91"/>
 <wire x1="71.755" y1="60.325" x2="71.755" y2="65.405" width="0.1524" layer="91"/>
@@ -21131,15 +20706,15 @@ Source: Comchip CGRM4001-G.pdf</description>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="CN1" gate="G$1" pin="VBUS"/>
-<wire x1="242.57" y1="99.695" x2="237.49" y2="99.695" width="0.1524" layer="91" grouprefs="USB_COMPUTER_INTERFACE"/>
+<wire x1="248.285" y1="99.695" x2="237.49" y2="99.695" width="0.1524" layer="91" grouprefs="USB_COMPUTER_INTERFACE"/>
 <wire x1="237.49" y1="99.695" x2="237.49" y2="102.87" width="0.1524" layer="91" grouprefs="USB_COMPUTER_INTERFACE"/>
 <pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="CN1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="OUT"/>
+<pinref part="U3" gate="G$1" pin="OUT"/>
 <wire x1="166.37" y1="63.5" x2="155.575" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <pinref part="C9" gate="G$1" pin="1"/>
@@ -21154,18 +20729,18 @@ Source: Comchip CGRM4001-G.pdf</description>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="S1" gate="G$1" pin="2"/>
 <wire x1="81.915" y1="26.67" x2="84.455" y2="26.67" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <wire x1="84.455" y1="26.67" x2="84.455" y2="24.13" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
-<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="86.995" y1="26.67" x2="84.455" y2="26.67" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <junction x="84.455" y="26.67" grouprefs="USER_INTERFACE"/>
 </segment>
 </net>
 <net name="BUTTON_PROG" class="0">
 <segment>
-<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="97.155" y1="26.67" x2="100.33" y2="26.67" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <wire x1="100.33" y1="26.67" x2="100.33" y2="24.13" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
@@ -21174,7 +20749,7 @@ Source: Comchip CGRM4001-G.pdf</description>
 <label x="103.505" y="26.67" size="1.27" layer="95" xref="yes" grouprefs="USER_INTERFACE"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PD0(INT0/OC0B/SCL)"/>
+<pinref part="U2" gate="G$1" pin="PD0(INT0/OC0B/SCL)"/>
 <wire x1="169.545" y1="86.36" x2="173.355" y2="86.36" width="0.1524" layer="91"/>
 <label x="173.355" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -21182,27 +20757,27 @@ Source: Comchip CGRM4001-G.pdf</description>
 <net name="N$18" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="148.59" y1="26.67" x2="154.94" y2="26.67" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <wire x1="154.94" y1="26.67" x2="154.94" y2="20.955" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 </segment>
 </net>
 <net name="LED_STATUS" class="0">
 <segment>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="138.43" y1="26.67" x2="135.89" y2="26.67" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <label x="135.89" y="26.67" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="USER_INTERFACE"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PD4(ICP1/ADC8)"/>
+<pinref part="U2" gate="G$1" pin="PD4(ICP1/ADC8)"/>
 <wire x1="169.545" y1="96.52" x2="173.355" y2="96.52" width="0.1524" layer="91"/>
 <label x="173.355" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="12V_DETECT" class="0">
 <segment>
-<pinref part="R12" gate="G$1" pin="1"/>
-<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="85.725" y1="60.325" x2="90.17" y2="60.325" width="0.1524" layer="91" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
 <wire x1="90.17" y1="60.325" x2="90.17" y2="57.785" width="0.1524" layer="91" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
 <wire x1="90.17" y1="60.325" x2="95.885" y2="60.325" width="0.1524" layer="91" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
@@ -21210,7 +20785,7 @@ Source: Comchip CGRM4001-G.pdf</description>
 <label x="95.885" y="60.325" size="1.27" layer="95" xref="yes" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PD1(INT1/SDA)"/>
+<pinref part="U2" gate="G$1" pin="PD1(INT1/SDA)"/>
 <wire x1="169.545" y1="88.9" x2="173.355" y2="88.9" width="0.1524" layer="91"/>
 <label x="173.355" y="88.9" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -21239,6 +20814,11 @@ packages will not be understood (or retained) with this version.
 <note version="9.5" severity="warning">
 Since Version 9.5, EAGLE supports persistent groups with
 schematics, and board files. Those persistent groups
+will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
 will not be understood (or retained) with this version.
 </note>
 <note version="8.4" severity="warning">
