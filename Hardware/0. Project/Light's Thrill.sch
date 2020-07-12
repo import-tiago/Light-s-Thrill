@@ -76,7 +76,7 @@
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="98" name="Guide" color="6" fill="1" visible="no" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
@@ -20832,7 +20832,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <plain>
 <text x="183.515" y="26.035" size="3.81" layer="94">Tiago Silva</text>
 <text x="166.37" y="21.209" size="2.032" layer="94">https://github.com/TiagoPaulaSilva/Light-s-Thrill</text>
-<text x="253.365" y="1.27" size="2.54" layer="94" ratio="5">1.2</text>
+<text x="253.365" y="1.27" size="2.54" layer="94" ratio="5">1.3</text>
 <text x="182.245" y="6.35" size="2.54" layer="94" ratio="5">Complete Schematic</text>
 <wire x1="46.99" y1="97.79" x2="46.99" y2="100.33" width="0.1524" layer="94" grouprefs="RGB_LED_STRIP"/>
 <wire x1="47.625" y1="40.005" x2="47.625" y2="42.545" width="0.1524" layer="94" grouprefs="RGB_LED_STRIP"/>
@@ -20855,7 +20855,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <rectangle x1="3.81" y1="56.515" x2="62.23" y2="60.325" layer="211" grouprefs="RGB_LED_STRIP"/>
 <text x="32.385" y="58.42" size="2.54" layer="213" font="vector" ratio="12" align="center" grouprefs="RGB_LED_STRIP">BLUE</text>
 <text x="171.45" y="135.89" size="1.27" layer="98" font="vector" align="center" grouprefs="MICROCONTROLLER">D5</text>
-<text x="171.45" y="105.41" size="1.27" layer="98" font="vector" align="center" grouprefs="MICROCONTROLLER">D6</text>
+<text x="171.45" y="123.19" size="1.27" layer="98" font="vector" align="center" grouprefs="MICROCONTROLLER">D9</text>
 <text x="171.45" y="125.73" size="1.27" layer="98" font="vector" align="center" grouprefs="MICROCONTROLLER">D10</text>
 <text x="171.45" y="140.97" size="1.27" layer="98" font="vector" align="center" grouprefs="MICROCONTROLLER">D7</text>
 <text x="171.45" y="90.17" size="1.27" layer="98" font="vector" align="center">D2</text>
@@ -21327,9 +21327,9 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 </net>
 <net name="MCU_PWM_GREEN" class="0">
 <segment>
-<label x="173.99" y="104.14" size="1.27" layer="95" font="vector" xref="yes" grouprefs="MICROCONTROLLER"/>
-<pinref part="U2" gate="G$1" pin="PD7(OC4D/ADC10/T0)"/>
-<wire x1="169.545" y1="104.14" x2="173.99" y2="104.14" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<label x="173.99" y="121.92" size="1.27" layer="95" font="vector" xref="yes" grouprefs="MICROCONTROLLER"/>
+<pinref part="U2" gate="G$1" pin="PB5(OC1A/ADC12/!OC4B)"/>
+<wire x1="169.545" y1="121.92" x2="173.99" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
@@ -21648,9 +21648,9 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <label x="95.885" y="60.325" size="1.27" layer="95" xref="yes" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
 </segment>
 <segment>
-<label x="173.355" y="119.38" size="1.27" layer="95" xref="yes"/>
+<label x="173.99" y="119.38" size="1.27" layer="95" xref="yes"/>
 <pinref part="U2" gate="G$1" pin="PB4(ADC11)"/>
-<wire x1="169.545" y1="119.38" x2="173.355" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="169.545" y1="119.38" x2="173.99" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
