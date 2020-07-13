@@ -76,7 +76,7 @@
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="62" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
@@ -647,11 +647,11 @@ Source: &lt;a href="https://assets.nexperia.com/documents/data-sheet/SI2302DS.pd
 <pin name="XTAL2" x="-22.86" y="-5.08" length="middle"/>
 <pin name="XTAL1" x="-22.86" y="-2.54" length="middle"/>
 <pin name="GND" x="-22.86" y="-22.86" length="middle"/>
-<pin name="VCC" x="-22.86" y="38.1" length="middle"/>
-<pin name="UVCC" x="-22.86" y="33.02" length="middle"/>
+<pin name="VCC" x="-22.86" y="27.94" length="middle"/>
+<pin name="UVCC" x="-22.86" y="22.86" length="middle"/>
 <pin name="UGND" x="-22.86" y="-20.32" length="middle"/>
-<pin name="D-" x="-22.86" y="10.16" length="middle"/>
-<pin name="AVCC" x="-22.86" y="30.48" length="middle"/>
+<pin name="D-" x="-22.86" y="7.62" length="middle"/>
+<pin name="AVCC" x="-22.86" y="20.32" length="middle"/>
 <pin name="PB3(PDO/MISO)" x="25.4" y="0" length="middle" rot="R180"/>
 <pin name="PB2(PDI/MOSI)" x="25.4" y="-2.54" length="middle" rot="R180"/>
 <pin name="PB1(SCK)" x="25.4" y="-5.08" length="middle" rot="R180"/>
@@ -670,8 +670,8 @@ Source: &lt;a href="https://assets.nexperia.com/documents/data-sheet/SI2302DS.pd
 <pin name="PB6(OC1B/OC4B/ADC13)" x="25.4" y="7.62" length="middle" rot="R180"/>
 <pin name="PB5(OC1A/ADC12/!OC4B)" x="25.4" y="5.08" length="middle" rot="R180"/>
 <pin name="PB7(OC0A/OC1C/RTS)" x="25.4" y="10.16" length="middle" rot="R180"/>
-<pin name="/RESET" x="-22.86" y="43.18" length="middle" function="dot"/>
-<pin name="D+" x="-22.86" y="12.7" length="middle"/>
+<pin name="/RESET" x="-22.86" y="33.02" length="middle" function="dot"/>
+<pin name="D+" x="-22.86" y="10.16" length="middle"/>
 <pin name="UCAP" x="-22.86" y="-10.16" length="middle"/>
 <pin name="PE2(!HWB)" x="-22.86" y="-17.78" length="middle"/>
 <pin name="PF0(ADC0)" x="25.4" y="43.18" length="middle" rot="R180"/>
@@ -681,10 +681,10 @@ Source: &lt;a href="https://assets.nexperia.com/documents/data-sheet/SI2302DS.pd
 <pin name="PF6(ADC6/TDO)" x="25.4" y="33.02" length="middle" rot="R180"/>
 <pin name="PF7(ADC7(TDI)" x="25.4" y="30.48" length="middle" rot="R180"/>
 <pin name="PE6(INT.6/AIN0)" x="25.4" y="22.86" length="middle" rot="R180"/>
-<pin name="VBUS" x="-22.86" y="40.64" length="middle"/>
+<pin name="VBUS" x="-22.86" y="30.48" length="middle"/>
 <pin name="GND1" x="-22.86" y="-25.4" length="middle"/>
-<pin name="AVCC1" x="-22.86" y="27.94" length="middle"/>
-<pin name="VCC1" x="-22.86" y="35.56" length="middle"/>
+<pin name="AVCC1" x="-22.86" y="17.78" length="middle"/>
+<pin name="VCC1" x="-22.86" y="25.4" length="middle"/>
 <pin name="AREF" x="-22.86" y="-12.7" length="middle"/>
 <pin name="GND2" x="-22.86" y="-27.94" length="middle"/>
 <pin name="GND3" x="-22.86" y="-30.48" length="middle"/>
@@ -2292,9 +2292,9 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <devices>
 <device name="" package="STRIP-CONNECTOR">
 <connects>
-<connect gate="-BLUE" pin="C" pad="2"/>
-<connect gate="-GREEN" pin="C" pad="3"/>
-<connect gate="-RED" pin="C" pad="4"/>
+<connect gate="-BLUE" pin="C" pad="4"/>
+<connect gate="-GREEN" pin="C" pad="2"/>
+<connect gate="-RED" pin="C" pad="3"/>
 <connect gate="G$4" pin="ANODE" pad="1"/>
 </connects>
 <technologies>
@@ -20736,6 +20736,163 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 </deviceset>
 </devicesets>
 </library>
+<library name="pinhead">
+<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="2X03" urn="urn:adsk.eagle:footprint:22348/1">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-2.54" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-1.905" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.905" x2="-3.175" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="2.54" x2="-1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="2.54" x2="-1.27" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="1.27" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-2.54" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="2.54" x2="3.81" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="1.905" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="3.175" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="1" x="-2.54" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="2" x="-2.54" y="1.27" drill="1.016" shape="octagon"/>
+<pad name="3" x="0" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="4" x="0" y="1.27" drill="1.016" shape="octagon"/>
+<pad name="5" x="2.54" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="6" x="2.54" y="1.27" drill="1.016" shape="octagon"/>
+<text x="-3.81" y="3.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="51"/>
+<rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
+<rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
+<rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
+<rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
+<rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
+</package>
+<package name="2X03/90" urn="urn:adsk.eagle:footprint:22349/1">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-3.81" y1="-1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="6.985" x2="-2.54" y2="1.27" width="0.762" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="6.985" x2="0" y2="1.27" width="0.762" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-1.905" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="6.985" x2="2.54" y2="1.27" width="0.762" layer="21"/>
+<pad name="2" x="-2.54" y="-3.81" drill="1.016" shape="octagon"/>
+<pad name="4" x="0" y="-3.81" drill="1.016" shape="octagon"/>
+<pad name="6" x="2.54" y="-3.81" drill="1.016" shape="octagon"/>
+<pad name="1" x="-2.54" y="-6.35" drill="1.016" shape="octagon"/>
+<pad name="3" x="0" y="-6.35" drill="1.016" shape="octagon"/>
+<pad name="5" x="2.54" y="-6.35" drill="1.016" shape="octagon"/>
+<text x="-4.445" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.921" y1="0.635" x2="-2.159" y2="1.143" layer="21"/>
+<rectangle x1="-0.381" y1="0.635" x2="0.381" y2="1.143" layer="21"/>
+<rectangle x1="2.159" y1="0.635" x2="2.921" y2="1.143" layer="21"/>
+<rectangle x1="-2.921" y1="-2.921" x2="-2.159" y2="-1.905" layer="21"/>
+<rectangle x1="-0.381" y1="-2.921" x2="0.381" y2="-1.905" layer="21"/>
+<rectangle x1="-2.921" y1="-5.461" x2="-2.159" y2="-4.699" layer="21"/>
+<rectangle x1="-2.921" y1="-4.699" x2="-2.159" y2="-2.921" layer="51"/>
+<rectangle x1="-0.381" y1="-4.699" x2="0.381" y2="-2.921" layer="51"/>
+<rectangle x1="-0.381" y1="-5.461" x2="0.381" y2="-4.699" layer="21"/>
+<rectangle x1="2.159" y1="-2.921" x2="2.921" y2="-1.905" layer="21"/>
+<rectangle x1="2.159" y1="-5.461" x2="2.921" y2="-4.699" layer="21"/>
+<rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-2.921" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="2X03" urn="urn:adsk.eagle:package:22462/2" type="model">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="2X03"/>
+</packageinstances>
+</package3d>
+<package3d name="2X03/90" urn="urn:adsk.eagle:package:22464/2" type="model">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="2X03/90"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="PINH2X3">
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-7.62" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-3.81" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="3.81" y="2.54" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="3" x="-3.81" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="4" x="3.81" y="0" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="5" x="-3.81" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="6" x="3.81" y="-2.54" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PINHD-2X3" prefix="CN" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="PINH2X3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2X03">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="5" pad="5"/>
+<connect gate="A" pin="6" pad="6"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22462/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="62" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="/90" package="2X03/90">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="5" pad="5"/>
+<connect gate="A" pin="6" pad="6"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22464/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -20753,9 +20910,10 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <schematic_group name="EXTERNAL_POWER_SUPPLY"/>
 <schematic_group name="USER_INTERFACE"/>
 <schematic_group name="EXTERNAL_SUPPLY_DETECT"/>
+<schematic_group name="IN-CIRCUIT_SERIAL_PROGRAMMING"/>
 </groups>
 <parts>
-<part name="FRAME1" library="frames-OSHW" deviceset="DINA4_L" device=""/>
+<part name="FRAME1" library="frames-OSHW" deviceset="DINA4_L" device="" value="A4"/>
 <part name="Q1" library="SI2302DS" deviceset="SI2302DS" device="" package3d_urn="urn:adsk.eagle:package:21787272/2"/>
 <part name="U2" library="adafruit" deviceset="ATMEGA32U4" device="-AU" package3d_urn="urn:adsk.eagle:package:6240644/1" override_package3d_urn="urn:adsk.eagle:package:21786985/2" override_package_urn="urn:adsk.eagle:footprint:6239998/1" value="ATMEGA32U4"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k (5%)"/>
@@ -20809,7 +20967,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <part name="D2" library="diode" deviceset="CGRM400*-G" device="" package3d_urn="urn:adsk.eagle:package:43457/2" technology="7" value="US1A"/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="LED2" library="led" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2"/>
+<part name="LED2" library="led" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2" value="Red"/>
 <part name="S1" library="switch-tact2" deviceset="DTSM-3" device="" override_package3d_urn="urn:adsk.eagle:package:21787057/2" override_package_urn="urn:adsk.eagle:footprint:21787059/1" value=""/>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k (5%)"/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
@@ -20826,13 +20984,16 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <part name="CN1" library="Micro USB Connector" deviceset="ZX62D-B-5PA8" device="" override_package3d_urn="urn:adsk.eagle:package:21786352/2" override_package_urn="urn:adsk.eagle:footprint:21786353/1" value="Micro-USB"/>
 <part name="U1" library="TSOP1838" deviceset="TSOP1838" device="" override_package3d_urn="urn:adsk.eagle:package:21786871/2" override_package_urn="urn:adsk.eagle:footprint:21786872/1"/>
 <part name="CN2" library="adafruit" deviceset="2.1MMJACK" device="THM" package3d_urn="urn:adsk.eagle:package:6240341/1" override_package3d_urn="urn:adsk.eagle:package:21786658/2" override_package_urn="urn:adsk.eagle:footprint:21786659/1"/>
+<part name="CN3" library="pinhead" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2" value="2x3"/>
+<part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
+<part name="GND20" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="183.515" y="26.035" size="3.81" layer="94">Tiago Silva</text>
 <text x="166.37" y="21.209" size="2.032" layer="94">https://github.com/TiagoPaulaSilva/Light-s-Thrill</text>
-<text x="253.365" y="1.27" size="2.54" layer="94" ratio="5">1.3</text>
+<text x="253.365" y="1.27" size="2.54" layer="94" ratio="5">1.4</text>
 <text x="182.245" y="6.35" size="2.54" layer="94" ratio="5">Complete Schematic</text>
 <wire x1="46.99" y1="97.79" x2="46.99" y2="100.33" width="0.1524" layer="94" grouprefs="RGB_LED_STRIP"/>
 <wire x1="47.625" y1="40.005" x2="47.625" y2="42.545" width="0.1524" layer="94" grouprefs="RGB_LED_STRIP"/>
@@ -20849,18 +21010,18 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <text x="32.385" y="115.57" size="2.54" layer="213" font="vector" ratio="12" align="center" grouprefs="RGB_LED_STRIP">GREEN</text>
 <text x="32.385" y="172.72" size="2.54" layer="213" font="vector" ratio="12" align="center" grouprefs="RGB_LED_STRIP">RED</text>
 <wire x1="3.81" y1="56.515" x2="62.23" y2="56.515" width="0.127" layer="211" style="shortdash" grouprefs="RGB_LED_STRIP"/>
-<wire x1="62.23" y1="56.515" x2="62.23" y2="6.35" width="0.127" layer="211" style="shortdash" grouprefs="RGB_LED_STRIP"/>
-<wire x1="62.23" y1="6.35" x2="3.81" y2="6.35" width="0.127" layer="211" style="shortdash" grouprefs="RGB_LED_STRIP"/>
-<wire x1="3.81" y1="6.35" x2="3.81" y2="56.515" width="0.127" layer="211" style="shortdash" grouprefs="RGB_LED_STRIP"/>
+<wire x1="62.23" y1="56.515" x2="62.23" y2="3.175" width="0.127" layer="211" style="shortdash" grouprefs="RGB_LED_STRIP"/>
+<wire x1="62.23" y1="3.175" x2="3.81" y2="3.175" width="0.127" layer="211" style="shortdash" grouprefs="RGB_LED_STRIP"/>
+<wire x1="3.81" y1="3.175" x2="3.81" y2="56.515" width="0.127" layer="211" style="shortdash" grouprefs="RGB_LED_STRIP"/>
 <rectangle x1="3.81" y1="56.515" x2="62.23" y2="60.325" layer="211" grouprefs="RGB_LED_STRIP"/>
 <text x="32.385" y="58.42" size="2.54" layer="213" font="vector" ratio="12" align="center" grouprefs="RGB_LED_STRIP">BLUE</text>
 <text x="171.45" y="135.89" size="1.27" layer="98" font="vector" align="center" grouprefs="MICROCONTROLLER">D5</text>
 <text x="171.45" y="123.19" size="1.27" layer="98" font="vector" align="center" grouprefs="MICROCONTROLLER">D9</text>
 <text x="171.45" y="125.73" size="1.27" layer="98" font="vector" align="center" grouprefs="MICROCONTROLLER">D10</text>
 <text x="171.45" y="140.97" size="1.27" layer="98" font="vector" align="center" grouprefs="MICROCONTROLLER">D7</text>
-<text x="171.45" y="90.17" size="1.27" layer="98" font="vector" align="center">D2</text>
 <text x="171.45" y="87.63" size="1.27" layer="98" font="vector" align="center">D3</text>
 <text x="171.45" y="97.79" size="1.27" layer="98" font="vector" align="center">D4</text>
+<text x="171.45" y="120.396" size="1.27" layer="98" font="vector" align="center">D8</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -20903,8 +21064,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <attribute name="NAME" x="29.845" y="23.0886" size="1.778" layer="95"/>
 <attribute name="VALUE" x="28.575" y="18.288" size="1.778" layer="96"/>
 </instance>
-<instance part="GND3" gate="1" x="47.625" y="10.16" smashed="yes" grouprefs="RGB_LED_STRIP">
-<attribute name="VALUE" x="45.085" y="7.62" size="1.778" layer="96"/>
+<instance part="GND3" gate="1" x="47.625" y="6.985" smashed="yes" grouprefs="RGB_LED_STRIP">
+<attribute name="VALUE" x="45.085" y="4.445" size="1.778" layer="96"/>
 </instance>
 <instance part="LED1" gate="-RED" x="46.355" y="152.4" smashed="yes" grouprefs="RGB_LED_STRIP">
 <attribute name="NAME" x="49.911" y="149.733" size="1.27" layer="95" rot="R90"/>
@@ -20954,15 +21115,15 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <attribute name="NAME" x="228.346" y="95.0976" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="218.44" y="95.123" size="1.27" layer="96" rot="MR0"/>
 </instance>
-<instance part="SUPPLY7" gate="+5V" x="74.295" y="168.91" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="VALUE" x="71.882" y="172.085" size="1.778" layer="96"/>
+<instance part="SUPPLY7" gate="+5V" x="74.295" y="158.75" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="VALUE" x="71.882" y="161.925" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="102.235" y="160.02" smashed="yes" rot="R180" grouprefs="MICROCONTROLLER">
-<attribute name="NAME" x="95.25" y="160.8836" size="1.778" layer="95"/>
-<attribute name="VALUE" x="112.395" y="162.052" size="1.27" layer="96" rot="R180"/>
+<instance part="R1" gate="G$1" x="115.57" y="158.115" smashed="yes" rot="R90" grouprefs="MICROCONTROLLER">
+<attribute name="NAME" x="114.0714" y="156.464" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="118.237" y="154.305" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY8" gate="+5V" x="92.71" y="167.64" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="VALUE" x="90.297" y="170.815" size="1.778" layer="96"/>
+<instance part="SUPPLY8" gate="+5V" x="115.57" y="168.91" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="VALUE" x="113.157" y="172.085" size="1.778" layer="96"/>
 </instance>
 <instance part="C6" gate="G$1" x="97.79" y="92.075" smashed="yes" grouprefs="MICROCONTROLLER">
 <attribute name="NAME" x="91.694" y="89.916" size="1.778" layer="95"/>
@@ -20999,22 +21160,22 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <instance part="GND11" gate="1" x="74.295" y="81.28" smashed="yes" grouprefs="MICROCONTROLLER">
 <attribute name="VALUE" x="71.755" y="78.74" size="1.778" layer="96"/>
 </instance>
-<instance part="C1" gate="G$1" x="74.295" y="140.335" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="NAME" x="68.199" y="138.176" size="1.778" layer="95"/>
-<attribute name="VALUE" x="78.359" y="133.604" size="1.27" layer="96" rot="R90"/>
+<instance part="C1" gate="G$1" x="74.295" y="130.175" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="NAME" x="68.199" y="128.016" size="1.778" layer="95"/>
+<attribute name="VALUE" x="78.359" y="123.444" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="GND12" gate="1" x="74.295" y="130.81" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="VALUE" x="71.755" y="128.27" size="1.778" layer="96"/>
+<instance part="GND12" gate="1" x="74.295" y="120.65" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="VALUE" x="71.755" y="118.11" size="1.778" layer="96"/>
 </instance>
-<instance part="C2" gate="G$1" x="86.995" y="140.335" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="NAME" x="80.899" y="138.176" size="1.778" layer="95"/>
-<attribute name="VALUE" x="91.059" y="134.874" size="1.27" layer="96" rot="R90"/>
+<instance part="C2" gate="G$1" x="86.995" y="130.175" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="NAME" x="80.899" y="128.016" size="1.778" layer="95"/>
+<attribute name="VALUE" x="91.059" y="124.714" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="GND13" gate="1" x="86.995" y="130.81" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="VALUE" x="84.455" y="128.27" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="86.995" y="120.65" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="VALUE" x="84.455" y="118.11" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY9" gate="+12V" x="204.47" y="67.31" smashed="yes" rot="MR0" grouprefs="EXTERNAL_POWER_SUPPLY">
-<attribute name="VALUE" x="206.883" y="70.485" size="1.778" layer="96" rot="MR0"/>
+<instance part="SUPPLY9" gate="+12V" x="235.585" y="67.31" smashed="yes" rot="MR0" grouprefs="EXTERNAL_POWER_SUPPLY">
+<attribute name="VALUE" x="237.998" y="70.485" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="SUPPLY10" gate="+12V" x="47.625" y="48.895" smashed="yes" grouprefs="RGB_LED_STRIP">
 <attribute name="VALUE" x="44.577" y="52.07" size="1.778" layer="96"/>
@@ -21025,46 +21186,46 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <instance part="SUPPLY2" gate="+12V" x="46.355" y="163.83" smashed="yes" grouprefs="RGB_LED_STRIP">
 <attribute name="VALUE" x="43.307" y="167.005" size="1.778" layer="96"/>
 </instance>
-<instance part="C10" gate="G$1" x="204.47" y="57.15" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
-<attribute name="NAME" x="197.104" y="54.991" size="1.778" layer="95"/>
-<attribute name="VALUE" x="208.534" y="50.419" size="1.27" layer="96" rot="R90"/>
+<instance part="C10" gate="G$1" x="235.585" y="57.15" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
+<attribute name="NAME" x="228.219" y="54.991" size="1.778" layer="95"/>
+<attribute name="VALUE" x="239.649" y="50.419" size="1.27" layer="96" rot="R90"/>
 </instance>
 <instance part="GND15" gate="1" x="253.365" y="44.45" smashed="yes" rot="MR0" grouprefs="EXTERNAL_POWER_SUPPLY">
 <attribute name="VALUE" x="255.905" y="41.91" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="D3" gate="G$1" x="227.965" y="56.515" smashed="yes" rot="R90" grouprefs="EXTERNAL_POWER_SUPPLY">
-<attribute name="NAME" x="225.9584" y="54.991" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="231.0384" y="54.229" size="1.27" layer="96" rot="R90"/>
+<instance part="D3" gate="G$1" x="247.015" y="56.515" smashed="yes" rot="R90" grouprefs="EXTERNAL_POWER_SUPPLY">
+<attribute name="NAME" x="245.0084" y="54.991" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="250.0884" y="54.229" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="U3" gate="G$1" x="180.34" y="62.23" smashed="yes" rot="MR0" grouprefs="EXTERNAL_POWER_SUPPLY">
-<attribute name="NAME" x="171.4645" y="68.9485" size="1.77945" layer="95"/>
-<attribute name="VALUE" x="171.4606" y="66.4104" size="1.779059375" layer="96"/>
+<instance part="U3" gate="G$1" x="216.535" y="62.23" smashed="yes" rot="MR0" grouprefs="EXTERNAL_POWER_SUPPLY">
+<attribute name="NAME" x="207.6595" y="68.9485" size="1.77945" layer="95"/>
+<attribute name="VALUE" x="207.6556" y="66.4104" size="1.779059375" layer="96"/>
 </instance>
-<instance part="C8" gate="G$1" x="137.795" y="57.15" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
-<attribute name="NAME" x="131.699" y="54.991" size="1.778" layer="95"/>
-<attribute name="VALUE" x="141.859" y="50.419" size="1.27" layer="96" rot="R90"/>
+<instance part="C8" gate="G$1" x="185.42" y="57.15" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
+<attribute name="NAME" x="179.324" y="54.991" size="1.778" layer="95"/>
+<attribute name="VALUE" x="189.484" y="50.419" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="C9" gate="G$1" x="155.575" y="57.15" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
-<attribute name="NAME" x="149.479" y="54.991" size="1.778" layer="95"/>
-<attribute name="VALUE" x="159.639" y="52.324" size="1.27" layer="96" rot="R90"/>
+<instance part="C9" gate="G$1" x="198.12" y="57.15" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
+<attribute name="NAME" x="192.024" y="54.991" size="1.778" layer="95"/>
+<attribute name="VALUE" x="202.184" y="52.324" size="1.27" layer="96" rot="R90"/>
 </instance>
 <instance part="D1" gate="G$1" x="237.49" y="105.41" smashed="yes" rot="R90">
 <attribute name="NAME" x="235.4834" y="103.886" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="240.5634" y="103.124" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="D2" gate="G$1" x="126.365" y="63.5" smashed="yes" rot="R180" grouprefs="EXTERNAL_POWER_SUPPLY">
-<attribute name="NAME" x="124.714" y="65.7606" size="1.778" layer="95"/>
-<attribute name="VALUE" x="124.333" y="60.1726" size="1.27" layer="96"/>
+<instance part="D2" gate="G$1" x="176.53" y="63.5" smashed="yes" rot="R180" grouprefs="EXTERNAL_POWER_SUPPLY">
+<attribute name="NAME" x="174.879" y="65.7606" size="1.778" layer="95"/>
+<attribute name="VALUE" x="174.498" y="60.1726" size="1.27" layer="96"/>
 </instance>
-<instance part="SUPPLY11" gate="+5V" x="116.84" y="67.945" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
-<attribute name="VALUE" x="114.427" y="71.12" size="1.778" layer="96"/>
+<instance part="SUPPLY11" gate="+5V" x="167.005" y="67.945" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
+<attribute name="VALUE" x="164.592" y="71.12" size="1.778" layer="96"/>
 </instance>
-<instance part="GND16" gate="1" x="137.795" y="44.45" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
-<attribute name="VALUE" x="135.255" y="41.91" size="1.778" layer="96"/>
+<instance part="GND16" gate="1" x="185.42" y="44.45" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
+<attribute name="VALUE" x="182.88" y="41.91" size="1.778" layer="96"/>
 </instance>
 <instance part="LED2" gate="G$1" x="154.94" y="18.415" smashed="yes" grouprefs="USER_INTERFACE">
 <attribute name="NAME" x="158.496" y="13.843" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="160.655" y="13.843" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="160.655" y="13.843" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="S1" gate="G$1" x="84.455" y="19.05" smashed="yes" grouprefs="USER_INTERFACE">
 <attribute name="NAME" x="78.867" y="17.399" size="1.778" layer="95" rot="R90"/>
@@ -21077,8 +21238,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <instance part="SUPPLY1" gate="+5V" x="70.485" y="31.115" smashed="yes" grouprefs="USER_INTERFACE">
 <attribute name="VALUE" x="68.072" y="34.29" size="1.778" layer="96"/>
 </instance>
-<instance part="GND14" gate="1" x="84.455" y="8.89" smashed="yes" grouprefs="USER_INTERFACE">
-<attribute name="VALUE" x="81.915" y="6.35" size="1.778" layer="96"/>
+<instance part="GND14" gate="1" x="84.455" y="5.715" smashed="yes" grouprefs="USER_INTERFACE">
+<attribute name="VALUE" x="81.915" y="3.175" size="1.778" layer="96"/>
 </instance>
 <instance part="R11" gate="G$1" x="92.075" y="26.67" smashed="yes" rot="MR0" grouprefs="USER_INTERFACE">
 <attribute name="NAME" x="89.535" y="30.2514" size="1.778" layer="95" rot="MR180"/>
@@ -21088,29 +21249,29 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <attribute name="NAME" x="93.599" y="19.431" size="1.778" layer="95"/>
 <attribute name="VALUE" x="104.394" y="14.859" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="GND17" gate="1" x="100.33" y="8.89" smashed="yes" grouprefs="USER_INTERFACE">
-<attribute name="VALUE" x="97.79" y="6.35" size="1.778" layer="96"/>
+<instance part="GND17" gate="1" x="100.33" y="5.715" smashed="yes" grouprefs="USER_INTERFACE">
+<attribute name="VALUE" x="97.79" y="3.175" size="1.778" layer="96"/>
 </instance>
 <instance part="R12" gate="G$1" x="143.51" y="26.67" smashed="yes" rot="MR180" grouprefs="USER_INTERFACE">
 <attribute name="NAME" x="140.97" y="30.2514" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="139.7" y="24.892" size="1.27" layer="96" rot="MR180"/>
 </instance>
-<instance part="GND18" gate="1" x="154.94" y="8.89" smashed="yes" grouprefs="USER_INTERFACE">
-<attribute name="VALUE" x="152.4" y="6.35" size="1.778" layer="96"/>
+<instance part="GND18" gate="1" x="154.94" y="5.715" smashed="yes" grouprefs="USER_INTERFACE">
+<attribute name="VALUE" x="152.4" y="3.175" size="1.778" layer="96"/>
 </instance>
-<instance part="R8" gate="G$1" x="80.645" y="60.325" smashed="yes" rot="MR0" grouprefs="EXTERNAL_SUPPLY_DETECT">
-<attribute name="NAME" x="78.105" y="63.9064" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="77.343" y="58.547" size="1.27" layer="96" rot="MR180"/>
+<instance part="R8" gate="G$1" x="131.445" y="60.325" smashed="yes" rot="MR0" grouprefs="EXTERNAL_SUPPLY_DETECT">
+<attribute name="NAME" x="128.905" y="63.9064" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="128.143" y="58.547" size="1.27" layer="96" rot="MR180"/>
 </instance>
-<instance part="R9" gate="G$1" x="90.17" y="52.705" smashed="yes" rot="MR90" grouprefs="EXTERNAL_SUPPLY_DETECT">
-<attribute name="NAME" x="86.5886" y="50.165" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="91.948" y="48.641" size="1.27" layer="96" rot="MR90"/>
+<instance part="R9" gate="G$1" x="140.97" y="52.705" smashed="yes" rot="MR90" grouprefs="EXTERNAL_SUPPLY_DETECT">
+<attribute name="NAME" x="137.3886" y="50.165" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="142.748" y="48.641" size="1.27" layer="96" rot="MR90"/>
 </instance>
-<instance part="SUPPLY12" gate="+12V" x="71.755" y="67.945" smashed="yes" rot="MR0" grouprefs="EXTERNAL_SUPPLY_DETECT">
-<attribute name="VALUE" x="74.168" y="71.12" size="1.778" layer="96" rot="MR0"/>
+<instance part="SUPPLY12" gate="+12V" x="123.825" y="67.945" smashed="yes" rot="MR0" grouprefs="EXTERNAL_SUPPLY_DETECT">
+<attribute name="VALUE" x="126.238" y="71.12" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND19" gate="1" x="90.17" y="44.45" smashed="yes" grouprefs="EXTERNAL_SUPPLY_DETECT">
-<attribute name="VALUE" x="87.63" y="41.91" size="1.778" layer="96"/>
+<instance part="GND19" gate="1" x="140.97" y="44.45" smashed="yes" grouprefs="EXTERNAL_SUPPLY_DETECT">
+<attribute name="VALUE" x="138.43" y="41.91" size="1.778" layer="96"/>
 </instance>
 <instance part="CN1" gate="G$1" x="253.365" y="94.615" smashed="yes" grouprefs="USB_COMPUTER_INTERFACE">
 <attribute name="VALUE" x="250.698" y="83.82" size="1.27" layer="96"/>
@@ -21122,6 +21283,16 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 </instance>
 <instance part="CN2" gate="G$1" x="258.445" y="60.96" smashed="yes" rot="MR0" grouprefs="EXTERNAL_POWER_SUPPLY">
 <attribute name="NAME" x="255.905" y="66.04" size="1.27" layer="95" rot="MR180"/>
+</instance>
+<instance part="CN3" gate="A" x="92.71" y="59.055" smashed="yes" grouprefs="IN-CIRCUIT_SERIAL_PROGRAMMING">
+<attribute name="NAME" x="85.09" y="64.77" size="1.778" layer="95"/>
+<attribute name="VALUE" x="85.09" y="51.435" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SUPPLY13" gate="+5V" x="102.87" y="67.945" smashed="yes" grouprefs="IN-CIRCUIT_SERIAL_PROGRAMMING">
+<attribute name="VALUE" x="100.457" y="71.12" size="1.778" layer="96"/>
+</instance>
+<instance part="GND20" gate="1" x="102.87" y="44.45" smashed="yes" grouprefs="IN-CIRCUIT_SERIAL_PROGRAMMING">
+<attribute name="VALUE" x="100.33" y="41.91" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -21148,7 +21319,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <segment>
 <pinref part="Q3" gate="G$1" pin="S"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="47.625" y1="12.7" x2="47.625" y2="16.51" width="0.1524" layer="91" grouprefs="RGB_LED_STRIP"/>
+<wire x1="47.625" y1="9.525" x2="47.625" y2="16.51" width="0.1524" layer="91" grouprefs="RGB_LED_STRIP"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -21215,39 +21386,39 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="74.295" y1="133.35" x2="74.295" y2="135.255" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="74.295" y1="123.19" x2="74.295" y2="125.095" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="86.995" y1="133.35" x2="86.995" y2="135.255" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="86.995" y1="123.19" x2="86.995" y2="125.095" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
 <pinref part="U3" gate="G$1" pin="GND"/>
-<wire x1="180.34" y1="53.34" x2="180.34" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<wire x1="180.34" y1="48.895" x2="155.575" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<wire x1="155.575" y1="48.895" x2="137.795" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<wire x1="137.795" y1="48.895" x2="137.795" y2="52.07" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="216.535" y1="53.34" x2="216.535" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="216.535" y1="48.895" x2="198.12" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="198.12" y1="48.895" x2="185.42" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="185.42" y1="48.895" x2="185.42" y2="52.07" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="155.575" y1="52.07" x2="155.575" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<junction x="155.575" y="48.895" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<junction x="180.34" y="48.895" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="198.12" y1="52.07" x2="198.12" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<junction x="198.12" y="48.895" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<junction x="216.535" y="48.895" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="204.47" y1="48.895" x2="204.47" y2="52.07" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<wire x1="180.34" y1="48.895" x2="204.47" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="235.585" y1="48.895" x2="235.585" y2="52.07" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="216.535" y1="48.895" x2="235.585" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="137.795" y1="46.99" x2="137.795" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<junction x="137.795" y="48.895" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<wire x1="204.47" y1="48.895" x2="227.965" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<wire x1="227.965" y1="48.895" x2="253.365" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<junction x="204.47" y="48.895" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="185.42" y1="46.99" x2="185.42" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<junction x="185.42" y="48.895" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="235.585" y1="48.895" x2="247.015" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="247.015" y1="48.895" x2="253.365" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<junction x="235.585" y="48.895" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="253.365" y1="46.99" x2="253.365" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <junction x="253.365" y="48.895" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <pinref part="D3" gate="G$1" pin="A"/>
-<wire x1="227.965" y1="53.975" x2="227.965" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<junction x="227.965" y="48.895" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="247.015" y1="53.975" x2="247.015" y2="48.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<junction x="247.015" y="48.895" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <wire x1="253.365" y1="48.895" x2="253.365" y2="58.42" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <pinref part="CN2" gate="G$1" pin="RING"/>
 <pinref part="CN2" gate="G$1" pin="RING_SW"/>
@@ -21262,22 +21433,28 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <segment>
 <pinref part="S1" gate="G$1" pin="1"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="84.455" y1="11.43" x2="84.455" y2="13.97" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
+<wire x1="84.455" y1="8.255" x2="84.455" y2="13.97" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="2"/>
 <pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="100.33" y1="11.43" x2="100.33" y2="16.51" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
+<wire x1="100.33" y1="8.255" x2="100.33" y2="16.51" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 </segment>
 <segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="154.94" y1="11.43" x2="154.94" y2="13.335" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
+<wire x1="154.94" y1="8.255" x2="154.94" y2="13.335" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="GND19" gate="1" pin="GND"/>
-<wire x1="90.17" y1="46.99" x2="90.17" y2="47.625" width="0.1524" layer="91" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
+<wire x1="140.97" y1="46.99" x2="140.97" y2="47.625" width="0.1524" layer="91" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
+</segment>
+<segment>
+<pinref part="CN3" gate="A" pin="6"/>
+<wire x1="96.52" y1="56.515" x2="102.87" y2="56.515" width="0.1524" layer="91" grouprefs="IN-CIRCUIT_SERIAL_PROGRAMMING"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="102.87" y1="46.99" x2="102.87" y2="56.515" width="0.1524" layer="91" grouprefs="IN-CIRCUIT_SERIAL_PROGRAMMING"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -21360,47 +21537,46 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <segment>
 <pinref part="U2" gate="G$1" pin="VBUS"/>
 <pinref part="SUPPLY7" gate="+5V" pin="+5V"/>
-<wire x1="121.285" y1="157.48" x2="74.295" y2="157.48" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<wire x1="74.295" y1="157.48" x2="74.295" y2="166.37" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<pinref part="U2" gate="G$1" pin="AVCC1"/>
-<wire x1="121.285" y1="144.78" x2="86.995" y2="144.78" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<wire x1="86.995" y1="144.78" x2="74.295" y2="144.78" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<wire x1="74.295" y1="144.78" x2="74.295" y2="147.32" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<junction x="74.295" y="157.48" grouprefs="MICROCONTROLLER"/>
-<pinref part="U2" gate="G$1" pin="AVCC"/>
-<wire x1="74.295" y1="147.32" x2="74.295" y2="149.86" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<wire x1="74.295" y1="149.86" x2="74.295" y2="152.4" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<wire x1="74.295" y1="152.4" x2="74.295" y2="154.94" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<wire x1="74.295" y1="154.94" x2="74.295" y2="157.48" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="121.285" y1="147.32" x2="74.295" y2="147.32" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="74.295" y1="147.32" x2="74.295" y2="156.21" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<pinref part="U2" gate="G$1" pin="AVCC1"/>
+<wire x1="121.285" y1="134.62" x2="86.995" y2="134.62" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="86.995" y1="134.62" x2="74.295" y2="134.62" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="74.295" y1="134.62" x2="74.295" y2="137.16" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <junction x="74.295" y="147.32" grouprefs="MICROCONTROLLER"/>
+<pinref part="U2" gate="G$1" pin="AVCC"/>
+<wire x1="74.295" y1="137.16" x2="74.295" y2="139.7" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="74.295" y1="139.7" x2="74.295" y2="142.24" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="74.295" y1="142.24" x2="74.295" y2="144.78" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="74.295" y1="144.78" x2="74.295" y2="147.32" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="121.285" y1="137.16" x2="74.295" y2="137.16" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<junction x="74.295" y="137.16" grouprefs="MICROCONTROLLER"/>
 <pinref part="U2" gate="G$1" pin="UVCC"/>
-<wire x1="121.285" y1="149.86" x2="74.295" y2="149.86" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<junction x="74.295" y="149.86" grouprefs="MICROCONTROLLER"/>
+<wire x1="121.285" y1="139.7" x2="74.295" y2="139.7" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<junction x="74.295" y="139.7" grouprefs="MICROCONTROLLER"/>
 <pinref part="U2" gate="G$1" pin="VCC1"/>
-<wire x1="121.285" y1="152.4" x2="74.295" y2="152.4" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<junction x="74.295" y="152.4" grouprefs="MICROCONTROLLER"/>
+<wire x1="121.285" y1="142.24" x2="74.295" y2="142.24" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<junction x="74.295" y="142.24" grouprefs="MICROCONTROLLER"/>
 <pinref part="U2" gate="G$1" pin="VCC"/>
-<wire x1="121.285" y1="154.94" x2="74.295" y2="154.94" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<junction x="74.295" y="154.94" grouprefs="MICROCONTROLLER"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="74.295" y1="142.875" x2="74.295" y2="144.78" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="121.285" y1="144.78" x2="74.295" y2="144.78" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <junction x="74.295" y="144.78" grouprefs="MICROCONTROLLER"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="74.295" y1="132.715" x2="74.295" y2="134.62" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<junction x="74.295" y="134.62" grouprefs="MICROCONTROLLER"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="86.995" y1="142.875" x2="86.995" y2="144.78" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<junction x="86.995" y="144.78" grouprefs="MICROCONTROLLER"/>
+<wire x1="86.995" y1="132.715" x2="86.995" y2="134.62" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<junction x="86.995" y="134.62" grouprefs="MICROCONTROLLER"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY8" gate="+5V" pin="+5V"/>
-<wire x1="97.155" y1="160.02" x2="92.71" y2="160.02" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<wire x1="92.71" y1="160.02" x2="92.71" y2="165.1" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="115.57" y1="166.37" x2="115.57" y2="163.195" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="SUPPLY11" gate="+5V" pin="+5V"/>
-<wire x1="123.825" y1="63.5" x2="116.84" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<wire x1="116.84" y1="63.5" x2="116.84" y2="65.405" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="173.99" y1="63.5" x2="167.005" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="167.005" y1="63.5" x2="167.005" y2="65.405" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -21417,6 +21593,12 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <pinref part="SUPPLY1" gate="+5V" pin="+5V"/>
 <wire x1="71.755" y1="26.67" x2="70.485" y2="26.67" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <wire x1="70.485" y1="26.67" x2="70.485" y2="28.575" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
+</segment>
+<segment>
+<pinref part="CN3" gate="A" pin="2"/>
+<wire x1="96.52" y1="61.595" x2="102.87" y2="61.595" width="0.1524" layer="91" grouprefs="IN-CIRCUIT_SERIAL_PROGRAMMING"/>
+<pinref part="SUPPLY13" gate="+5V" pin="+5V"/>
+<wire x1="102.87" y1="65.405" x2="102.87" y2="61.595" width="0.1524" layer="91" grouprefs="IN-CIRCUIT_SERIAL_PROGRAMMING"/>
 </segment>
 </net>
 <net name="IR_SENSOR_SIGNAL" class="0">
@@ -21467,9 +21649,9 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <label x="205.74" y="97.155" size="1.27" layer="95" font="vector" rot="MR0" xref="yes" grouprefs="USB_COMPUTER_INTERFACE"/>
 </segment>
 <segment>
-<label x="118.11" y="127" size="1.27" layer="95" font="vector" rot="R180" xref="yes" grouprefs="MICROCONTROLLER"/>
+<label x="118.11" y="124.46" size="1.27" layer="95" font="vector" rot="R180" xref="yes" grouprefs="MICROCONTROLLER"/>
 <pinref part="U2" gate="G$1" pin="D-"/>
-<wire x1="118.11" y1="127" x2="121.285" y2="127" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="118.11" y1="124.46" x2="121.285" y2="124.46" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 </segment>
 </net>
 <net name="USB_D+" class="0">
@@ -21479,16 +21661,9 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <label x="205.74" y="94.615" size="1.27" layer="95" font="vector" rot="MR0" xref="yes" grouprefs="USB_COMPUTER_INTERFACE"/>
 </segment>
 <segment>
-<label x="118.11" y="129.54" size="1.27" layer="95" font="vector" rot="R180" xref="yes" grouprefs="MICROCONTROLLER"/>
+<label x="118.11" y="127" size="1.27" layer="95" font="vector" rot="R180" xref="yes" grouprefs="MICROCONTROLLER"/>
 <pinref part="U2" gate="G$1" pin="D+"/>
-<wire x1="121.285" y1="129.54" x2="118.11" y2="129.54" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="/RESET"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="121.285" y1="160.02" x2="107.315" y2="160.02" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="121.285" y1="127" x2="118.11" y2="127" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -21548,23 +21723,23 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <segment>
 <pinref part="SUPPLY9" gate="+12V" pin="+12V"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="204.47" y1="64.77" x2="204.47" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<wire x1="204.47" y1="63.5" x2="204.47" y2="59.69" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<junction x="204.47" y="63.5" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="235.585" y1="64.77" x2="235.585" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="235.585" y1="63.5" x2="235.585" y2="59.69" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<junction x="235.585" y="63.5" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <pinref part="U3" gate="G$1" pin="IN"/>
-<wire x1="194.31" y1="63.5" x2="204.47" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="230.505" y1="63.5" x2="235.585" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="253.365" y1="63.5" x2="227.965" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<wire x1="227.965" y1="63.5" x2="227.965" y2="59.055" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<wire x1="204.47" y1="63.5" x2="227.965" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<junction x="227.965" y="63.5" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="253.365" y1="63.5" x2="247.015" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="247.015" y1="63.5" x2="247.015" y2="59.055" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="235.585" y1="63.5" x2="247.015" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<junction x="247.015" y="63.5" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <pinref part="CN2" gate="G$1" pin="TIP"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="SUPPLY12" gate="+12V" pin="+12V"/>
-<wire x1="75.565" y1="60.325" x2="71.755" y2="60.325" width="0.1524" layer="91"/>
-<wire x1="71.755" y1="60.325" x2="71.755" y2="65.405" width="0.1524" layer="91"/>
+<wire x1="126.365" y1="60.325" x2="123.825" y2="60.325" width="0.1524" layer="91" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
+<wire x1="123.825" y1="60.325" x2="123.825" y2="65.405" width="0.1524" layer="91" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -21578,16 +21753,16 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <net name="N$16" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="OUT"/>
-<wire x1="166.37" y1="63.5" x2="155.575" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="202.565" y1="63.5" x2="198.12" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="155.575" y1="63.5" x2="137.795" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<wire x1="137.795" y1="63.5" x2="128.905" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<wire x1="155.575" y1="59.69" x2="155.575" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<junction x="155.575" y="63.5" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="198.12" y1="63.5" x2="185.42" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="185.42" y1="63.5" x2="179.07" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="198.12" y1="59.69" x2="198.12" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<junction x="198.12" y="63.5" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="137.795" y1="59.69" x2="137.795" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<junction x="137.795" y="63.5" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="185.42" y1="59.69" x2="185.42" y2="63.5" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<junction x="185.42" y="63.5" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -21641,16 +21816,68 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf"&gt;h
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="85.725" y1="60.325" x2="90.17" y2="60.325" width="0.1524" layer="91" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
-<wire x1="90.17" y1="60.325" x2="90.17" y2="57.785" width="0.1524" layer="91" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
-<wire x1="90.17" y1="60.325" x2="95.885" y2="60.325" width="0.1524" layer="91" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
-<junction x="90.17" y="60.325" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
-<label x="95.885" y="60.325" size="1.27" layer="95" xref="yes" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
+<wire x1="136.525" y1="60.325" x2="140.97" y2="60.325" width="0.1524" layer="91" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
+<wire x1="140.97" y1="60.325" x2="140.97" y2="57.785" width="0.1524" layer="91" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
+<wire x1="140.97" y1="60.325" x2="146.685" y2="60.325" width="0.1524" layer="91" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
+<junction x="140.97" y="60.325" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
+<label x="146.685" y="60.325" size="1.27" layer="95" xref="yes" grouprefs="EXTERNAL_SUPPLY_DETECT"/>
 </segment>
 <segment>
 <label x="173.99" y="119.38" size="1.27" layer="95" xref="yes"/>
 <pinref part="U2" gate="G$1" pin="PB4(ADC11)"/>
 <wire x1="169.545" y1="119.38" x2="173.99" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ICSP_MISO" class="0">
+<segment>
+<pinref part="CN3" gate="A" pin="1"/>
+<wire x1="88.9" y1="61.595" x2="81.28" y2="61.595" width="0.1524" layer="91" grouprefs="IN-CIRCUIT_SERIAL_PROGRAMMING"/>
+<label x="81.28" y="61.595" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="IN-CIRCUIT_SERIAL_PROGRAMMING"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="PB3(PDO/MISO)"/>
+<wire x1="169.545" y1="116.84" x2="173.99" y2="116.84" width="0.1524" layer="91"/>
+<label x="173.99" y="116.84" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="ICSP_SCK" class="0">
+<segment>
+<pinref part="CN3" gate="A" pin="3"/>
+<wire x1="88.9" y1="59.055" x2="81.28" y2="59.055" width="0.1524" layer="91" grouprefs="IN-CIRCUIT_SERIAL_PROGRAMMING"/>
+<label x="81.28" y="59.055" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="IN-CIRCUIT_SERIAL_PROGRAMMING"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="PB1(SCK)"/>
+<wire x1="169.545" y1="111.76" x2="173.99" y2="111.76" width="0.1524" layer="91"/>
+<label x="173.99" y="111.76" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="ICSP_RESET" class="0">
+<segment>
+<pinref part="CN3" gate="A" pin="5"/>
+<wire x1="88.9" y1="56.515" x2="81.28" y2="56.515" width="0.1524" layer="91" grouprefs="IN-CIRCUIT_SERIAL_PROGRAMMING"/>
+<label x="81.28" y="56.515" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="IN-CIRCUIT_SERIAL_PROGRAMMING"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="/RESET"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<label x="111.125" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="121.285" y1="149.86" x2="115.57" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="115.57" y1="149.86" x2="115.57" y2="153.035" width="0.1524" layer="91"/>
+<wire x1="111.125" y1="149.86" x2="115.57" y2="149.86" width="0.1524" layer="91"/>
+<junction x="115.57" y="149.86"/>
+</segment>
+</net>
+<net name="ICSP_MOSI" class="0">
+<segment>
+<pinref part="CN3" gate="A" pin="4"/>
+<wire x1="96.52" y1="59.055" x2="103.505" y2="59.055" width="0.1524" layer="91" grouprefs="IN-CIRCUIT_SERIAL_PROGRAMMING"/>
+<label x="103.505" y="59.055" size="1.27" layer="95" xref="yes" grouprefs="IN-CIRCUIT_SERIAL_PROGRAMMING"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="PB2(PDI/MOSI)"/>
+<wire x1="169.545" y1="114.3" x2="173.99" y2="114.3" width="0.1524" layer="91"/>
+<label x="173.99" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
