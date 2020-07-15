@@ -1,226 +1,255 @@
+#include "IRremote.h"
 #include <RGBLed.h>
+#include <EEPROM.h>
 
-#include <RGBLED.h>
+#define LED_RED_PIN     5
+#define LED_GREEN_PIN   9
+#define LED_BLUE_PIN    10
+#define IR_SENSOR_PIN   7
 
-#define RED  3
-#define GREEN 6
-#define BLUE 5
+#define BRIGHTNESS_INCREASE   ((long)0xF700FF)
+#define COLOR_RED             ((long)0xF720DF)
+#define COLOR_ORANGE_RED      ((long)0xF710EF)
+#define COLOR_ORANGE          ((long)0xF730CF)
+#define COLOR_CORAL           ((long)0xF708F7)
+#define COLOR_YELLOW          ((long)0xF728D7)
+#define BRIGHTNESS_DECREASE   ((long)0xF7807F)
+#define COLOR_GREEN           ((long)0xF7A05F)
+#define COLOR_LIME            ((long)0xF7906F)
+#define COLOR_CYAN            ((long)0xF7B04F)
+#define COLOR_BABY_BLUE       ((long)0xF78877)
+#define COLOR_CERULEAN        ((long)0xF7A857)
+#define SWITCH_OFF            ((long)0xF740BF)
+#define COLOR_BLUE            ((long)0xF7609F)
+#define COLOR_AZURE           ((long)0xF750AF)
+#define COLOR_BLUE_VIOLET     ((long)0xF7708F)
+#define COLOR_BYZANTIUM       ((long)0xF748B7)
+#define COLOR_PINK            ((long)0xF76897)
+#define SWITCH_ON             ((long)0xF7C03F)
+#define COLOR_WHITE           ((long)0xF7E01F)
+#define EFFECT_FLASH          ((long)0xF7D02F)
+#define EFFECT_STROBE         ((long)0xF7F00F)
+#define EFFECT_FADE           ((long)0xF7C837)
+#define EFFECT_SMOOTH         ((long)0xF7E817)
 
-#define HUE  A0
-#define SAT A1
-#define BRIGHT A2
-
-RGBLED LED_Strip(RED, GREEN, BLUE, COMMON_CATHODE);
-
-int PWM = 0;
+IRrecv irrecv(7);
+decode_results results;
 
 
+RGBLed LED_Strip(LED_RED_PIN, LED_GREEN_PIN, LED_BLUE_PIN, COMMON_CATHODE);
 
+
+int Brightness_Value = 100;
 
 
 
-typedef enum {
-  Red = 1 ,
-  Orange_Red ,
-  Orange ,
-  Coral ,
-  Yellow ,
-  Green ,
-  Lime ,
-  Cyan ,
-  Baby_Blue ,
-  Cerulean ,
-  Blue ,
-  Azure ,
-  Blue_Violet ,
-  Byzantium ,
-  Pink ,
-  White,
-  OFF
-} Colors_List;
+long EEPROM_Last_Color_Addr = 0;
+int EEPROM_Last_Brightness_Addr = 4;
 
-int HSV[17][3];
+long Last_RGB_Color;
+int Last_Brightness_Value;
 
-Colors_List Selected_Color = Red;
-int Last_Color = Selected_Color;
-void setup() {
 
-  pinMode(RED, OUTPUT);
-  pinMode(GREEN, OUTPUT);
-  pinMode(BLUE, OUTPUT);
-
-  pinMode(HUE, INPUT);
-  pinMode(SAT, INPUT);
-  pinMode(BRIGHT, INPUT);
-
+void setup()
+{
   Serial.begin(9600);
-  while (!Serial) {
-    ;
-  }
-
-
-}
-
-void Get_HSV_From_ADC() {
-  int h = 0;
-  int s = 0;
-  int v = 0;
-  int i = 0;
-  int n = 30;
-  int y = 1;
-  int m = 3;//16
-
-  do {
-
-    for (i = 0; i < n; i++) {
-      h += analogRead(HUE);
-      delay(1);
-    }
-    h /= n;
-
-    for (i = 0; i < n; i++) {
-      s += analogRead(SAT);
-      delay(1);
-    }
-    s /= n;
-
-    for (i = 0; i < n; i++) {
-      v += analogRead(BRIGHT);
-      delay(1);
-    }
-    v /= n;
-
-    h = map(h, 0, 1030, 0, 359);
-    s = map(s, 0, 1023, 0, 100);
-    v = map(v, 0, 1023, 0, 100);
-
-    Serial.print(h);
-    Serial.print(',');
-    Serial.print(s);
-    Serial.print(',');
-    Serial.println(v);
-
-    LED_Strip.writeHSV(h, s, v);
-
-
-
-    if (Serial.available() > 0) {
-      int c = Serial.parseInt();
-      if (c == 1) {
-        Serial.println("========================");
-        Serial.println("========================");
-        Serial.println("========================");
-        HSV[y][0] = h;
-        HSV[y][1] = s;
-        HSV[y][2] = v;
-
-        y++;
-      }
-
-
-
-    }
-  } while (y <= m);
-
-  Serial.println("========================");
-  for (i = 0; i <= m; i++) {
-    Serial.print(HSV[y][0]);
-    Serial.print(',');
-    Serial.print(HSV[y][1]);
-    Serial.print(',');
-    Serial.println(HSV[y][2]);
-  }
-}
-
-
-void loop() {
-  Get_HSV_From_ADC();
-
-
   /*
-    if (Serial.available() > 0) {
-      int color = Serial.parseInt();
-      Selected_Color = color;
-      
-      Serial.println(Selected_Color);
-    }
+  while (!Serial) {
+    ; // wait for serial port to connect. Needed for native USB port only
+  }
+  */
+  irrecv.enableIRIn();
 
-    
-    if (Last_Color != Selected_Color) {
-      switch (Selected_Color) {
-        case Red:          
-          LED_Strip.writeHSV(0, 100, 50);
-          break;
+  pinMode(LED_RED_PIN, OUTPUT);
+  pinMode(LED_GREEN_PIN, OUTPUT);
+  pinMode(LED_BLUE_PIN, OUTPUT);
+  pinMode(IR_SENSOR_PIN, INPUT);
 
-        case Orange_Red:          
-          LED_Strip.writeHSV(16, 100, 50);
-          break;
-
-        case Orange:          
-          LED_Strip.writeHSV(24, 100, 50);
-          break;
-
-        case Coral:          
-          LED_Strip.writeRGB(16, 69, 66);
-          break;
-
-        case Yellow:
-          LED_Strip.writeHSV(60, 100, 50);          
-          break;
-
-        case Green:
-          LED_Strip.writeHSV(120, 100 / 100, 25 / 100);          
-          break;
-
-        case Lime:
-          LED_Strip.writeHSV(75, 100 / 100, 50 / 100);          
-          break;
-
-        case Cyan:
-          LED_Strip.writeHSV(180, 100 / 100, 50 / 100);          
-          break;
-
-        case Baby_Blue:
-          LED_Strip.writeHSV(199, 43 / 100, 74 / 100);          
-          break;
-
-        case Cerulean:
-          LED_Strip.writeHSV(196, 100 / 100, 33 / 100);          
-          break;
-
-        case Blue:
-          LED_Strip.writeHSV(240, 100 / 100, 50 / 100);          
-          break;
-
-        case Azure:
-          LED_Strip.writeHSV(210, 100 / 100, 50 / 100);          
-          break;
-
-        case Blue_Violet:
-          LED_Strip.writeHSV(271, 81 / 100, 53 / 100);          
-          break;
-
-        case Byzantium:
-          LED_Strip.writeHSV(311, 63 / 100, 30 / 100);          
-          break;
-
-        case Pink:
-          LED_Strip.writeHSV(339, 57 / 100, 71 / 100);          
-          break;
-
-        case White:
-          LED_Strip.writeHSV(0, 100 / 100, 100 / 100);          
-          break;
-
-        case OFF:
-          digitalWrite(RED, LOW);
-          digitalWrite(GREEN, LOW);
-          digitalWrite(BLUE, LOW);
-          break;
-      }
-      Last_Color = Selected_Color;
-    }
-
-*/
   
+
+   
+
+Restore_Last_Adjustments();
+
+}
+
+void loop()
+{
+  readIR();
+  
+}
+
+void Restore_Last_Adjustments(){
+     
+   EEPROM.get(EEPROM_Last_Color_Addr, Last_RGB_Color);
+   EEPROM.get(EEPROM_Last_Brightness_Addr, Last_Brightness_Value);
+   Run_IR_Command(Last_RGB_Color);
+   LED_Strip.brightness(Last_Brightness_Value);
+}
+
+void readIR() {
+  if (irrecv.decode( &results )) {
+    unsigned long IRval = results.value;
+    if (IRval == 0xFFFFFFFF) { // 0xFFFFFFFF is the "repeat code" sent when a button is held down
+      irrecv.resume();
+      return;
+    }
+    //Serial.println( results.value, HEX);
+    Run_IR_Command(results.value);
+    irrecv.resume();
+  }
+}
+
+void Run_IR_Command(long Code_Received) {
+
+  bool Color_Adjustment = false;
+
+  switch (Code_Received) {
+
+    case SWITCH_ON:
+      Serial.println("SWITCH_ON");
+      
+      LED_Strip.brightness(Brightness_Value);
+      
+      break;
+
+    case SWITCH_OFF:
+      Serial.println("SWITCH_OFF");
+      digitalWrite(LED_RED_PIN, LOW);
+      digitalWrite(LED_GREEN_PIN, LOW);
+      digitalWrite(LED_BLUE_PIN, LOW);
+
+      break;
+
+    case BRIGHTNESS_INCREASE:
+      Serial.println("BRIGHTNESS_INCREASE");
+      if(Brightness_Value < 100)
+        Brightness_Value += 20;
+      LED_Strip.brightness(Brightness_Value);
+      EEPROM.put(EEPROM_Last_Brightness_Addr, Brightness_Value);
+      break;
+
+    case BRIGHTNESS_DECREASE:
+      Serial.println("BRIGHTNESS_DECREASE");
+      if(Brightness_Value > 20)
+        Brightness_Value -= 20;
+      LED_Strip.brightness(Brightness_Value);
+      EEPROM.put(EEPROM_Last_Brightness_Addr, Brightness_Value);
+      break;
+
+    case COLOR_RED:
+      Serial.println("COLOR_RED");
+      LED_Strip.setColor(RGBLed::RED);
+      Color_Adjustment = true;
+      break;
+
+    case COLOR_ORANGE_RED:
+      Serial.println("COLOR_ORANGE_RED");
+      LED_Strip.setColor(RGBLed::ORANGE_RED);
+      Color_Adjustment = true;
+      break;
+
+    case COLOR_ORANGE:
+      Serial.println("COLOR_ORANGE");
+      LED_Strip.setColor(RGBLed::ORANGE);
+      Color_Adjustment = true;
+      break;
+
+    case COLOR_CORAL:
+      Serial.println("COLOR_CORAL");
+      LED_Strip.setColor(RGBLed::CORAL);
+      Color_Adjustment = true;
+      break;
+
+    case COLOR_YELLOW:
+      Serial.println("COLOR_YELLOW");
+      LED_Strip.setColor(RGBLed::YELLOW);
+      Color_Adjustment = true;
+      break;
+
+    case COLOR_GREEN:
+      Serial.println("COLOR_GREEN");
+      LED_Strip.setColor(RGBLed::GREEN);
+      Color_Adjustment = true;     
+      break;
+
+    case COLOR_LIME:
+      Serial.println("COLOR_LIME");
+      LED_Strip.setColor(RGBLed::LIME);
+      Color_Adjustment = true;
+      break;
+
+    case COLOR_CYAN:
+      Serial.println("COLOR_CYAN");
+      LED_Strip.setColor(RGBLed::CYAN);
+      Color_Adjustment = true;
+      break;
+
+    case COLOR_BABY_BLUE:
+      Serial.println("COLOR_BABY_BLUE");
+      LED_Strip.setColor(RGBLed::BABY_BLUE);
+      Color_Adjustment = true;
+      break;
+
+    case COLOR_CERULEAN:
+      Serial.println("COLOR_CERULEAN");
+      LED_Strip.setColor(RGBLed::CERULEAN);
+      Color_Adjustment = true;
+      break;
+
+    case COLOR_BLUE:
+      Serial.println("COLOR_BLUE");
+      LED_Strip.setColor(RGBLed::BLUE);
+      Color_Adjustment = true;
+      break;
+
+    case COLOR_AZURE:
+      Serial.println("COLOR_AZURE");
+      LED_Strip.setColor(RGBLed::AZURE);
+      Color_Adjustment = true;
+      break;
+
+    case COLOR_BLUE_VIOLET:
+      Serial.println("COLOR_BLUE_VIOLET");
+      LED_Strip.setColor(RGBLed::BLUE_VIOLET);
+      Color_Adjustment = true;
+      break;
+
+    case COLOR_BYZANTIUM:
+      Serial.println("COLOR_BYZANTIUM");
+      LED_Strip.setColor(RGBLed::BYZANTIUM);
+      Color_Adjustment = true;
+      break;
+
+    case COLOR_PINK:
+      Serial.println("COLOR_PINK");
+      LED_Strip.setColor(RGBLed::PINK);
+      Color_Adjustment = true;
+      break;
+
+    case COLOR_WHITE:
+      Serial.println("COLOR_WHITE");
+      LED_Strip.setColor(RGBLed::WHITE);
+      Color_Adjustment = true;
+      break;
+
+    case EFFECT_FLASH:
+      Serial.println("EFFECT_FLASH");
+      break;
+
+    case EFFECT_STROBE:
+      Serial.println("EFFECT_STROBE");
+      break;
+
+    case EFFECT_FADE:
+      Serial.println("EFFECT_FADE");
+      break;
+
+    case EFFECT_SMOOTH:
+      Serial.println("EFFECT_SMOOTH");
+      break;
+  }
+  
+  if(Color_Adjustment == true)
+    EEPROM.put(EEPROM_Last_Color_Addr, Code_Received);
 }
