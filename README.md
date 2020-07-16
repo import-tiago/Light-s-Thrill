@@ -8,7 +8,7 @@ Light's Thrill is an IR and USB controller for RGB LED strips compatible with Co
 * [iCUE](https://www.corsair.com/br/pt/icue)
 * [OpenRGB](https://gitlab.com/CalcProgrammer1/OpenRGB)
 * [JackNet RGB Sync](https://rgbsync.com/)
-* [RGB Infrared Controller]()
+* [RGB Infrared Controller](https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Others/RGB%20Infrared%20Controller%20Example.jpg)
 
 ## PCB Preview
 <img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Others/PCB%20Preview.png" width="100%" height="100%">
