@@ -1,0 +1,46 @@
+#######################################
+# Syntax Coloring Map For Corsair Lighting Protocol
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+ILEDController	KEYWORD1
+LEDController	KEYWORD1
+FastLEDController	KEYWORD1
+CorsairLightingProtocolController	KEYWORD1
+CorsairLightingProtocolHID	KEYWORD1
+CorsairLightingProtocolSerial	KEYWORD1
+CorsairLightingProtocolResponse	KEYWORD1
+CorsairLightingFirmware	KEYWORD1
+IFanController	KEYWORD1
+FanController	KEYWORD1
+ITemperatureController	KEYWORD1
+TemperatureController	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+
+#######################################
+# Instances (KEYWORD1)
+#######################################
+
+
+#######################################
+# Structures (KEYWORD3)
+#######################################
+
+ChannelData	KEYWORD3
+Command	KEYWORD3
+FanCurve	KEYWORD3
+LEDChannel	KEYWORD3
+LEDGroup	KEYWORD3
+SegmentScaling  KEYWORD3
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
