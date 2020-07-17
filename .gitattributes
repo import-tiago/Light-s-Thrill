@@ -1,2 +1,2 @@
-*.sch linguist-detectable=true
+*.sch linguist-detectable=false
 *.brd linguist-detectable=true
