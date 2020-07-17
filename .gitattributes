@@ -1,2 +1,3 @@
 *.sch linguist-detectable=false
 *.brd linguist-detectable=true
+*.epf linguist-detectable=true
