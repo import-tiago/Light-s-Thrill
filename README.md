@@ -19,6 +19,9 @@ Light's Thrill is an IR and USB controller for RGB LED strips compatible with Co
 ## Schematic
 <img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Others/Schematic%20Preview.png" width="100%" height="100%">
 
+## SETUP Parts
+<img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Others/SETUP%20Parts.png" width="100%" height="100%">
+
 ## Video - Demo
 [![Watch the video](https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Others/Video%20Preview.png)](https://vimeo.com/446214253)
 
