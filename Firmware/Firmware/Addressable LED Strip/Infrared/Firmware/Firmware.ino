@@ -4,10 +4,12 @@
 #include <RGBLed.h>
 #include <EEPROM.h>
 
-#define LED_RED_PIN     5
-#define LED_GREEN_PIN   9
-#define LED_BLUE_PIN    10
+
 #define IR_SENSOR_PIN   7
+#define SUPPLY_MONITOR_PIN 8
+
+#define DATA_PIN_CHANNEL_1 6
+#define DATA_PIN_CHANNEL_2 3
 
 #define BRIGHTNESS_INCREASE   ((long)0xF700FF)
 #define COLOR_RED             ((long)0xF720DF)
@@ -41,8 +43,16 @@ bool Current_Control_Device = CONTROLLED_BY_USB;
 IRrecv irrecv(7);
 decode_results results;
 
+//No Addresable LEDs
+//RGBLed LED_Strip(LED_RED_PIN, LED_GREEN_PIN, LED_BLUE_PIN, COMMON_CATHODE);
 
-RGBLed LED_Strip(LED_RED_PIN, LED_GREEN_PIN, LED_BLUE_PIN, COMMON_CATHODE);
+//Addresable LEDs
+// Hint: The ATmega32U4 does not have enough memory for 135 leds on both channels
+
+#define NUM_LEDS1 135
+#define NUM_LEDS2 54
+CRGB ledsChannel1[135];
+CRGB ledsChannel2[54];
 
 
 int Brightness_Value = 100;
@@ -55,12 +65,14 @@ int EEPROM_Last_Brightness_Addr = 4;
 long Last_RGB_Color;
 int Last_Brightness_Value;
 
-CorsairLightingFirmware firmware = corsairLightingNodePROFirmware();
+
+
+CorsairLightingFirmware firmware = corsairLS100Firmware();
 FastLEDController ledController(true);
 CorsairLightingProtocolController cLP(&ledController, &firmware);
 CorsairLightingProtocolHID cHID(&cLP);
 
-CRGB ledsChannel1[1];
+//CRGB ledsChannel1[1];
 
 
 void setup() {
@@ -68,42 +80,30 @@ void setup() {
   Serial.begin(9600);
 
   irrecv.enableIRIn();
-  pinMode(LED_RED_PIN, OUTPUT);
-  pinMode(LED_GREEN_PIN, OUTPUT);
-  pinMode(LED_BLUE_PIN, OUTPUT);
-  pinMode(IR_SENSOR_PIN, INPUT);
-  ledController.addLEDs(0, ledsChannel1, 1);
-  ledController.onUpdateHook(0, []() {
-    // use color of first LED of the first channel
-    set4PinLEDs(ledsChannel1[0]);
-  });
 
-  Restore_Last_Adjustments();
+  pinMode(IR_SENSOR_PIN, INPUT);
+
+  FastLED.addLeds<WS2812B, DATA_PIN_CHANNEL_1, GRB>(ledsChannel1, 135);
+  FastLED.addLeds<WS2812B, DATA_PIN_CHANNEL_2, GRB>(ledsChannel2, 54);
+
+  ledController.addLEDs(1, ledsChannel1, 135);
+  ledController.addLEDs(0, ledsChannel2, 54);
+
+   Restore_Last_Adjustments();
 
   Current_Control_Device = CONTROLLED_BY_USB;
 }
 
 void loop() {
-  if(Current_Control_Device == CONTROLLED_BY_USB){
+  /*
+  if (Current_Control_Device == CONTROLLED_BY_USB) {
     cHID.update();
-    ledController.updateLEDs();
+    if (ledController.updateLEDs()) {
+      FastLED.show();
+    }
   }
+  */
   readIR();
-}
-
-void set4PinLEDs(const CRGB& color) {
-  analogWrite(LED_RED_PIN, color.r);
-  analogWrite(LED_GREEN_PIN, color.g);
-  analogWrite(LED_BLUE_PIN, color.b);
-}
-
-
-void Restore_Last_Adjustments() {
-
-  EEPROM.get(EEPROM_Last_Color_Addr, Last_RGB_Color);
-  EEPROM.get(EEPROM_Last_Brightness_Addr, Last_Brightness_Value);
-  Run_IR_Command(Last_RGB_Color);
-  LED_Strip.brightness(Last_Brightness_Value);
 }
 
 void readIR() {
@@ -119,6 +119,18 @@ void readIR() {
   }
 }
 
+void setColor(CRGB::HTMLColorCode _color) {
+
+  for (int i = 0; i < NUM_LEDS1; i++) {
+    ledsChannel1[i] = _color;
+  }
+  for (int i = 0; i < NUM_LEDS2; i++) {
+    ledsChannel2[i] = _color;
+  }
+  FastLED.show();
+}
+
+
 void Run_IR_Command(long Code_Received) {
 
   bool Color_Adjustment = false;
@@ -127,26 +139,22 @@ void Run_IR_Command(long Code_Received) {
 
     case SWITCH_ON:
       Serial.println("SWITCH_ON");
-
-      LED_Strip.brightness(Brightness_Value);
+      
+      FastLED.setBrightness(Brightness_Value);
       Current_Control_Device = CONTROLLED_BY_INFRARED;
-
       break;
 
     case SWITCH_OFF:
       Serial.println("SWITCH_OFF");
-      digitalWrite(LED_RED_PIN, LOW);
-      digitalWrite(LED_GREEN_PIN, LOW);
-      digitalWrite(LED_BLUE_PIN, LOW);
+      setColor(CRGB::Black);
       Current_Control_Device = CONTROLLED_BY_USB;
-
       break;
 
     case BRIGHTNESS_INCREASE:
       Serial.println("BRIGHTNESS_INCREASE");
-      if (Brightness_Value < 100)
+      if (Brightness_Value <= 255)
         Brightness_Value += 20;
-      LED_Strip.brightness(Brightness_Value);
+      FastLED.setBrightness(Brightness_Value);
       EEPROM.put(EEPROM_Last_Brightness_Addr, Brightness_Value);
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
@@ -155,140 +163,132 @@ void Run_IR_Command(long Code_Received) {
       Serial.println("BRIGHTNESS_DECREASE");
       if (Brightness_Value > 0)
         Brightness_Value -= 20;
-      LED_Strip.brightness(Brightness_Value);
+      FastLED.setBrightness(Brightness_Value);
       EEPROM.put(EEPROM_Last_Brightness_Addr, Brightness_Value);
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
 
     case COLOR_RED:
       Serial.println("COLOR_RED");
-      LED_Strip.setColor(RGBLed::RED);
+      setColor(CRGB::Red);
       Color_Adjustment = true;
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
+  
 
     case COLOR_ORANGE_RED:
       Serial.println("COLOR_ORANGE_RED");
-      LED_Strip.setColor(RGBLed::ORANGE_RED);
+      setColor(CRGB::OrangeRed);
       Color_Adjustment = true;
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
 
     case COLOR_ORANGE:
       Serial.println("COLOR_ORANGE");
-      LED_Strip.setColor(RGBLed::ORANGE);
+      setColor(CRGB::Orange);
       Color_Adjustment = true;
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
 
     case COLOR_CORAL:
       Serial.println("COLOR_CORAL");
-      LED_Strip.setColor(RGBLed::CORAL);
+      setColor(CRGB::Coral);
       Color_Adjustment = true;
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
 
     case COLOR_YELLOW:
       Serial.println("COLOR_YELLOW");
-      LED_Strip.setColor(RGBLed::YELLOW);
+      setColor(CRGB::Yellow);
       Color_Adjustment = true;
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
 
     case COLOR_GREEN:
       Serial.println("COLOR_GREEN");
-      LED_Strip.setColor(RGBLed::GREEN);
+      setColor(CRGB::Green);
       Color_Adjustment = true;
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
 
     case COLOR_LIME:
       Serial.println("COLOR_LIME");
-      LED_Strip.setColor(RGBLed::LIME);
+      setColor(CRGB::LawnGreen);
       Color_Adjustment = true;
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
 
     case COLOR_CYAN:
       Serial.println("COLOR_CYAN");
-      LED_Strip.setColor(RGBLed::CYAN);
+      setColor(CRGB::Aqua);
       Color_Adjustment = true;
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
 
     case COLOR_BABY_BLUE:
       Serial.println("COLOR_BABY_BLUE");
-      LED_Strip.setColor(RGBLed::BABY_BLUE);
+      setColor(CRGB::DeepSkyBlue);
       Color_Adjustment = true;
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
 
     case COLOR_CERULEAN:
       Serial.println("COLOR_CERULEAN");
-      LED_Strip.setColor(RGBLed::CERULEAN);
+      setColor(CRGB::DodgerBlue);
       Color_Adjustment = true;
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
 
     case COLOR_BLUE:
       Serial.println("COLOR_BLUE");
-      LED_Strip.setColor(RGBLed::BLUE);
+      setColor(CRGB::Blue);
       Color_Adjustment = true;
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
 
     case COLOR_AZURE:
       Serial.println("COLOR_AZURE");
-      LED_Strip.setColor(RGBLed::AZURE);
+      setColor(CRGB::DarkBlue);
       Color_Adjustment = true;
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
 
     case COLOR_BLUE_VIOLET:
       Serial.println("COLOR_BLUE_VIOLET");
-      LED_Strip.setColor(RGBLed::BLUE_VIOLET);
+      setColor(CRGB::BlueViolet);
       Color_Adjustment = true;
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
 
     case COLOR_BYZANTIUM:
       Serial.println("COLOR_BYZANTIUM");
-      LED_Strip.setColor(RGBLed::BYZANTIUM);
+      setColor(CRGB::Purple);
       Color_Adjustment = true;
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
 
     case COLOR_PINK:
       Serial.println("COLOR_PINK");
-      LED_Strip.setColor(RGBLed::PINK);
+      setColor(CRGB::Crimson);
       Color_Adjustment = true;
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
 
     case COLOR_WHITE:
       Serial.println("COLOR_WHITE");
-      LED_Strip.setColor(RGBLed::WHITE);
+      setColor(CRGB::White);
       Color_Adjustment = true;
       Current_Control_Device = CONTROLLED_BY_INFRARED;
       break;
-
-    case EFFECT_FLASH:
-      Serial.println("EFFECT_FLASH");
-      break;
-
-    case EFFECT_STROBE:
-      Serial.println("EFFECT_STROBE");
-      break;
-
-    case EFFECT_FADE:
-      Serial.println("EFFECT_FADE");
-      break;
-
-    case EFFECT_SMOOTH:
-      Serial.println("EFFECT_SMOOTH");
-      break;
   }
+   if (Color_Adjustment == true)
+   EEPROM.put(EEPROM_Last_Color_Addr, Code_Received);
+}
 
-  if (Color_Adjustment == true)
-    EEPROM.put(EEPROM_Last_Color_Addr, Code_Received);
+void Restore_Last_Adjustments() {
+
+  EEPROM.get(EEPROM_Last_Color_Addr, Last_RGB_Color);
+  //EEPROM.get(EEPROM_Last_Brightness_Addr, Last_Brightness_Value);
+  Run_IR_Command(Last_RGB_Color);
+  //LED_Strip.brightness(Last_Brightness_Value);
 }

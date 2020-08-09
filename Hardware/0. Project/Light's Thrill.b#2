@@ -2776,7 +2776,7 @@ design rules under a new name.</description>
 <wire x1="28.39" y1="18.21" x2="28.39" y2="19.46" width="0.1524" layer="1"/>
 <wire x1="31.84" y1="10.26" x2="30.4" y2="11.7" width="0.1524" layer="1"/>
 </signal>
-<signal name="SUPPLY_MONITOR">
+<signal name="12V_DETECT">
 <contactref element="R8" pad="1"/>
 <contactref element="R9" pad="2"/>
 <contactref element="U2" pad="28"/>
@@ -2860,9 +2860,6 @@ design rules under a new name.</description>
 <wire x1="26.6674625" y1="9.7282" x2="26.9356625" y2="9.46" width="0.1524" layer="1"/>
 <wire x1="26.9356625" y1="9.46" x2="28.23" y2="9.46" width="0.1524" layer="1"/>
 <wire x1="11.238346875" y1="9.43101875" x2="26.380440625" y2="9.43101875" width="0.1524" layer="16"/>
-</signal>
-<signal name="LED_DATA">
-<contactref element="U2" pad="19"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

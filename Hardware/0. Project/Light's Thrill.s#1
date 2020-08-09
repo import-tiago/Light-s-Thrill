@@ -21072,7 +21072,6 @@ Distributor Buerklin, 11G810</description>
 <text x="171.45" y="97.79" size="1.27" layer="98" font="vector" align="center">D4</text>
 <text x="171.45" y="120.396" size="1.27" layer="98" font="vector" align="center">D8</text>
 <rectangle x1="187.325" y1="64.135" x2="236.22" y2="74.422" layer="200"/>
-<text x="171.45" y="90.805" size="1.27" layer="98" font="vector" align="center">D2</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -21939,13 +21938,6 @@ Distributor Buerklin, 11G810</description>
 <pinref part="U2" gate="G$1" pin="PB2(PDI/MOSI)"/>
 <wire x1="169.545" y1="114.3" x2="173.99" y2="114.3" width="0.1524" layer="91"/>
 <label x="173.99" y="114.3" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LED_DATA" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="PD1(INT1/SDA)"/>
-<wire x1="169.545" y1="88.9" x2="173.355" y2="88.9" width="0.1524" layer="91"/>
-<label x="173.355" y="88.9" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
