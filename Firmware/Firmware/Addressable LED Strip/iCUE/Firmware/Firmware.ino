@@ -6,9 +6,9 @@
 #define DATA_PIN_CHANNEL_2 3
 
 
-// Hint: The ATmega32U4 does not have enough memory! MAX 256 at CH1 and 256 at another one (512 max)
-#define N_LED_CH1 256
-#define N_LED_CH2 256
+// Hint: The ATmega32U4 does not have enough memory! MAX 135 at ch1 and 54 at another one (189 max)
+#define N_LED_CH1 89
+#define N_LED_CH2 89
 
 CRGB ledsChannel1[N_LED_CH1];
 CRGB ledsChannel2[N_LED_CH2];
