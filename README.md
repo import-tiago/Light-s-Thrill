@@ -23,7 +23,7 @@ Light's Thrill is an USB controller for RGB LED strips compatible with Corsair i
 ## MCU SETUP
 - Burn the Arduino Leornado bootloader at ATmega32U4 with an Arduino UNO as ISP programmer using SPI circuit connection.
 - Install the Corsair Lighting Protocol Boards to the Arduino IDE from: ```https://raw.githubusercontent.com/Legion2/CorsairLightingProtocolBoards/master/package_Legion2_CorsairLightingProtocolBoards_index.json```.
-- Upload the ```Firmware\Addressable LED Strip\iCUE\Firmware.ino``` to the ATmega32u4 as following:
+- Upload the ```Firmware\Firmware.ino``` to the ATmega32u4 as following:
 <img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/Arduino%20IDE%20SETUP.png" width="75%" height="75%">
 - Done. The device is now ready to be recognized by Corsair iCUE application.
 
