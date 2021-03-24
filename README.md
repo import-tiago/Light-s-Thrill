@@ -2,7 +2,7 @@
 
 [![Status](https://img.shields.io/badge/Status-Finished-green.svg)](https://github.com/TiagoPaulaSilva/Light-s-Thrill) [![Donate](https://img.shields.io/badge/Donate-Buy%20Me%20a%20Coffee-yellow.svg)](https://www.buymeacoffee.com/TiagoPaulaSilva)
 
-Light's Thrill is an IR and USB controller for RGB LED strips compatible with Corsair iCUE.
+Light's Thrill is an USB controller for RGB LED strips compatible with Corsair iCUE.
 
 #### Compatible with: 
 * [iCUE](https://www.corsair.com/br/pt/icue)
