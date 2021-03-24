@@ -10,11 +10,9 @@ Light's Thrill is an IR and USB controller for RGB LED strips compatible with Co
 * [JackNet RGB Sync](https://rgbsync.com/)
 * [RGB Infrared Controller](https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/RGB%20Infrared%20Controller%20Example.jpg)
 
-## PCB Preview
-<img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/PCB%20Preview.png" width="100%" height="100%">
-
 ## Enclosure Preview
-<p align="center"><img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/Enclosure%20Preview.png" width="70%" height="70%"></p>
+![](https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/Enclosure%20Preview1.jpg) | ![](https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/Enclosure%20Preview2.jpg) | ![](https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/Enclosure%20Preview3.jpg)
+--- | --- | ---
 
 ## Schematic
 <img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/Schematic%20Preview.png" width="100%" height="100%">
