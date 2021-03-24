@@ -8,22 +8,33 @@ Light's Thrill is an IR and USB controller for RGB LED strips compatible with Co
 * [iCUE](https://www.corsair.com/br/pt/icue)
 * [OpenRGB](https://gitlab.com/CalcProgrammer1/OpenRGB)
 * [JackNet RGB Sync](https://rgbsync.com/)
-* [RGB Infrared Controller](https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Others/RGB%20Infrared%20Controller%20Example.jpg)
+* [RGB Infrared Controller](https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/RGB%20Infrared%20Controller%20Example.jpg)
 
 ## PCB Preview
-<img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Others/PCB%20Preview.png" width="100%" height="100%">
+<img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/PCB%20Preview.png" width="100%" height="100%">
 
 ## Enclosure Preview
-<p align="center"><img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Others/Enclosure%20Preview.png" width="70%" height="70%"></p>
+<p align="center"><img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/Enclosure%20Preview.png" width="70%" height="70%"></p>
 
 ## Schematic
-<img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Others/Schematic%20Preview.png" width="100%" height="100%">
+<img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/Schematic%20Preview.png" width="100%" height="100%">
 
 ## SETUP Parts
-<img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Others/SETUP%20Parts.png" width="100%" height="100%">
+<img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/SETUP%20Parts.png" width="100%" height="100%">
+
+## MCU SETUP
+- Burn the Arduino Leornado bootloader at ATmega32U4 with an Arduino UNO as ISP programmer using SPI circuit connection.
+- Install the Corsair Lighting Protocol Boards to the Arduino IDE from: ```https://raw.githubusercontent.com/Legion2/CorsairLightingProtocolBoards/master/package_Legion2_CorsairLightingProtocolBoards_index.json```.
+- Upload the ```Firmware\Addressable LED Strip\iCUE\Firmware.ino``` to the ATmega32u4 as following:
+<img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/Arduino%20IDE%20SETUP.png" width="75%" height="75%">
+- Done. The device is now ready to be recognized by Corsair iCUE application.
+
+## Corsair iCUE SETUP
+- To have the maximum (2x 89) of LEDs controlled by the iCUE, configure it as follows:
+<img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/iCUE%20SETUP.png" width="100%" height="100%">
 
 ## Video - Demo
-<p align="center"><a href="https://vimeo.com/446214253"><img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Others/Video%20Preview.png" width="80%" height="80%" title="Watch the video" alt="Watch the video"></a></p>
+<p align="center"><a href="https://vimeo.com/446214253"><img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/Video%20Preview.png" width="80%" height="80%" title="Watch the video" alt="Watch the video"></a></p>
 
 ### Contributing
 0. Give this project a :star:
