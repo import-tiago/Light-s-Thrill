@@ -18526,12 +18526,18 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <part name="SUPPLY14" library="My-Supply" deviceset="0V" device=""/>
 <part name="SUPPLY15" library="My-Supply" deviceset="0V" device=""/>
 <part name="SUPPLY16" library="My-Supply" deviceset="0V" device=""/>
-<part name="R8" library="My-RLC" deviceset="R_" device="0603" package3d_urn="urn:adsk.eagle:package:23494030/2" value="22R"/>
-<part name="R9" library="My-RLC" deviceset="R_" device="0603" package3d_urn="urn:adsk.eagle:package:23494030/2" value="22R"/>
+<part name="R8" library="My-RLC" deviceset="R_" device="0603" package3d_urn="urn:adsk.eagle:package:23494030/2" value="22R (5%)"/>
+<part name="R9" library="My-RLC" deviceset="R_" device="0603" package3d_urn="urn:adsk.eagle:package:23494030/2" value="22R (5%)"/>
 <part name="+5V1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device="" value="5V"/>
 <part name="+5V3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device="" value="5V"/>
 <part name="C1" library="My-RLC" deviceset="C_" device="0603" package3d_urn="urn:adsk.eagle:package:23494015/2" value="100nF"/>
 <part name="SUPPLY1" library="My-Supply" deviceset="0V" device=""/>
+<part name="C2" library="My-RLC" deviceset="C_" device="0603" package3d_urn="urn:adsk.eagle:package:23494015/2" value="10uF"/>
+<part name="SUPPLY17" library="My-Supply" deviceset="0V" device=""/>
+<part name="R2" library="My-RLC" deviceset="R_" device="0603" package3d_urn="urn:adsk.eagle:package:23494030/2" value="0R (5%)"/>
+<part name="SUPPLY18" library="My-Supply" deviceset="0V" device=""/>
+<part name="R3" library="My-RLC" deviceset="R_" device="0603" package3d_urn="urn:adsk.eagle:package:23494030/2" value="0R (5%)"/>
+<part name="SUPPLY19" library="My-Supply" deviceset="VBAT" device="" value="VBUS"/>
 </parts>
 <sheets>
 <sheet>
@@ -18540,10 +18546,10 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <text x="290.83" y="21.209" size="2.032" layer="94">https://github.com/TiagoPaulaSilva/Light-s-Thrill</text>
 <text x="377.825" y="1.27" size="2.54" layer="94" ratio="5">3.0</text>
 <text x="306.705" y="6.35" size="2.54" layer="94" ratio="5">Complete Schematic</text>
-<wire x1="299.72" y1="-43.815" x2="205.74" y2="-43.815" width="0.254" layer="152" style="longdash"/>
+<wire x1="323.215" y1="-43.815" x2="205.74" y2="-43.815" width="0.254" layer="152" style="longdash"/>
 <wire x1="205.74" y1="-43.815" x2="205.74" y2="-160.655" width="0.254" layer="152" style="longdash"/>
-<wire x1="205.74" y1="-160.655" x2="299.72" y2="-160.655" width="0.254" layer="152" style="longdash"/>
-<wire x1="299.72" y1="-160.655" x2="299.72" y2="-43.815" width="0.254" layer="152" style="longdash"/>
+<wire x1="205.74" y1="-160.655" x2="323.215" y2="-160.655" width="0.254" layer="152" style="longdash"/>
+<wire x1="323.215" y1="-160.655" x2="323.215" y2="-43.815" width="0.254" layer="152" style="longdash"/>
 <text x="219.71" y="-48.895" size="2.54" layer="152" ratio="5">BOOST CONVERTER (DC-DC STEP UP)</text>
 </plain>
 <instances>
@@ -18559,8 +18565,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <attribute name="NAME" x="302.2854" y="238.125" size="1.27" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="306.197" y="238.125" size="1.27" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="SUPPLY40" gate="G$1" x="273.05" y="249.555" smashed="yes" grouprefs="MICROCONTROLLER">
-<attribute name="VALUE" x="273.0754" y="253.365" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY40" gate="G$1" x="252.095" y="249.555" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="VALUE" x="252.1204" y="253.365" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="C6" gate="G$1" x="271.78" y="160.02" smashed="yes" grouprefs="MICROCONTROLLER">
 <attribute name="NAME" x="269.2908" y="158.75" size="1.27" layer="95" align="center-right"/>
@@ -18597,68 +18603,68 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <instance part="SUPPLY46" gate="G$1" x="281.305" y="147.955" smashed="yes" grouprefs="MICROCONTROLLER">
 <attribute name="VALUE" x="281.305" y="146.685" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="CN2" gate="-1" x="139.065" y="180.975" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
-<attribute name="NAME" x="137.795" y="181.864" size="1.778" layer="95" rot="R180"/>
+<instance part="CN2" gate="-1" x="225.425" y="112.395" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
+<attribute name="NAME" x="224.155" y="113.284" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="CN2" gate="-2" x="139.065" y="175.895" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
-<attribute name="NAME" x="137.795" y="176.784" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="135.255" y="172.212" size="1.778" layer="96"/>
+<instance part="CN2" gate="-2" x="225.425" y="107.315" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
+<attribute name="NAME" x="224.155" y="108.204" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="221.615" y="103.632" size="1.778" layer="96"/>
 </instance>
-<instance part="CN3" gate="-1" x="180.975" y="182.245" smashed="yes" grouprefs="LED_STRIPS">
-<attribute name="NAME" x="179.705" y="183.134" size="1.778" layer="95" rot="R180"/>
+<instance part="CN3" gate="-1" x="267.335" y="113.665" smashed="yes" grouprefs="LED_STRIPS">
+<attribute name="NAME" x="266.065" y="114.554" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="CN3" gate="-2" x="180.975" y="177.165" smashed="yes" grouprefs="LED_STRIPS">
-<attribute name="NAME" x="179.705" y="178.054" size="1.778" layer="95" rot="R180"/>
+<instance part="CN3" gate="-2" x="267.335" y="108.585" smashed="yes" grouprefs="LED_STRIPS">
+<attribute name="NAME" x="266.065" y="109.474" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="CN3" gate="-3" x="180.975" y="172.085" smashed="yes" grouprefs="LED_STRIPS">
-<attribute name="NAME" x="179.705" y="172.974" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="177.165" y="168.402" size="1.778" layer="96"/>
+<instance part="CN3" gate="-3" x="267.335" y="103.505" smashed="yes" grouprefs="LED_STRIPS">
+<attribute name="NAME" x="266.065" y="104.394" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="263.525" y="99.822" size="1.778" layer="96"/>
 </instance>
-<instance part="CN4" gate="-1" x="220.98" y="182.245" smashed="yes" grouprefs="LED_STRIPS">
-<attribute name="NAME" x="219.71" y="183.134" size="1.778" layer="95" rot="R180"/>
+<instance part="CN4" gate="-1" x="307.34" y="113.665" smashed="yes" grouprefs="LED_STRIPS">
+<attribute name="NAME" x="306.07" y="114.554" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="CN4" gate="-2" x="220.98" y="177.165" smashed="yes" grouprefs="LED_STRIPS">
-<attribute name="NAME" x="219.71" y="178.054" size="1.778" layer="95" rot="R180"/>
+<instance part="CN4" gate="-2" x="307.34" y="108.585" smashed="yes" grouprefs="LED_STRIPS">
+<attribute name="NAME" x="306.07" y="109.474" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="CN4" gate="-3" x="220.98" y="172.085" smashed="yes" grouprefs="LED_STRIPS">
-<attribute name="NAME" x="219.71" y="172.974" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="217.17" y="168.402" size="1.778" layer="96"/>
+<instance part="CN4" gate="-3" x="307.34" y="103.505" smashed="yes" grouprefs="LED_STRIPS">
+<attribute name="NAME" x="306.07" y="104.394" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="303.53" y="99.822" size="1.778" layer="96"/>
 </instance>
-<instance part="D2" gate="G$1" x="151.765" y="180.975" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
-<attribute name="NAME" x="150.495" y="185.2676" size="1.27" layer="95"/>
-<attribute name="VALUE" x="149.225" y="183.1086" size="1.4224" layer="96"/>
+<instance part="D2" gate="G$1" x="238.125" y="112.395" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
+<attribute name="NAME" x="236.855" y="116.6876" size="1.27" layer="95"/>
+<attribute name="VALUE" x="235.585" y="114.5286" size="1.4224" layer="96"/>
 </instance>
-<instance part="SUPPLY2" gate="G$1" x="161.29" y="187.96" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
-<attribute name="VALUE" x="161.3154" y="191.77" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY2" gate="G$1" x="247.65" y="119.38" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
+<attribute name="VALUE" x="247.6754" y="123.19" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY3" gate="G$1" x="161.29" y="166.37" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
-<attribute name="VALUE" x="161.29" y="165.1" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY3" gate="G$1" x="247.65" y="97.79" smashed="yes" grouprefs="EXTERNAL_POWER_SUPPLY">
+<attribute name="VALUE" x="247.65" y="96.52" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="188.595" y="187.96" smashed="yes" grouprefs="LED_STRIPS">
-<attribute name="VALUE" x="188.6204" y="191.77" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY4" gate="G$1" x="274.955" y="119.38" smashed="yes" grouprefs="LED_STRIPS">
+<attribute name="VALUE" x="274.9804" y="123.19" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY5" gate="G$1" x="188.595" y="166.37" smashed="yes" grouprefs="LED_STRIPS">
-<attribute name="VALUE" x="188.595" y="165.1" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY5" gate="G$1" x="274.955" y="97.79" smashed="yes" grouprefs="LED_STRIPS">
+<attribute name="VALUE" x="274.955" y="96.52" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY6" gate="G$1" x="228.6" y="187.96" smashed="yes" grouprefs="LED_STRIPS">
-<attribute name="VALUE" x="228.6254" y="191.77" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY6" gate="G$1" x="314.96" y="119.38" smashed="yes" grouprefs="LED_STRIPS">
+<attribute name="VALUE" x="314.9854" y="123.19" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY7" gate="G$1" x="228.6" y="166.37" smashed="yes" grouprefs="LED_STRIPS">
-<attribute name="VALUE" x="228.6" y="165.1" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY7" gate="G$1" x="314.96" y="97.79" smashed="yes" grouprefs="LED_STRIPS">
+<attribute name="VALUE" x="314.96" y="96.52" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="R5" gate="G$1" x="350.52" y="191.135" smashed="yes" grouprefs="MICROCONTROLLER">
 <attribute name="NAME" x="347.98" y="192.6336" size="1.778" layer="95"/>
 <attribute name="VALUE" x="347.98" y="187.833" size="1.778" layer="96"/>
 </instance>
-<instance part="CN5" gate="A" x="157.48" y="140.97" smashed="yes" grouprefs="ICSP_PROGRAMMER">
-<attribute name="NAME" x="149.86" y="146.685" size="1.778" layer="95"/>
-<attribute name="VALUE" x="149.86" y="133.35" size="1.778" layer="96"/>
+<instance part="CN5" gate="A" x="243.84" y="72.39" smashed="yes" grouprefs="ICSP_PROGRAMMER">
+<attribute name="NAME" x="236.22" y="78.105" size="1.778" layer="95"/>
+<attribute name="VALUE" x="236.22" y="64.77" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY8" gate="G$1" x="168.275" y="148.59" smashed="yes" grouprefs="ICSP_PROGRAMMER">
-<attribute name="VALUE" x="168.3004" y="152.4" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY8" gate="G$1" x="254.635" y="80.01" smashed="yes" grouprefs="ICSP_PROGRAMMER">
+<attribute name="VALUE" x="254.6604" y="83.82" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY9" gate="G$1" x="168.275" y="133.35" smashed="yes" grouprefs="ICSP_PROGRAMMER">
-<attribute name="VALUE" x="168.275" y="132.08" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY9" gate="G$1" x="254.635" y="64.77" smashed="yes" grouprefs="ICSP_PROGRAMMER">
+<attribute name="VALUE" x="254.635" y="63.5" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
 <instance part="FRAME2" gate="G$2" x="287.02" y="0" smashed="yes">
@@ -18670,8 +18676,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <attribute name="VALUE" x="99.441" y="-63.754" size="1.778" layer="96"/>
 <attribute name="NAME" x="99.441" y="-60.96" size="1.778" layer="95"/>
 </instance>
-<instance part="SUPPLY10" gate="G$1" x="86.995" y="-155.575" smashed="yes">
-<attribute name="VALUE" x="86.995" y="-156.845" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY10" gate="G$1" x="76.835" y="-155.575" smashed="yes">
+<attribute name="VALUE" x="76.835" y="-156.845" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="SUPPLY11" gate="G$1" x="158.115" y="-155.575" smashed="yes">
 <attribute name="VALUE" x="158.115" y="-156.845" size="1.778" layer="96" align="center"/>
@@ -18707,8 +18713,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <attribute name="NAME" x="274.193" y="-102.489" size="1.778" layer="95"/>
 <attribute name="VALUE" x="286.004" y="-107.696" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+5V2" gate="+5V" x="293.37" y="-56.515" smashed="yes">
-<attribute name="VALUE" x="292.1" y="-53.34" size="1.778" layer="96"/>
+<instance part="+5V2" gate="+5V" x="314.325" y="-56.515" smashed="yes">
+<attribute name="VALUE" x="313.055" y="-53.34" size="1.778" layer="96"/>
 </instance>
 <instance part="D4" gate="G$1" x="287.02" y="-69.85" smashed="yes" rot="R270">
 <attribute name="NAME" x="284.099" y="-65.405" size="1.778" layer="95"/>
@@ -18728,11 +18734,11 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </instance>
 <instance part="R8" gate="G$1" x="177.165" y="-87.63" smashed="yes">
 <attribute name="NAME" x="172.72" y="-86.3854" size="1.27" layer="95" align="center"/>
-<attribute name="VALUE" x="182.245" y="-86.487" size="1.27" layer="96" align="center"/>
+<attribute name="VALUE" x="184.785" y="-86.487" size="1.27" layer="96" align="center"/>
 </instance>
 <instance part="R9" gate="G$1" x="177.165" y="-90.17" smashed="yes">
 <attribute name="NAME" x="172.72" y="-88.9254" size="1.27" layer="95" align="center"/>
-<attribute name="VALUE" x="182.245" y="-89.027" size="1.27" layer="96" align="center"/>
+<attribute name="VALUE" x="184.785" y="-89.027" size="1.27" layer="96" align="center"/>
 </instance>
 <instance part="+5V1" gate="+5V" x="283.21" y="249.555" smashed="yes">
 <attribute name="VALUE" x="281.94" y="252.73" size="1.778" layer="96"/>
@@ -18746,6 +18752,27 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="165.735" y="-155.575" smashed="yes">
 <attribute name="VALUE" x="165.735" y="-156.845" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="C2" gate="G$1" x="252.095" y="160.02" smashed="yes" grouprefs="MICROCONTROLLER">
+<attribute name="NAME" x="249.6058" y="158.75" size="1.27" layer="95" align="center-right"/>
+<attribute name="VALUE" x="255.778" y="158.7754" size="1.27" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="SUPPLY17" gate="G$1" x="252.095" y="147.955" smashed="yes">
+<attribute name="VALUE" x="252.095" y="146.685" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="R2" gate="G$1" x="85.725" y="-142.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="83.8454" y="-142.24" size="1.27" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="87.757" y="-142.24" size="1.27" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="SUPPLY18" gate="G$1" x="85.725" y="-155.575" smashed="yes">
+<attribute name="VALUE" x="85.725" y="-156.845" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="R3" gate="G$1" x="303.53" y="-69.85" smashed="yes" rot="R180">
+<attribute name="NAME" x="303.53" y="-71.7296" size="1.27" layer="95" rot="R180" align="center"/>
+<attribute name="VALUE" x="303.53" y="-67.818" size="1.27" layer="96" rot="R180" align="center"/>
+</instance>
+<instance part="SUPPLY19" gate="G$1" x="294.005" y="-56.515" smashed="yes">
+<attribute name="VALUE" x="294.0304" y="-52.705" size="1.778" layer="96" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -18801,52 +18828,52 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <segment>
 <pinref part="CN2" gate="-2" pin="KL"/>
 <pinref part="SUPPLY3" gate="G$1" pin="0V"/>
-<wire x1="144.145" y1="175.895" x2="161.29" y2="175.895" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<wire x1="161.29" y1="175.895" x2="161.29" y2="168.91" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="230.505" y1="107.315" x2="247.65" y2="107.315" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="247.65" y1="107.315" x2="247.65" y2="100.33" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 </segment>
 <segment>
 <pinref part="SUPPLY5" gate="G$1" pin="0V"/>
-<wire x1="186.055" y1="172.085" x2="188.595" y2="172.085" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
-<wire x1="188.595" y1="172.085" x2="188.595" y2="168.91" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
+<wire x1="272.415" y1="103.505" x2="274.955" y2="103.505" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
+<wire x1="274.955" y1="103.505" x2="274.955" y2="100.33" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
 <pinref part="CN3" gate="-3" pin="KL"/>
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="G$1" pin="0V"/>
-<wire x1="226.06" y1="172.085" x2="228.6" y2="172.085" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
-<wire x1="228.6" y1="172.085" x2="228.6" y2="168.91" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
+<wire x1="312.42" y1="103.505" x2="314.96" y2="103.505" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
+<wire x1="314.96" y1="103.505" x2="314.96" y2="100.33" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
 <pinref part="CN4" gate="-3" pin="KL"/>
 </segment>
 <segment>
 <pinref part="CN5" gate="A" pin="6"/>
 <pinref part="SUPPLY9" gate="G$1" pin="0V"/>
-<wire x1="161.29" y1="138.43" x2="168.275" y2="138.43" width="0.1524" layer="91" grouprefs="ICSP_PROGRAMMER"/>
-<wire x1="168.275" y1="138.43" x2="168.275" y2="135.89" width="0.1524" layer="91" grouprefs="ICSP_PROGRAMMER"/>
+<wire x1="247.65" y1="69.85" x2="254.635" y2="69.85" width="0.1524" layer="91" grouprefs="ICSP_PROGRAMMER"/>
+<wire x1="254.635" y1="69.85" x2="254.635" y2="67.31" width="0.1524" layer="91" grouprefs="ICSP_PROGRAMMER"/>
 </segment>
 <segment>
 <pinref part="CN6" gate="G$1" pin="GND@35"/>
 <pinref part="SUPPLY10" gate="G$1" pin="0V"/>
-<wire x1="94.615" y1="-90.17" x2="86.995" y2="-90.17" width="0.1524" layer="91"/>
-<wire x1="86.995" y1="-90.17" x2="86.995" y2="-97.79" width="0.1524" layer="91"/>
+<wire x1="94.615" y1="-90.17" x2="76.835" y2="-90.17" width="0.1524" layer="91"/>
+<wire x1="76.835" y1="-90.17" x2="76.835" y2="-97.79" width="0.1524" layer="91"/>
 <pinref part="CN6" gate="G$1" pin="GND@29"/>
-<wire x1="86.995" y1="-97.79" x2="86.995" y2="-100.33" width="0.1524" layer="91"/>
-<wire x1="86.995" y1="-100.33" x2="86.995" y2="-107.95" width="0.1524" layer="91"/>
-<wire x1="86.995" y1="-107.95" x2="86.995" y2="-120.65" width="0.1524" layer="91"/>
-<wire x1="86.995" y1="-120.65" x2="86.995" y2="-128.27" width="0.1524" layer="91"/>
-<wire x1="86.995" y1="-128.27" x2="86.995" y2="-153.035" width="0.1524" layer="91"/>
-<wire x1="94.615" y1="-97.79" x2="86.995" y2="-97.79" width="0.1524" layer="91"/>
-<junction x="86.995" y="-97.79"/>
+<wire x1="76.835" y1="-97.79" x2="76.835" y2="-100.33" width="0.1524" layer="91"/>
+<wire x1="76.835" y1="-100.33" x2="76.835" y2="-107.95" width="0.1524" layer="91"/>
+<wire x1="76.835" y1="-107.95" x2="76.835" y2="-120.65" width="0.1524" layer="91"/>
+<wire x1="76.835" y1="-120.65" x2="76.835" y2="-128.27" width="0.1524" layer="91"/>
+<wire x1="76.835" y1="-128.27" x2="76.835" y2="-153.035" width="0.1524" layer="91"/>
+<wire x1="94.615" y1="-97.79" x2="76.835" y2="-97.79" width="0.1524" layer="91"/>
+<junction x="76.835" y="-97.79"/>
 <pinref part="CN6" gate="G$1" pin="GND@27"/>
-<wire x1="94.615" y1="-100.33" x2="86.995" y2="-100.33" width="0.1524" layer="91"/>
-<junction x="86.995" y="-100.33"/>
+<wire x1="94.615" y1="-100.33" x2="76.835" y2="-100.33" width="0.1524" layer="91"/>
+<junction x="76.835" y="-100.33"/>
 <pinref part="CN6" gate="G$1" pin="GND@15"/>
-<wire x1="94.615" y1="-120.65" x2="86.995" y2="-120.65" width="0.1524" layer="91"/>
-<junction x="86.995" y="-120.65"/>
+<wire x1="94.615" y1="-120.65" x2="76.835" y2="-120.65" width="0.1524" layer="91"/>
+<junction x="76.835" y="-120.65"/>
 <pinref part="CN6" gate="G$1" pin="GND@9"/>
-<wire x1="94.615" y1="-128.27" x2="86.995" y2="-128.27" width="0.1524" layer="91"/>
-<junction x="86.995" y="-128.27"/>
+<wire x1="94.615" y1="-128.27" x2="76.835" y2="-128.27" width="0.1524" layer="91"/>
+<junction x="76.835" y="-128.27"/>
 <pinref part="CN6" gate="G$1" pin="GND@21"/>
-<wire x1="94.615" y1="-107.95" x2="86.995" y2="-107.95" width="0.1524" layer="91"/>
-<junction x="86.995" y="-107.95"/>
+<wire x1="94.615" y1="-107.95" x2="76.835" y2="-107.95" width="0.1524" layer="91"/>
+<junction x="76.835" y="-107.95"/>
 </segment>
 <segment>
 <pinref part="CN6" gate="G$1" pin="GND@50"/>
@@ -18899,13 +18926,23 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <pinref part="SUPPLY1" gate="G$1" pin="0V"/>
 <wire x1="165.735" y1="-153.035" x2="165.735" y2="-149.86" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="SUPPLY17" gate="G$1" pin="0V"/>
+<wire x1="252.095" y1="150.495" x2="252.095" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="SUPPLY18" gate="G$1" pin="0V"/>
+<wire x1="85.725" y1="-153.035" x2="85.725" y2="-147.32" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
 <pinref part="CN5" gate="A" pin="2"/>
 <pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
-<wire x1="161.29" y1="143.51" x2="168.275" y2="143.51" width="0.1524" layer="91" grouprefs="ICSP_PROGRAMMER"/>
-<wire x1="168.275" y1="143.51" x2="168.275" y2="146.05" width="0.1524" layer="91" grouprefs="ICSP_PROGRAMMER"/>
+<wire x1="247.65" y1="74.93" x2="254.635" y2="74.93" width="0.1524" layer="91" grouprefs="ICSP_PROGRAMMER"/>
+<wire x1="254.635" y1="74.93" x2="254.635" y2="77.47" width="0.1524" layer="91" grouprefs="ICSP_PROGRAMMER"/>
 </segment>
 <segment>
 <pinref part="CN6" gate="G$1" pin="+3.3V@52"/>
@@ -18937,14 +18974,17 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </net>
 <net name="VBUS" class="0">
 <segment>
-<wire x1="307.975" y1="216.535" x2="273.05" y2="216.535" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<wire x1="307.975" y1="213.995" x2="273.05" y2="213.995" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<wire x1="273.05" y1="213.995" x2="273.05" y2="216.535" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<wire x1="273.05" y1="247.015" x2="273.05" y2="216.535" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
-<junction x="273.05" y="216.535" grouprefs="MICROCONTROLLER"/>
+<wire x1="307.975" y1="216.535" x2="252.095" y2="216.535" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="307.975" y1="213.995" x2="252.095" y2="213.995" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="252.095" y1="213.995" x2="252.095" y2="216.535" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<wire x1="252.095" y1="247.015" x2="252.095" y2="216.535" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
+<junction x="252.095" y="216.535" grouprefs="MICROCONTROLLER"/>
 <pinref part="U2" gate="G$1" pin="VBUS"/>
 <pinref part="U2" gate="G$1" pin="UVCC"/>
 <pinref part="SUPPLY40" gate="G$1" pin="P$1"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="252.095" y1="162.56" x2="252.095" y2="213.995" width="0.1524" layer="91"/>
+<junction x="252.095" y="213.995"/>
 </segment>
 </net>
 <net name="USB_D-" class="0">
@@ -18955,8 +18995,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="182.245" y1="-90.17" x2="186.055" y2="-90.17" width="0.1524" layer="91"/>
-<label x="186.055" y="-90.17" size="1.27" layer="95" xref="yes"/>
+<wire x1="182.245" y1="-90.17" x2="191.77" y2="-90.17" width="0.1524" layer="91"/>
+<label x="191.77" y="-90.17" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="USB_D+" class="0">
@@ -18967,8 +19007,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="182.245" y1="-87.63" x2="186.055" y2="-87.63" width="0.1524" layer="91"/>
-<label x="186.055" y="-87.63" size="1.27" layer="95" xref="yes"/>
+<wire x1="182.245" y1="-87.63" x2="191.77" y2="-87.63" width="0.1524" layer="91"/>
+<label x="191.77" y="-87.63" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!ICSP_RESET" class="0">
@@ -18983,8 +19023,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </segment>
 <segment>
 <pinref part="CN5" gate="A" pin="5"/>
-<wire x1="153.67" y1="138.43" x2="146.05" y2="138.43" width="0.1524" layer="91" grouprefs="ICSP_PROGRAMMER"/>
-<label x="146.05" y="138.43" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ICSP_PROGRAMMER"/>
+<wire x1="240.03" y1="69.85" x2="232.41" y2="69.85" width="0.1524" layer="91" grouprefs="ICSP_PROGRAMMER"/>
+<label x="232.41" y="69.85" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ICSP_PROGRAMMER"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -19035,35 +19075,35 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </segment>
 <segment>
 <pinref part="CN3" gate="-2" pin="KL"/>
-<wire x1="186.055" y1="177.165" x2="188.595" y2="177.165" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
-<label x="188.595" y="177.165" size="1.27" layer="95" xref="yes" grouprefs="LED_STRIPS"/>
+<wire x1="272.415" y1="108.585" x2="274.955" y2="108.585" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
+<label x="274.955" y="108.585" size="1.27" layer="95" xref="yes" grouprefs="LED_STRIPS"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="CN2" gate="-1" pin="KL"/>
 <pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="149.225" y1="180.975" x2="144.145" y2="180.975" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="235.585" y1="112.395" x2="230.505" y2="112.395" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 </segment>
 </net>
 <net name="5V" class="0">
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="SUPPLY2" gate="G$1" pin="5V"/>
-<wire x1="154.305" y1="180.975" x2="161.29" y2="180.975" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
-<wire x1="161.29" y1="180.975" x2="161.29" y2="185.42" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="240.665" y1="112.395" x2="247.65" y2="112.395" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
+<wire x1="247.65" y1="112.395" x2="247.65" y2="116.84" width="0.1524" layer="91" grouprefs="EXTERNAL_POWER_SUPPLY"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="5V"/>
-<wire x1="226.06" y1="182.245" x2="228.6" y2="182.245" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
-<wire x1="228.6" y1="182.245" x2="228.6" y2="185.42" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
+<wire x1="312.42" y1="113.665" x2="314.96" y2="113.665" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
+<wire x1="314.96" y1="113.665" x2="314.96" y2="116.84" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
 <pinref part="CN4" gate="-1" pin="KL"/>
 </segment>
 <segment>
 <pinref part="CN3" gate="-1" pin="KL"/>
 <pinref part="SUPPLY4" gate="G$1" pin="5V"/>
-<wire x1="186.055" y1="182.245" x2="188.595" y2="182.245" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
-<wire x1="188.595" y1="182.245" x2="188.595" y2="185.42" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
+<wire x1="272.415" y1="113.665" x2="274.955" y2="113.665" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
+<wire x1="274.955" y1="113.665" x2="274.955" y2="116.84" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -19088,15 +19128,15 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </segment>
 <segment>
 <pinref part="CN4" gate="-2" pin="KL"/>
-<wire x1="226.06" y1="177.165" x2="228.6" y2="177.165" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
-<label x="228.6" y="177.165" size="1.27" layer="95" xref="yes" grouprefs="LED_STRIPS"/>
+<wire x1="312.42" y1="108.585" x2="314.96" y2="108.585" width="0.1524" layer="91" grouprefs="LED_STRIPS"/>
+<label x="314.96" y="108.585" size="1.27" layer="95" xref="yes" grouprefs="LED_STRIPS"/>
 </segment>
 </net>
 <net name="ICSP_MOSI" class="0">
 <segment>
 <pinref part="CN5" gate="A" pin="4"/>
-<wire x1="161.29" y1="140.97" x2="168.275" y2="140.97" width="0.1524" layer="91" grouprefs="ICSP_PROGRAMMER"/>
-<label x="168.275" y="140.97" size="1.27" layer="95" xref="yes" grouprefs="ICSP_PROGRAMMER"/>
+<wire x1="247.65" y1="72.39" x2="254.635" y2="72.39" width="0.1524" layer="91" grouprefs="ICSP_PROGRAMMER"/>
+<label x="254.635" y="72.39" size="1.27" layer="95" xref="yes" grouprefs="ICSP_PROGRAMMER"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="PB2(MOSI)"/>
@@ -19107,8 +19147,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <net name="ICSP_MISO" class="0">
 <segment>
 <pinref part="CN5" gate="A" pin="1"/>
-<wire x1="153.67" y1="143.51" x2="146.05" y2="143.51" width="0.1524" layer="91" grouprefs="ICSP_PROGRAMMER"/>
-<label x="146.05" y="143.51" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ICSP_PROGRAMMER"/>
+<wire x1="240.03" y1="74.93" x2="232.41" y2="74.93" width="0.1524" layer="91" grouprefs="ICSP_PROGRAMMER"/>
+<label x="232.41" y="74.93" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ICSP_PROGRAMMER"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="PB3(MISO)"/>
@@ -19119,8 +19159,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <net name="ICSP_SCK" class="0">
 <segment>
 <pinref part="CN5" gate="A" pin="3"/>
-<wire x1="153.67" y1="140.97" x2="146.05" y2="140.97" width="0.1524" layer="91" grouprefs="ICSP_PROGRAMMER"/>
-<label x="146.05" y="140.97" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ICSP_PROGRAMMER"/>
+<wire x1="240.03" y1="72.39" x2="232.41" y2="72.39" width="0.1524" layer="91" grouprefs="ICSP_PROGRAMMER"/>
+<label x="232.41" y="72.39" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="ICSP_PROGRAMMER"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="PB1(SCK)"/>
@@ -19182,12 +19222,6 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="+5V2" gate="+5V" pin="+5V"/>
-<pinref part="D4" gate="G$1" pin="C"/>
-<wire x1="293.37" y1="-59.055" x2="293.37" y2="-69.85" width="0.1524" layer="91"/>
-<wire x1="293.37" y1="-69.85" x2="289.56" y2="-69.85" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <wire x1="307.975" y1="226.695" x2="283.21" y2="226.695" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="283.21" y1="226.695" x2="283.21" y2="247.015" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <wire x1="307.975" y1="224.155" x2="283.21" y2="224.155" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
@@ -19209,6 +19243,31 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="304.165" y1="247.015" x2="304.165" y2="243.205" width="0.1524" layer="91" grouprefs="MICROCONTROLLER"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="+5V3" gate="+5V" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="+5V2" gate="+5V" pin="+5V"/>
+<wire x1="314.325" y1="-59.055" x2="314.325" y2="-69.85" width="0.1524" layer="91"/>
+<wire x1="314.325" y1="-69.85" x2="308.61" y2="-69.85" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="CN6" gate="G$1" pin="CLKREQ#"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="94.615" y1="-130.81" x2="85.725" y2="-130.81" width="0.1524" layer="91"/>
+<wire x1="85.725" y1="-130.81" x2="85.725" y2="-137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="P$1" class="0">
+<segment>
+<pinref part="D4" gate="G$1" pin="C"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="298.45" y1="-69.85" x2="294.005" y2="-69.85" width="0.1524" layer="91"/>
+<pinref part="SUPPLY19" gate="G$1" pin="P$1"/>
+<wire x1="294.005" y1="-69.85" x2="289.56" y2="-69.85" width="0.1524" layer="91"/>
+<wire x1="294.005" y1="-59.055" x2="294.005" y2="-69.85" width="0.1524" layer="91"/>
+<junction x="294.005" y="-69.85"/>
 </segment>
 </net>
 </nets>
