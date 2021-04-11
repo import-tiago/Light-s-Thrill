@@ -10,15 +10,7 @@ Light's Thrill is an USB HID controller for RGB LED-strips, compatible with Cors
 * [JackNet RGB Sync](https://rgbsync.com/)
 * [RGB Infrared Controller](https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/RGB%20Infrared%20Controller%20Example.jpg)
 
-## 3D Printed Enclosure
-![](https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/Enclosure%20Preview1.jpg) | ![](https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/Enclosure%20Preview2.jpg) | ![](https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/Enclosure%20Preview3.jpg)
---- | --- | ---
-
-## Schematic
-<img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/Schematic%20Preview.png" width="100%" height="100%">
-
-## SETUP Parts
-<img src="https://github.com/TiagoPaulaSilva/Light-s-Thrill/blob/master/Assets/SETUP%20Parts.png" width="100%" height="100%">
+## mini PCIe Card
 
 ## MCU SETUP
 - Burn the Arduino Leornado bootloader at ATmega32U4 with an Arduino UNO as ISP programmer using SPI circuit connection.
