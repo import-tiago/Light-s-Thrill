@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -18551,6 +18551,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="205.74" y1="-160.655" x2="323.215" y2="-160.655" width="0.254" layer="152" style="longdash"/>
 <wire x1="323.215" y1="-160.655" x2="323.215" y2="-43.815" width="0.254" layer="152" style="longdash"/>
 <text x="219.71" y="-48.895" size="2.54" layer="152" ratio="5">BOOST CONVERTER (DC-DC STEP UP)</text>
+<text x="86.36" y="203.2" size="1.778" layer="91">TODO: ICSP by C#</text>
 </plain>
 <instances>
 <instance part="R4" gate="G$1" x="350.52" y="198.755" smashed="yes" grouprefs="MICROCONTROLLER">
